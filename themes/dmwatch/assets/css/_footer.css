@@ -1,5 +1,6 @@
 .footer-wrp{
 	padding-top: 100px;
+	position: relative;
 }
 .footer-inner{
 	padding-bottom: 20px;
@@ -7,7 +8,7 @@
 .ftr-logo{
 	float: left;
 	width: 33.7606%;
-	padding-right: 30px;
+	padding-right: 40px;
 }
 .ftr-menu{
 	float: left;
@@ -24,11 +25,12 @@
 }
 .ftr-logo a{
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
 .ftr-des p{
 	font-size: 16px;
 	color: #575656;
+	line-height: 24px;
 }
 .ftr-menu-title,
 .ftr-cnt-menu-title,
@@ -39,20 +41,19 @@
 	margin-bottom: 40px;
 	font-weight: 400;
 	color: #2a2828;
-	font-family: 'Open Sans', sans-serif;
 }
 .ftr-menu ul{
 	padding: 0;
 }
 .ftr-menu ul li{
-	padding-bottom: 17px;
+	padding-bottom: 16px;
 }
 .ftr-menu ul li a{
 	font-size: 15px;
 	color: #2a2828;
 }
 .ftr-cnt-menu ul li:first-child{
-	padding-bottom: 28px;
+	padding-bottom: 20px;
 }
 .ftr-cnt-menu ul li a{
 	font-size: 16px;
@@ -87,7 +88,7 @@
 
 
 .ftr-copywrite-sec{
-	padding: 50px 0;
+	padding: 45px 0;
 }
 .ftr-cpwrt-menu{
 	float: left;
@@ -130,20 +131,28 @@
 	display: block;
 	font-weight: 400;
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 0;
 }
 
 .ftr-top-sec-link a{
 	display: block;
-	padding: 22px 15px 22px 20px;
+	padding: 22px 14px 22px 17px;
 	background: #fff;
 	border: 2px solid #fff;
 	border-radius: 8px;
 	font-size: 36px;
 	color: #88bc41;
+	-webkit-box-shadow: 6px 8px 8px 0px rgba(66,93,28,0.75);
+	-moz-box-shadow: 6px 8px 8px 0px rgba(66,93,28,0.75);
+	box-shadow: 6px 8px 8px 0px rgba(66,93,28,0.75);
 }
 .ftr-top-sec-link a:hover{
 	background: #88bc41;
 	color: #fff;
+}
+
+.ftr-msg-icon{
+	position: fixed;
+	bottom: 35px;
+	right: 15%;
 }
