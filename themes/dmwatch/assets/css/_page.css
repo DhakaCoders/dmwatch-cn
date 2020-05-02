@@ -5,16 +5,20 @@
 	padding: 0 20px!important;
 }
 .slick-slider .slick-dots li{
-	width: 16px!important;
-	height: 16px!important;
+	width: 13px!important;
+	height: 5px!important;
 	position: static;
-	background: #E1E1E1!important;
-	border-radius: 100% 100%!important;
-	margin: 0 8px;
+	background: url(../images/slick-pagi-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 0%!important;
+	margin: 0 4px;
 	padding: 0!important;
 }
 .slick-slider .slick-dots li.slick-active{
-	background: #F3BA4B!important;
+	background: url(../images/slick-pagi-active-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center
 }
 .slick-slider .slick-dots li:before,
 .slick-slider .slick-dots li button:before{
@@ -22,8 +26,8 @@
 }
 .slick-slider .slick-dots li button{
 	padding: 0;
-	width: 16px;
-	height: 16px;
+	width: 13px;
+	height: 5px;
 }
 
 
