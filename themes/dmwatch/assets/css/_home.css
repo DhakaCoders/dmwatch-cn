@@ -1,0 +1,257 @@
+.main-slider-sec{
+	padding-bottom: 80px;
+}
+.mainSlider{
+	margin: 0!important;
+	overflow: hidden;
+}
+.main-slider-des{
+	padding: 290px 0 170px;
+	max-width: 750px;
+}
+
+.main-slider-des a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background: #53bc20;
+	width: 125px;
+	height: 41px;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 1;
+}
+.mainSLideItem{
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+}
+.main-slide-des-title{
+	display: block;
+	color: #a0d45e;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-size: 56px;
+	line-height: 1.2;
+}
+
+.mainSlider.slick-slider ul.slick-dots{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+}
+
+.dm-watch-section{
+	background: #f5f7f7;
+	padding: 80px 0 70px;
+}
+
+.dm-watch-sec-cntlr{
+	display: flex;
+	align-items: center;
+}
+.dm-watch-sec-fea-img{
+	order: 2;
+	width: 45%;
+	padding-left: 30px;
+}
+.dm-watch-sec-des{
+	order: 1;
+	width: 55%;
+}
+
+.dmwsd-title{
+	display: block;
+	color: #86c531;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+	font-size: 48px;
+	line-height: 1.2;
+}
+.dm-watch-sec-des p{
+	margin-bottom: 30px;
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+.hm-practice-area-sec{
+	padding: 85px 0 65px;
+}
+
+.hmpashdr-title{
+	font-size: 48px;
+	line-height: 1.2;
+	display: block;
+	color: #86c531;
+	margin-bottom: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.hm-practice-area-sec-hdr p{
+	font-size: 20px;
+}
+.hm-practice-area-sec-hdr{
+	padding-bottom: 50px;
+}
+.hm-practice-area-item-des{
+	text-align: center;
+	padding-bottom: 25px;
+}
+.hmPracticeAreaSlider{
+	margin: 0 -12px!important;
+}
+
+.hmPracticeAreaSlideItem{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.hm-practice-area-item-title{
+	font-weight: 700;
+	display: block;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.hm-practice-area-item-des p{
+	color: #9c9c9c;
+	font-size: 15px;
+}
+.hm-practice-area-fea-img{
+	margin-bottom: 30px;
+	position: relative;
+}
+.hm-practice-area-fea-img img{
+	width: 100%;
+}
+
+
+.hm-fea-services-sec{
+	background: #f5f7f7;
+	padding: 85px 0 70px;
+	margin-bottom: 100px;
+}
+
+.hm-fea-services-sec-hdr{
+	text-align: center;
+}
+
+.hm-fea-services-sec-hdr{
+	padding-bottom: 50px;
+}
+.hmfsshdr-title{
+	text-transform: uppercase;
+	line-height: 1.2;
+	font-size: 48px;
+	color: #8dc63f;
+}
+.hm-fea-service-item-img{
+	padding-bottom: 10px;
+}
+.hm-fea-service-item{
+	text-align: center;
+}
+
+.hmfsid-title{
+	font-size: 18px;
+	line-height: 1.2;
+	display: block;
+	margin-bottom: 15px;
+}
+.hm-fea-service-item{
+	text-align: center;
+}
+.hmFeaServicesSlider{
+	margin: 0 -10px!important;
+}
+.hmFeaServicesSlideItem{
+	padding: 0 10px;
+}
+.hm-fea-service-item-img img{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.hm-fea-service-item-des{
+	padding-bottom: 20px;
+}
+.hm-fea-service-item-des p{
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.hm-counter-sec{
+	background: #81b33d;
+	padding: 75px 0 65px;
+	color: #fff;
+}
+
+.hm-counter-cntlr ul li{
+	float: left;
+	width: 25%;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.hm-counter-item strong{
+	display: block;
+	font-size: 72px;
+}
+.hm-projects-tabs{
+	text-align: center;
+	padding-bottom: 45px;
+}
+.hm-projects-tabs .tab-link{
+	margin: 0 30px;
+	background: transparent;
+	text-transform: uppercase;
+	font-size: 38px;
+	line-height: 1;
+	position: relative;
+	padding: 0;
+	cursor: pointer;
+}
+.hm-projects-tabs .tab-link:not(:last-child):after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	width: 4px;
+	height: 33px;
+	background: #81b33d;
+	right: -33px;
+}
+.hm-projects-tabs .tab-link.current{
+	color: #81b33d;
+}
+.hm-projects-section{
+	padding: 95px 0 75px;
+}
+.hm-project-tab-short-des{
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 55px;
+}
+.hmProTabSlider{
+	margin: 0 -15px!important;
+}
+.hmProTabSlideItemCon{
+	position: relative;
+}
+.hmProTabSlideItem{
+	padding: 0 15px 30px;
+}
+.hmProTabSlideItemCon img{
+	width: 100%;
+}
+
+.fl-tab-content{
+	display: none;
+}
+.fl-tab-content.current{
+	display: block;
+}
