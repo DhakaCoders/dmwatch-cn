@@ -17,12 +17,15 @@ a, a:hover, a:focus, button:hover, button:focus{
 
 body {
     background: #ffffff;
-    color: #444444;
+    color: #000;
     font-size: 22px;
     line-height: 24px;
+    /*font-family: 'FranklinGothic';*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 p{
-	line-height: 1.2;
+	line-height: 24px;
 	margin-bottom: 15px;
 }
 /*-- app gap use pattern --*/
