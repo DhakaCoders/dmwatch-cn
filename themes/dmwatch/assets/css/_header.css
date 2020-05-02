@@ -12,6 +12,14 @@ header.header{
 .hdr-topbar{
 	padding-bottom: 15px;
 }
+.logo{
+	padding-top: 20px;
+}
+nav.main-nav > ul{
+	float: right;
+	font-size: 13.5px;
+	line-height: 1;
+}
 nav.main-nav ul{
 
 }
@@ -19,7 +27,7 @@ nav.main-nav ul li{
 	
 }
 nav.main-nav ul li a{
-	
+	color: #2a2828;
 }
 nav.main-nav > ul{
 
@@ -27,9 +35,13 @@ nav.main-nav > ul{
 nav.main-nav > ul > li{
 	display: inline-block;
 	vertical-align: baseline;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 0 20px;
 }
 nav.main-nav > ul > li > a{
-
+	padding-bottom: 30px;
+	display: block;
 }
 
 nav.main-nav > ul > li.current-menu-item > a{
