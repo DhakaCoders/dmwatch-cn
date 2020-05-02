@@ -7,7 +7,7 @@
 .ftr-logo{
 	float: left;
 	width: 33.7606%;
-	padding-right: 45px;
+	padding-right: 30px;
 }
 .ftr-menu{
 	float: left;
@@ -16,7 +16,7 @@
 .ftr-cnt-menu{
 	float: left;
 	width: 26.0683%;
-	padding-right: 55px;
+	padding-right: 50px;
 }
 .ftr-facebook{
 	float: left;
@@ -39,12 +39,13 @@
 	margin-bottom: 40px;
 	font-weight: 400;
 	color: #2a2828;
+	font-family: 'Open Sans', sans-serif;
 }
 .ftr-menu ul{
 	padding: 0;
 }
 .ftr-menu ul li{
-	padding-bottom: 20px;
+	padding-bottom: 17px;
 }
 .ftr-menu ul li a{
 	font-size: 15px;
@@ -60,9 +61,29 @@
 }
 .ftr-cnt-socials-media{
 	margin-top: 22px;
+	background: #f7f7f7;
+	margin-right: 85px;
+}
+.ftr-cnt-socials-media ul li{
+	display: inline-block;
+	padding-left: 13px;
+	padding-right: 13px;
+	padding-top: 7px;
+	padding-bottom: 10px;
+}
+.ftr-cnt-socials-media ul li:first-child{
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+.ftr-cnt-socials-media ul li:last-child{
+	padding-right: 8px;
 }
 
-
+.ftr-menu ul li a:hover,
+.ftr-cnt-menu ul li a:hover,
+.ftr-cpwrt-menu ul li a:hover{
+	color: #71a033;
+}
 
 
 .ftr-copywrite-sec{
@@ -88,4 +109,41 @@
 	font-size: 15px;
 	color: #2a2828;
 	text-transform: capitalize;
+}
+
+
+.footer-top-section{
+	background: #84b73e;
+	padding-top: 68px;
+	padding-bottom: 58px;
+}
+.ftr-top-sec-title{
+	float: left;
+}
+.ftr-top-sec-link{
+	float: right;
+}
+
+.ftr-top-title{
+	font-size: 52px;
+	line-height: 1;
+	display: block;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 0;
+}
+
+.ftr-top-sec-link a{
+	display: block;
+	padding: 22px 15px 22px 20px;
+	background: #fff;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	font-size: 36px;
+	color: #88bc41;
+}
+.ftr-top-sec-link a:hover{
+	background: #88bc41;
+	color: #fff;
 }
