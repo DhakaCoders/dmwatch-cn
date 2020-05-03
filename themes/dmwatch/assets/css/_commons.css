@@ -20,8 +20,6 @@ body {
     color: #000;
     font-size: 18px;
     line-height: 24px;
-    /*font-family: 'FranklinGothic';*/
-   /* font-family: 'Open Sans', sans-serif;*/
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
@@ -310,4 +308,29 @@ form .dropdown-menu li a{
 }
 .dropdown-menu.show{
 	width: 100%;
+}
+
+
+/* slider break*/
+.mainSlider .mainSLideItem,
+.hmPracticeAreaSlider .hmPracticeAreaSlideItem,
+.hmFeaServicesSlider .hmFeaServicesSlideItem,
+.clientsPartnersLogosSlider .clientsPartnersLogosSlideItem,
+.hmProTabSlider .hmProTabSlideItem{
+	display: none;
+}
+.mainSlider .mainSLideItem:first-child,
+.hmPracticeAreaSlider .hmPracticeAreaSlideItem:first-child,
+.hmFeaServicesSlider .hmFeaServicesSlideItem:first-child,
+.clientsPartnersLogosSlider .clientsPartnersLogosSlideItem:first-child,
+.hmProTabSlider .hmProTabSlideItem:first-child{
+	display: block;
+}
+
+.mainSlider.slick-initialized .mainSLideItem,
+.hmPracticeAreaSlider.slick-initialized .hmPracticeAreaSlideItem,
+.hmFeaServicesSlider.slick-initialized .hmFeaServicesSlideItem,
+.clientsPartnersLogosSlider.slick-initialized .clientsPartnersLogosSlideItem,
+.hmProTabSlider.slick-initialized .hmProTabSlideItem{
+	display: block;
 }

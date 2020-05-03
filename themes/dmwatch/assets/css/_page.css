@@ -20,6 +20,15 @@
 	background-repeat: no-repeat;
 	background-position: center center
 }
+
+
+@media(min-width: 992px){
+	.slick-slider .slick-dots li:hover{
+		background: url(../images/slick-pagi-active-bg.png);
+		background-repeat: no-repeat;
+		background-position: center center
+	}
+}
 .slick-slider .slick-dots li:before,
 .slick-slider .slick-dots li button:before{
 	content: none!important;

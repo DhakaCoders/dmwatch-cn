@@ -7,7 +7,7 @@
 }
 .main-slider-des{
 	padding: 290px 0 170px;
-	max-width: 750px;
+	max-width: 805px;
 }
 
 .main-slider-des a{
@@ -15,13 +15,19 @@
 	align-items: center;
 	justify-content: center;
 	color: #fff;
-	background: #53bc20;
+	background: url(../images/read-more-btn-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
 	width: 125px;
 	height: 41px;
 	padding: 5px;
 	text-transform: uppercase;
 	font-size: 18px;
 	line-height: 1;
+}
+.main-slider-des a:hover{
+	opacity: .8;
 }
 .mainSLideItem{
 	background-size: cover!important;
@@ -44,6 +50,29 @@
 	bottom: 30px;
 }
 
+
+.mainSlider .mainSLideItem.slick-current .main-slider-des .main-slide-des-title{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.mainSlider .mainSLideItem.slick-current .main-slider-des a{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;	
+}
+
+
 .dm-watch-section{
 	background: #f5f7f7;
 	padding: 80px 0 70px;
@@ -57,10 +86,12 @@
 	order: 2;
 	width: 45%;
 	padding-left: 30px;
+	text-align: right;
 }
 .dm-watch-sec-des{
 	order: 1;
 	width: 55%;
+	padding-right: 57px;
 }
 
 .dmwsd-title{
@@ -73,7 +104,7 @@
 }
 .dm-watch-sec-des p{
 	margin-bottom: 30px;
-	font-size: 22px;
+	font-size: 21px;
 	line-height: 1.2;
 }
 
@@ -92,7 +123,7 @@
 	font-weight: 700;
 }
 .hm-practice-area-sec-hdr p{
-	font-size: 20px;
+	font-size: 19px;
 }
 .hm-practice-area-sec-hdr{
 	padding-bottom: 50px;
@@ -100,6 +131,8 @@
 .hm-practice-area-item-des{
 	text-align: center;
 	padding-bottom: 25px;
+	padding-left: 31px;
+	padding-right: 31px;
 }
 .hmPracticeAreaSlider{
 	margin: 0 -12px!important;
@@ -108,6 +141,7 @@
 .hmPracticeAreaSlideItem{
 	padding-left: 12px;
 	padding-right: 12px;
+	width: 33.3333%;
 }
 .hm-practice-area-item-title{
 	font-weight: 700;
@@ -159,9 +193,14 @@
 	line-height: 1.2;
 	display: block;
 	margin-bottom: 15px;
+	color: #3b3b3b;
+}
+.hmFeaServicesSlideItem{
+	width: 20%;
 }
 .hm-fea-service-item{
 	text-align: center;
+	
 }
 .hmFeaServicesSlider{
 	margin: 0 -10px!important;
@@ -177,7 +216,7 @@
 	padding-bottom: 20px;
 }
 .hm-fea-service-item-des p{
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.2;
 }
 
@@ -197,6 +236,7 @@
 .hm-counter-item strong{
 	display: block;
 	font-size: 72px;
+	font-weight: 600;
 }
 .hm-projects-tabs{
 	text-align: center;
@@ -239,9 +279,62 @@
 .hmProTabSlider{
 	margin: 0 -15px!important;
 }
+.hmProTabSlideItem{
+	width: 33.3333%;
+}
 .hmProTabSlideItemCon{
 	position: relative;
 }
+.hmProTabSlideItemCon-hover-inr{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.hmProTabSlideItemCon-hover-inr strong{
+	color: #94ce44;
+	padding: 0 10px 30px;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	font-size: 21px;
+	line-height: 1.2;
+}
+.hmProTabSlideItemCon-hover{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url(../images/hmProTabSlideItemConInr-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+    transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.hmProTabSlideItemCon:hover .hmProTabSlideItemCon-hover{
+    opacity: 1;
+    transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+}
+.hmProTabSlideItemCon:hover{
+-webkit-box-shadow: 3px 3px 6px 0px rgba(155,155,155,1);
+-moz-box-shadow: 3px 3px 6px 0px rgba(155,155,155,1);
+box-shadow: 3px 3px 6px 0px rgba(155,155,155,1);
+}
+
 .hmProTabSlideItem{
 	padding: 0 15px 30px;
 }
@@ -254,4 +347,31 @@
 }
 .fl-tab-content.current{
 	display: block;
+}
+
+
+.hm-clients-partners-sec{
+	padding: 75px 0 50px;
+	background: #f5f7f6;
+	margin-bottom: 130px;
+}
+.hm-clients-partners-sec-hdr{
+	padding-bottom: 60px;
+	text-align: center;
+}
+.hmcpshdr-title{
+	text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 48px;
+    color: #8dc641;
+    display: block;
+}
+
+.hm-clients-partners-sec-hdr p {
+    font-size: 19px;
+}
+
+.clientsPartnersLogosSlideItem{
+	padding: 0 30px 40px;
+	width: 20%;
 }

@@ -57,7 +57,7 @@
 }
 .ftr-cnt-menu ul li a{
 	font-size: 16px;
-	color: #2a2828;
+	color: #aaaaaa;
 	line-height: 22px;
 }
 .ftr-cnt-socials-media{
@@ -65,19 +65,23 @@
 	background: #f7f7f7;
 	margin-right: 85px;
 }
+.ftr-cnt-socials-media ul{
+	padding-left: 5px;
+	padding-right: 5px;
+}
 .ftr-cnt-socials-media ul li{
 	display: inline-block;
-	padding-left: 13px;
-	padding-right: 13px;
+	padding-left: 15px;
+	padding-right: 15px;
 	padding-top: 7px;
 	padding-bottom: 10px;
 }
 .ftr-cnt-socials-media ul li:first-child{
 	padding-bottom: 10px;
-	padding-left: 5px;
+	padding-left: 0;
 }
 .ftr-cnt-socials-media ul li:last-child{
-	padding-right: 8px;
+	padding-right: 0;
 }
 
 .ftr-menu ul li a:hover,
@@ -119,28 +123,40 @@
 	padding-bottom: 58px;
 }
 .ftr-top-sec-title{
-	float: left;
+	
 }
 .ftr-top-sec-link{
-	float: right;
+	margin-left: auto;
+}
+.ftr-top-sec-inr{
+	display: flex;
+	align-items: center;
 }
 
 .ftr-top-title{
-	font-size: 52px;
+	font-size: 50px;
 	line-height: 1;
 	display: block;
-	font-weight: 400;
+	font-weight: 600;
 	color: #fff;
 	margin-bottom: 0;
+	padding-right: 20px;
 }
 
 .ftr-top-sec-link a{
 	display: block;
-	padding: 22px 14px 22px 17px;
+	/*padding: 22px 14px 22px 17px;*/
+	padding: 5px 10px;
+	font-weight: 500;
+	width: 220px;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: #fff;
 	border: 2px solid #fff;
 	border-radius: 8px;
-	font-size: 36px;
+	font-size: 34px;
 	color: #88bc41;
 	-webkit-box-shadow: 6px 8px 8px 0px rgba(66,93,28,0.75);
 	-moz-box-shadow: 6px 8px 8px 0px rgba(66,93,28,0.75);
@@ -154,5 +170,5 @@
 .ftr-msg-icon{
 	position: fixed;
 	bottom: 35px;
-	right: 15%;
+	right: 10px;
 }
