@@ -1,3 +1,7 @@
+.home-sections-cntlr{
+	font-family: 'FranklinGothic-Book';
+}
+
 .main-slider-sec{
 	padding-bottom: 80px;
 }
@@ -7,7 +11,7 @@
 }
 .main-slider-des{
 	padding: 290px 0 170px;
-	max-width: 805px;
+	max-width: 775px;
 }
 
 .main-slider-des a{
@@ -27,7 +31,7 @@
 	line-height: 1;
 }
 .main-slider-des a:hover{
-	opacity: .8;
+	opacity: .8!important;
 }
 .mainSLideItem{
 	background-size: cover!important;
@@ -91,7 +95,7 @@
 .dm-watch-sec-des{
 	order: 1;
 	width: 55%;
-	padding-right: 57px;
+	padding-right: 100px;
 }
 
 .dmwsd-title{
@@ -121,6 +125,9 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
+}
+.hm-practice-area-sec-hdr{
+	text-align: center;
 }
 .hm-practice-area-sec-hdr p{
 	font-size: 19px;
@@ -182,7 +189,7 @@
 	color: #8dc63f;
 }
 .hm-fea-service-item-img{
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 }
 .hm-fea-service-item{
 	text-align: center;
@@ -237,6 +244,7 @@
 	display: block;
 	font-size: 72px;
 	font-weight: 600;
+	line-height: 1;
 }
 .hm-projects-tabs{
 	text-align: center;
@@ -321,6 +329,9 @@
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    -webkit-transform-origin: bottom;
 }
 
 .hmProTabSlideItemCon:hover .hmProTabSlideItemCon-hover{
@@ -337,6 +348,12 @@ box-shadow: 3px 3px 6px 0px rgba(155,155,155,1);
 
 .hmProTabSlideItem{
 	padding: 0 15px 30px;
+}
+.hmProTabSlideItemCon{
+	min-height: 215px;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	background-size: cover!important; 
 }
 .hmProTabSlideItemCon img{
 	width: 100%;

@@ -1,6 +1,7 @@
 .footer-wrp{
 	padding-top: 100px;
 	position: relative;
+	font-family: 'FranklinGothic-Book';
 }
 .footer-inner{
 	padding-bottom: 20px;
@@ -8,7 +9,8 @@
 .ftr-logo{
 	float: left;
 	width: 33.7606%;
-	padding-right: 40px;
+	padding-right: 72px;
+	margin-top: -5px;
 }
 .ftr-menu{
 	float: left;
@@ -26,6 +28,7 @@
 .ftr-logo a{
 	display: block;
 	margin-bottom: 27px;
+	max-width: 275px;
 }
 .ftr-des p{
 	font-size: 16px;
@@ -46,7 +49,9 @@
 	padding: 0;
 }
 .ftr-menu ul li{
-	padding-bottom: 16px;
+	padding-bottom: 14px;
+	text-transform: uppercase;
+	line-height: 1;
 }
 .ftr-menu ul li a{
 	font-size: 15px;
@@ -57,24 +62,24 @@
 }
 .ftr-cnt-menu ul li a{
 	font-size: 16px;
-	color: #aaaaaa;
+	color: #2a2828;
 	line-height: 22px;
 }
 .ftr-cnt-socials-media{
-	margin-top: 22px;
-	background: #f7f7f7;
-	margin-right: 85px;
+	padding-bottom: 25px;
 }
-.ftr-cnt-socials-media ul{
-	padding-left: 5px;
-	padding-right: 5px;
-}
+
 .ftr-cnt-socials-media ul li{
 	display: inline-block;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 7px;
+	padding-left: 5px;
 	padding-bottom: 10px;
+}
+.ftr-cnt-socials-media ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.ftr-cnt-socials-media ul li a:hover{
+	opacity: .7;
 }
 .ftr-cnt-socials-media ul li:first-child{
 	padding-bottom: 10px;
@@ -121,6 +126,7 @@
 	background: #84b73e;
 	padding-top: 68px;
 	padding-bottom: 58px;
+	font-family: 'FranklinGothic-Book';
 }
 .ftr-top-sec-title{
 	
@@ -137,7 +143,7 @@
 	font-size: 50px;
 	line-height: 1;
 	display: block;
-	font-weight: 600;
+	font-weight: 500;
 	color: #fff;
 	margin-bottom: 0;
 	padding-right: 20px;
@@ -147,7 +153,7 @@
 	display: block;
 	/*padding: 22px 14px 22px 17px;*/
 	padding: 5px 10px;
-	font-weight: 500;
+	font-weight: 600;
 	width: 220px;
 	height: 75px;
 	display: flex;
