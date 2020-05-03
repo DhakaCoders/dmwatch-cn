@@ -228,7 +228,10 @@
 }
 
 .hm-counter-sec{
-	background: #81b33d;
+	background: url(../images/hm-counter-sec-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	padding: 75px 0 65px;
 	color: #fff;
 }
