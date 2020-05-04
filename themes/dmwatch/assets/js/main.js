@@ -162,9 +162,9 @@ if( $('.mainSlider').length ){
       autoplay: true,
       autoplaySpeed: 5000,
       dots: true,
-      infinite: false,
+      infinite: true,
       arrows:false,
-      speed: 700,
+      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true
@@ -174,10 +174,12 @@ if( $('.mainSlider').length ){
 
 if( $('.hmPracticeAreaSlider').length ){
     $('.hmPracticeAreaSlider').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
       dots: true,
-      infinite: false,
+      infinite: true,
       arrows: false,
-      speed: 300,
+      speed: 700,
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
@@ -214,10 +216,12 @@ if( $('.hmPracticeAreaSlider').length ){
 
 if( $('.hmFeaServicesSlider').length ){
     $('.hmFeaServicesSlider').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
       dots: true,
-      infinite: false,
+      infinite: true,
       arrows: false,
-      speed: 300,
+      speed: 700,
       slidesToShow: 5,
       slidesToScroll: 1,
       responsive: [
@@ -254,10 +258,12 @@ if( $('.hmFeaServicesSlider').length ){
 
 if( $('.hmProTabSlider').length ){
     $('.hmProTabSlider').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
       dots: true,
-      infinite: false,
+      infinite: true,
       arrows: false,
-      speed: 300,
+      speed: 700,
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
@@ -293,10 +299,12 @@ if( $('.hmProTabSlider').length ){
 
 if( $('.clientsPartnersLogosSlider').length ){
     $('.clientsPartnersLogosSlider').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
       dots: true,
-      infinite: false,
+      infinite: true,
       arrows: false,
-      speed: 300,
+      speed: 700,
       slidesToShow: 5,
       slidesToScroll: 1,
       responsive: [
