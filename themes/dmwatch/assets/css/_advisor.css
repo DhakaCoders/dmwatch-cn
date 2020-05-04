@@ -1,0 +1,90 @@
+.dm-advisor-grd-sec{
+	margin: 105px 0 120px;
+	background: #F5F7F7;
+	padding: 70px 0;
+}
+.dm-advisor-grd-sec-des{
+	text-align: center;
+	padding: 0 30px 80px 30px;
+}
+.dm-advisor-grd-sec-des p{
+	font-size: 23px;
+	color: #606060;
+	line-height: 34px;
+}
+.dm-advisor-grd-sec-title{
+	display: block;
+	font-size: 38px;
+	line-height: 1;
+	padding-bottom: 35px;
+	font-weight: 700;
+	color: #606060;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 48px;
+}
+.dm-advisor-grd-sec-title:before{
+	content: "";
+	height: 2px;
+	width: 528px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #606060;
+}
+
+
+.dm-advisor-grd-item-wrap ul{
+	margin-right: -9px;
+	margin-left: -9px;
+}
+.dm-advisor-grd-item-wrap ul li{
+	float: left;
+	width: 25%;
+	padding: 0 9px 50px 9px;
+}
+
+.dm-advisor-grd-item-img-ctlr{
+	position: relative;
+	overflow: hidden;
+}
+.dm-advisor-grd-item-img{
+	min-height: 280px;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.dm-advisor-grd-item:hover .dm-advisor-grd-item-img{
+	transform: scale(1.1);
+}
+
+.dm-advisor-grd-item-des{
+	padding-top: 20px;
+}
+.dm-advisor-grd-item-des-title{
+	display: block;
+	font-size: 18px;
+	line-height: 1;
+	margin-bottom: 8px;
+	font-weight: 700;
+	color: #606060;
+	text-transform: capitalize;
+}
+
+.dm-advisor-grd-item-des span{
+	display: block;
+	font-size: 11px;
+	color: #606060;
+}
+
+.dm-advisor-grd-item-des a{
+	font-size: 11px;
+	color: #606060;
+	font-weight: 600;
+}
+.dm-advisor-grd-item-des a:hover{
+	color: #88BE43;
+}

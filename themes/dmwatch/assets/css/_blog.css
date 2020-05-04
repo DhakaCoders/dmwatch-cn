@@ -1,0 +1,78 @@
+.dm-blog-grd-sec{
+	margin: 115px 0;
+	background: #F5F7F7;
+	padding: 88px 0 25px;
+}
+.dm-blog-grd-sec-inr ul li{
+	padding-bottom: 30px;
+}
+
+
+
+.dm-blog-grd-item{
+	padding-left: 80px;
+	position: relative;
+}
+.dm-blog-grd-item span{
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 45px;
+	height: 45px;
+	border: 2px solid #6D9B6A;
+}
+.dm-blog-grd-item span:before{
+	content: "";
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #88BE43;
+	border-radius: 100%;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.dm-blog-grd-item:hover span:before{
+	content: "";
+	height: 18px;
+	width: 25px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background: url('../images/dm-blog-grd-item-tick.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.dm-blog-grd-item:hover .dm-blog-grd-item-title{
+	color: #88BE43;
+}
+
+.dm-blog-grd-item-title{
+	display: block;
+	font-size: 48px;
+	line-height: 1;
+	margin-bottom: 25px;
+	font-weight: 500;
+	color: #757575;
+	text-transform: uppercase;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.dm-blog-grd-item strong{
+	font-size: 22px;
+	color: #6D6D6D;
+	margin-bottom: 60px;
+	font-family: 'FranklinGothic-Book';
+	display: block;
+	font-weight: 400;
+}
+.dm-blog-grd-item p{
+	font-size: 24px;
+	color: #757575;
+	line-height: 45px;
+}

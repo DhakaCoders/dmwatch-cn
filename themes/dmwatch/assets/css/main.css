@@ -11,8 +11,9 @@
 
 
 /*Shoriful*/
-
-
+@import url('_advisor.css');
+@import url('_blog-details.css');
+@import url('_blog.css');
 @import url('_about.css');
 @import url('_contact.css');
 @import url('_footer.css');

@@ -1,0 +1,102 @@
+.dm-blog-details-des-sec-inr{
+	background: #88BE43;
+	padding: 35px 20px 10px 45px;
+}
+
+.dm-bd-des-title{
+	display: block;
+	font-size: 48px;
+	line-height: 1;
+	font-weight: 500;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.dm-blog-details-des-sec-inr strong{
+	display: block;
+	font-size: 22px;
+	color: #fff;
+	margin-bottom: 60px;
+	font-family: 'FranklinGothic-Book';
+	font-weight: 400;
+}
+.dm-blog-details-des-sec-inr p{
+	font-size: 24px;
+	color: #fff;
+	line-height: 45px;
+}
+
+
+.dm-bd-grd-sec{
+	padding: 150px 0 35px;
+	background: #F5F7F7;
+	margin-bottom: 127px;
+	margin-top: -68px;
+}
+
+
+
+.dm-bd-grd-sec-inr ul li{
+	padding-bottom: 45px;
+	padding-right: 190px;
+}
+.dm-bd-grd-sec-inr ul li:last-child{
+	padding-bottom: 130px;
+}
+.dm-bd-grd-item-title{
+	display: block;
+	font-size: 25px;
+	line-height: 1;
+	margin-bottom: 32px;
+	font-weight: 500;
+	color: #424242;
+}
+.dm-bd-grd-item p{
+	font-size: 22px;
+	color: #424242;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+
+.dm-bd-grd-search-sec{
+	display: flex;
+	justify-content: flex-end;
+}
+.dm-bd-grd-search-sec-inr span{
+	display: block;
+	font-size: 21px;
+	margin-bottom: 15px;
+	color: #424242;
+	font-weight: 500;
+}
+
+.dm-bd-grd-sec-ctlr .hdr-search form{
+    max-width: 300px;
+    border: 1px solid #424242;
+}
+.dm-bd-grd-sec-ctlr .hdr-search form input[type="search"]{
+    width: 100%;
+    border: 1px solid #424242;
+    height: 38px;
+    border-radius: 0px;
+    font-size: 15px;
+    line-height: 1;
+    padding: 2px 68px 2px 25px;
+    font-weight: 500;
+}
+.dm-bd-grd-sec-ctlr .hdr-search form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 68px;
+    background: #6CBF32;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
