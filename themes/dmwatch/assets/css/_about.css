@@ -3,13 +3,13 @@
 }
 .dm-about-sec-inr{
 	background: #88BE43;
-	padding: 50px 60px 90px 45px;
+	padding: 50px 70px 55px 45px;
 }
 .dm-about-sec-title{
 	display: block;
 	font-size: 36px;
 	line-height: 1;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
@@ -30,7 +30,7 @@
 
 .dm-vision-mision-sec{
 	background: #F5F7F7;
-	padding: 60px 0 45px 0;
+	padding: 60px 0 35px 0;
 }
 .dm-vm-title{
 	display: block;
@@ -84,7 +84,7 @@
 	display: block;
 	font-size: 41px;
 	line-height: 1;
-	margin-bottom: 18px;
+	margin-bottom: 10px;
 	font-weight: 700;
 	color: #7FB23B;
 	text-transform: uppercase;
@@ -100,7 +100,7 @@
 .dm-about-value-sec{
 	margin-bottom: 110px;
 	background: #F5F7F7;
-	padding: 45px 0 60px;
+	padding: 45px 0 50px;
 }
 
 .dm-about-value-title{
@@ -120,7 +120,7 @@
 .dm-about-value-sec-inr ul li{
 	float: left;
 	width: 50%;
-	padding: 0 0 22px 30px;
+	padding: 0 0 18px 30px;
 	font-size: 30px;
 	color: #606060;
 	font-family: 'Montserrat', sans-serif;

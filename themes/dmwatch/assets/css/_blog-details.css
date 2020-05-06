@@ -8,7 +8,7 @@
 	font-size: 48px;
 	line-height: 1;
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -16,7 +16,7 @@
 	display: block;
 	font-size: 22px;
 	color: #fff;
-	margin-bottom: 60px;
+	margin-bottom: 55px;
 	font-family: 'FranklinGothic-Book';
 	font-weight: 400;
 }
@@ -40,9 +40,7 @@
 	padding-bottom: 45px;
 	padding-right: 190px;
 }
-.dm-bd-grd-sec-inr ul li:last-child{
-	padding-bottom: 130px;
-}
+
 .dm-bd-grd-item-title{
 	display: block;
 	font-size: 25px;
@@ -66,13 +64,14 @@
 .dm-bd-grd-search-sec-inr span{
 	display: block;
 	font-size: 21px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	color: #424242;
 	font-weight: 500;
 }
 
 .dm-bd-grd-sec-ctlr .hdr-search form{
     max-width: 300px;
+    width: 100%;
     border: 1px solid #424242;
 }
 .dm-bd-grd-sec-ctlr .hdr-search form input[type="search"]{
