@@ -1,0 +1,52 @@
+/*
+------------------------
+dm-contact-form-sec-wrp
+------------------------
+*/
+#googlemap{
+	height: 640px;
+}
+.dm-contact-form-sec-wrp{
+	background:#f5f7f6;
+	padding-top: 100px;
+	padding-bottom: 125px;
+}
+.dm-contact-form-overfolw{
+	overflow: hidden;
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.dm-contact-form-block{
+	background-color:#fff;
+}
+.dm-contact-form-block span{
+    position: absolute;
+    left: -105px;
+    right: 0;
+    bottom: 0;
+    top: -83px;
+    background-image: url(../images/dm-contact-form-block-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.dm-contact-form-head{
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 25px;
+	line-height: 27px;
+	color: #757575;
+	padding-bottom: 120px;
+}
+.dm-contact-form-head-title{
+	display: block;
+	font-size: 50px;
+	line-height: 52px;
+	color: #74A334;
+	font-weight: 500;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
