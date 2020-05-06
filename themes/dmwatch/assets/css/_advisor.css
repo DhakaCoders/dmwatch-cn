@@ -1,7 +1,7 @@
 .dm-advisor-grd-sec{
 	margin: 105px 0 120px;
 	background: #F5F7F7;
-	padding: 70px 0;
+	padding: 70px 0 50px 0;
 }
 .dm-advisor-grd-sec-des{
 	text-align: center;
@@ -16,13 +16,14 @@
 	display: block;
 	font-size: 38px;
 	line-height: 1;
-	padding-bottom: 35px;
+	padding-bottom: 30px;
 	font-weight: 700;
 	color: #606060;
 	text-transform: uppercase;
 	position: relative;
 	margin-bottom: 48px;
 }
+
 .dm-advisor-grd-sec-title:before{
 	content: "";
 	height: 2px;
@@ -41,7 +42,10 @@
 .dm-advisor-grd-item-wrap ul li{
 	float: left;
 	width: 25%;
-	padding: 0 9px 50px 9px;
+	padding: 0 9px 70px 9px;
+}
+.dm-advisor-grd-item-wrap ul li:nth-child(4n+1){
+	clear: left;
 }
 
 .dm-advisor-grd-item-img-ctlr{
@@ -68,23 +72,41 @@
 	display: block;
 	font-size: 18px;
 	line-height: 1;
-	margin-bottom: 8px;
+	margin-bottom: 2px;
 	font-weight: 700;
 	color: #606060;
 	text-transform: capitalize;
+}
+.dm-advisor-grd-item-des-title a{
+	color: #606060;
+}
+.dm-advisor-grd-item-des-title a:hover{
+	color: #88BE43;
 }
 
 .dm-advisor-grd-item-des span{
 	display: block;
 	font-size: 11px;
 	color: #606060;
+	border-bottom: 1px solid #606060;
 }
 
-.dm-advisor-grd-item-des a{
+.dm-advisor-grd-item-des > a{
 	font-size: 11px;
 	color: #606060;
 	font-weight: 600;
+	padding-right: 160px;
+	position: relative;
+}
+.dm-advisor-grd-item-des a i{
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 .dm-advisor-grd-item-des a:hover{
 	color: #88BE43;
+}
+
+.dm-advisor-grd-item-des a:hover svg{
+	fill: #88BE43;
 }
