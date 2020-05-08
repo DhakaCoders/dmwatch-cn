@@ -98,7 +98,6 @@ dm-contact-form-sec-wrp
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label span{
 	color: #F3BF00;
 }
-.dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea,
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
 	width: 100%;
 	max-width: 100%;
@@ -118,21 +117,36 @@ dm-contact-form-sec-wrp
 	font-family: 'PoppinsRegular';
 }
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
+	width: 100%;
+	max-width: 100%;
+	height: 48px;
+	background: transparent;
+	border:0;
+	border-bottom: 1px solid #707070 !important;
+	box-sizing: border-box;
+	padding: 17px 0 17px;
+	color: #9AA59A;
+	font-size: 18px;
+	line-height: 20px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	border-radius: 0;
+	font-family: 'PoppinsRegular';
 	resize: none !important;
 }
+
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea:focus,
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
-	border-color: #F3BF00;
+	border-bottom-color: #88BE43 !important;
+	box-shadow: none !important;
 }
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {
     max-width: 210px;
     width: 100%;
-    height: 75px;
-    border: 2px solid!important;
-    background: url(../images/contact-btn-bg.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    height: 65px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,144,89,1) 0%, rgba(80,172,87,1) 78%);
     font-size: 19px;
     line-height: 21px;
     text-transform: uppercase;
@@ -143,15 +157,17 @@ dm-contact-form-sec-wrp
     cursor: pointer;
     display: table;
     margin: 0 auto;
-    padding: 15px 40px 25px 36px;
+    padding: 22px 40px 24px 36px;
     margin-top: 12px;
     font-family: 'MontserratBold';
-    border:2px solid#3b9059;
+    border-radius: 15px;
+    -webkit-box-shadow: 7px 6px 8px 1px  rgba(188,189,191,0.75);
+    -moz-box-shadow: 7px 6px 8px 1px  rgba(188,189,191,0.75);
+    box-shadow: 7px 6px 8px 1px rgba(188,189,191,0.75);
 }
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
-	background: transparent;
-	color: #3b9059;
-	border-color: #3b9059 !important;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,190,67,1) 0%, rgba(12,238,29,1) 100%);
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;

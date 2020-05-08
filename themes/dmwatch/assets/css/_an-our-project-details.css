@@ -132,9 +132,14 @@ dm-project-info-sec-wrp
 .dm-vacancy-grid-img-contrl{
 	background:#88BE43;
 	padding: 45px 45px;
+	position: relative;
+	overflow: hidden;
 }
 .dm-vacancy-grid-img{
 	text-align: center;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .dm-vacancy-grid-dsc{
 	padding: 25px 30px 27px;
