@@ -1,6 +1,7 @@
 /**
 All Transitions
 */
+.dm-vacancy-grid-inr:hover .dm-vacancy-grid-img,
 a,input,img,textarea,button,svg,
 .slick-slider .slick-dots li,
 .hmProTabSlideItemCon{
@@ -8,6 +9,7 @@ a,input,img,textarea,button,svg,
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.dm-vacancy-grid-inr:hover .dm-vacancy-grid-img,
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);

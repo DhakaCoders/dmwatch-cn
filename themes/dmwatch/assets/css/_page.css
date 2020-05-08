@@ -104,3 +104,132 @@ ol li::before {
 	align-items: center;
 	justify-content: center;
 }
+
+
+
+/*page banner*/
+.page-banner{
+	position: relative;
+	margin-bottom: 100px;
+}
+
+
+.page-banner-des{
+	min-height: 641px;
+}
+.page-banner-bg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+	z-index: 1;
+}
+.page-banner-des{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 2;
+	max-width: 1200px;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.page-banner-title{
+	display: block;
+	font-size: 106px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+	margin: 0;
+	text-shadow: 2px 0px 7px #2F3627;
+}
+.page-banner-des{
+	color: #fff;
+}
+.page-banner-des p{
+	margin-bottom: 0;
+	font-size: 21px;
+	line-height: 1.5;
+	padding-top: 20px;
+}
+.page-banner-des p a{
+	color: #88BE43;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.page-banner-des p a:hover{
+	text-decoration: underline;
+}
+.page-banner.page-bnr-lft-con .page-banner-des,
+.page-banner.page-bnr-rgt-con .page-banner-des{
+	display: block;
+}
+
+.page-banner.page-bnr-lft-con .page-banner-inr{
+	position: absolute;
+	left: 0;
+	bottom: 160px;
+}
+
+.page-banner.page-bnr-lft-con .page-banner-title{
+	font-size: 63px;
+	color: #88BE43;
+}
+
+.page-banner.page-bnr-rgt-con .page-banner-inr{
+	position: absolute;
+	right: 0;
+	bottom: 220px;
+}
+.page-banner.page-bnr-rgt-con .page-banner-des{
+	text-align: right;
+}
+.page-banner.page-bnr-rgt-con .page-banner-title{
+	font-size: 82px;
+	color: #88BE43;
+}
+
+.bnr-txt-shadow-remove .page-banner-title{
+	text-shadow: none;
+}
+
+.page-banner.page-bnr-title-semi .page-banner-title{
+	font-size: 56px;
+}
+
+.page-bnr-top-logo {
+    position: absolute;
+    top: -4px;
+    left: 3px;
+}
+
+.page-bnr-btm-logo{
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+	max-width: 1200px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	z-index: 10;
+	text-align: right;
+}
+
+.page-banner{
+	overflow: initial!important;
+}
+.page-banner-controller{
+	overflow: hidden;
+	position: relative;
+}
+
