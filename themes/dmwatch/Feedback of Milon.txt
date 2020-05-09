@@ -1,0 +1,33 @@
+------------------------
+Practice-areas
+-------------------------
+Desktop--->
+
+1. https://www.screencast.com/t/ivPy5WZM3
+	link ta akline a hobe, r left a gap hobe
+
+2. https://www.screencast.com/t/BXBM4OSyz
+	hover time a jokhon ai overlay bg ta asteche setar transition lagbe
+
+3. https://www.screencast.com/t/cC7p9rgFl
+	aikhane aro item add hote pare , tai li ar bottom a padding lagbe
+
+
+
+-------------------------
+An-Our-Project-Details
+-------------------------
+Desktop--->
+
+1. https://www.screencast.com/t/RH3560I9XB0k
+	ai size ar akta logo img bosbe aikhane, just shadow ta css diye korte hobe,
+	r text and bg soho img
+
+2. https://www.screencast.com/t/S2LYobVU
+	aikhane shadow sara img ta bosate hobe r shadow ta css diye hobe
+
+3. https://www.screencast.com/t/jpOeQJH8
+	ata link hobe
+
+4. https://www.screencast.com/t/G2cHBY5vV
+	gap besi hoiche

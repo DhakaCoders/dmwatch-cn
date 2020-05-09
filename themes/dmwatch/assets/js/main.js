@@ -398,6 +398,16 @@ if( $('.counter').length ){
       time: 1000
   });
 }
+
+
+$('.filter-btn button').on('click', function(){
+  $(this).toggleClass('filter-btn-active');
+  $('.filter-btn-dorpdown').is(":visible");
+  $(this).parent().parent().find('.filter-btn-dorpdown').slideToggle(300);
+
+});
+  
+
     new WOW().init();
 
 })(jQuery);

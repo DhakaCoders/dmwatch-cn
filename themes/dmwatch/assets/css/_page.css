@@ -128,6 +128,9 @@ ol li::before {
 	background-position: center center!important;
 	z-index: 1;
 }
+.page-banner-bg img{
+	display: none;
+}
 .page-banner-des{
 	display: flex;
 	align-items: center;
@@ -189,6 +192,9 @@ ol li::before {
 	right: 0;
 	bottom: 220px;
 }
+.page-banner.page-bnr-rgt-con.page-bnr-practice-areas .page-banner-inr{
+	bottom: 146px;
+}
 .page-banner.page-bnr-rgt-con .page-banner-des{
 	text-align: right;
 }
@@ -213,9 +219,8 @@ ol li::before {
 
 .page-bnr-btm-logo{
 	position: absolute;
-	right: 0;
 	bottom: -40px;
-	max-width: 1200px;
+	max-width: 1230px;
 	width: 100%;
 	left: 50%;
 	transform: translateX(-50%);
@@ -223,6 +228,8 @@ ol li::before {
 	-webkit-transform: translateX(-50%);
 	z-index: 10;
 	text-align: right;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .page-banner{
@@ -233,3 +240,8 @@ ol li::before {
 	position: relative;
 }
 
+
+
+.page-bnr-our-management-bio{
+	margin-bottom: 0;
+}
