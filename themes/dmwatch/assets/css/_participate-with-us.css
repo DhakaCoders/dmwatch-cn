@@ -229,17 +229,6 @@ dm-us-contact-form-sec
  Responsive Css
 ----------------------
 */
-@media(max-width: 1499px){
-
-}
-
-@media(max-width: 1399px){
-
-}
-
-@media(max-width: 1299px){
-
-}
 
 @media(max-width: 1199px){
 	.dm-us-contact-form-sec {
@@ -248,6 +237,9 @@ dm-us-contact-form-sec
 	.dm-member-msg span {
 	    font-size: 27px;
 	    line-height: 29px;
+	}
+	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
+	    padding: 0 20px;
 	}
 
 }

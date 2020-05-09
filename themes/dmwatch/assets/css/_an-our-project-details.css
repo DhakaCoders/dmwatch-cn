@@ -43,11 +43,11 @@ dm-project-info-sec-wrp
 	color: #88BE43;
 	font-weight: 700; 
 	font-family: 'Raleway', sans-serif;
-	margin-bottom: 22px;
+	margin-bottom: 20px;
 	text-transform: uppercase;
 }
 .dm-project-info-rgt-dsc p {
-    margin-bottom: 62px;
+    margin-bottom: 60px;
     line-height: 48px;
     font-size: 22px;
     text-transform: uppercase;
@@ -59,7 +59,7 @@ dm-project-info-sec-wrp
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: 400;
-	padding-bottom: 50px;
+	padding-bottom: 48px;
 }
 .dm-project-info-logo {
     background: #88BE43;
@@ -238,6 +238,9 @@ dm-project-info-sec-wrp
 	.dm-vacancy-grid-sec-wrp {
 	    padding-bottom: 80px;
 	    margin: 80px 0;
+	}
+	.dm-vacancy-grid-dsc-title br{
+		display: none;
 	}
 }
 
