@@ -185,17 +185,7 @@
 
 
 
-@media(max-width: 1499px){
 
-}
-
-@media(max-width: 1399px){
-
-}
-
-@media(max-width: 1299px){
-
-}
 
 @media(max-width: 1199px){
 	.footer-top-section {
@@ -292,8 +282,8 @@
 	    margin: 0 auto;
 	    text-align: center;
 	}
-	.ftr-menu-inr ul,
-	.ftr-cnt-menu-inr ul{
+	.ftr-menu ul,
+	.ftr-cnt-menu ul{
 		display: none;
 	}
 	.ftr-cnt-menu-title,
