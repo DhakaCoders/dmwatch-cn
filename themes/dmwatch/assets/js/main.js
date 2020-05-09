@@ -402,11 +402,17 @@ if( $('.counter').length ){
 
 $('.filter-btn button').on('click', function(){
   $(this).toggleClass('filter-btn-active');
-  $('.filter-btn-dorpdown').is(":visible");
   $(this).parent().parent().find('.filter-btn-dorpdown').slideToggle(300);
 
 });
   
+
+$('.view-full-biography-toggle-btn').on('click', function(){
+  $(this).toggleClass('view-full-biography-toggle-btn-active');
+  $('.view-full-biography-con').slideToggle(300);
+
+});
+
 
     new WOW().init();
 
