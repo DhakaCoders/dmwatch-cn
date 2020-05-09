@@ -189,6 +189,16 @@ if( $('#googlemap').length ){
 /*Shoriful*/
 
 
+ if (windowWidth <= 767) {
+  $('.ftr-menu-inr h4, .ftr-cnt-menu-inr h4').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parent().siblings().find('h4').removeClass('active');
+    $(this).parent().find('ul').slideToggle(300);
+    $(this).parent().siblings().find('ul').slideUp(300);
+  });
+
+
+ }
 
 
 

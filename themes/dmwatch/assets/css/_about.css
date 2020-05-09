@@ -1,9 +1,12 @@
 .dm-about-sec{
 	padding-bottom: 90px;
+	margin-top: -100px;
 }
 .dm-about-sec-inr{
 	background: #88BE43;
 	padding: 50px 70px 55px 45px;
+	position: relative;
+	z-index: 1;
 }
 .dm-about-sec-title{
 	display: block;
@@ -137,6 +140,11 @@
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
+.about-page-ctlr .page-banner {
+    margin-bottom: 0px;
+    position: relative;
+    z-index: -1;
+}
 
 
 @media(max-width: 1499px){
@@ -200,39 +208,200 @@
 }
 
 @media(max-width: 991px){
-	.hide-md{
-		display: none!important;
+	.dm-about-sec {
+	    padding-bottom: 70px;
+	    margin-top: -80px;
 	}
-	.show-md{
-		display: block!important;
+	.dm-about-sec-inr {
+	    padding: 40px 40px 40px 45px;
+	}
+	.dm-about-sec-title {
+	    margin-bottom: 20px;
+	    font-size: 32px;
+	}
+	.dm-about-sec-inr p {
+	    font-size: 18px;
+	    line-height: 28px;
+	}
+	.dm-vm-title {
+	    margin-bottom: 10px;
+	    font-size: 40px;
+	}
+	.dm-vision-mision-grd-sec {
+	    padding: 50px 0;
+	}
+	.dm-vision-mision-grd-sec-inr ul li:first-child {
+	    padding-left: 0px;
+	}
+	.dm-vision-mision-grd-sec-inr ul li {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+	.dm-vision-mision-grd-sec-inr ul li:last-child {
+	    padding-right: 0px;
+	}
+	.dm-vm-grd-item {
+	    padding: 115px 20px 40px 40px;
+	}
+	.dm-vm-grd-item-title {
+	    font-size: 38px;
+	}
+	.dm-about-value-sec {
+	    margin-bottom: 75px;
+	    padding: 45px 0 40px;
+	}
+	.dm-about-value-title {
+	    font-size: 40px;
+	    margin-bottom: 40px;
+	}
+	.dm-about-value-sec-inr ul {
+	    margin-left: 0px;
+	    margin-right: 0px;
+	}
+	.dm-about-value-sec-inr ul li {
+	    font-size: 22px;
+	    padding: 0 0 12px 30px;
 	}
 	
 }
 
 @media(max-width: 767px){
-	.hide-sm{
-		display: none!important;
+	.dm-about-sec {
+	    margin-top: -70px;
 	}
-	.show-sm{
-		display: block!important;
+	.dm-about-sec-inr {
+	    padding: 40px 40px 30px 45px;
+	}
+	.dm-about-sec-title {
+	    margin-bottom: 15px;
+	    font-size: 30px;
+	}
+	.dm-vision-mision-sec {
+	    padding: 40px 0 25px 0;
+	}
+	.dm-vm-title {
+	    margin-bottom: 10px;
+	    font-size: 35px;
+	}
+	.dm-vision-mision-grd-sec-inr ul li {
+	    width: 100%;
+	    padding-right: 0px;
+	    padding-left: 0px;
+	    padding-bottom: 20px;
+	}
+	.dm-vm-grd-item{
+		max-width: 450px;
+		margin: 0 auto;
+	}
+	.dm-about-value-sec {
+	    margin-bottom: 60px;
+	    padding: 45px 0 40px;
+	}
+	.dm-about-value-title {
+	    font-size: 35px;
+	    margin-bottom: 30px;
+	}
+	.dm-about-value-sec-inr ul li {
+	    width: 100%;
+	}
+	.dm-about-value-sec-inr ul li:after {
+	    top: 2px;
 	}
 }
 
 @media(max-width: 575px){
-	.hide-xs{
-		display: none!important;
+	.dm-about-sec {
+	    margin-top: 20px;
+	    padding-bottom: 50px;
 	}
-	.show-xs{
-		display: block!important;
+	.dm-about-sec-inr {
+	    padding: 35px 20px 25px 40px;
+	}
+	.dm-about-sec-title {
+	    margin-bottom: 12px;
+	    font-size: 28px;
+	}
+	.dm-about-sec-inr p {
+	    line-height: 24px;
+	}
+	.dm-vm-title {
+	    font-size: 30px;
+	}
+	.dm-vm-grd-item {
+	    padding: 115px 20px 30px 40px;
+	}
+	.dm-vm-grd-item-title {
+	    font-size: 32px;
+	}
+	.dm-vm-grd-item p {
+	    font-size: 18px;
+	    line-height: 24px;
+	}
+	.dm-vision-mision-grd-sec{
+		padding-bottom: 30px;
+	}
+	.dm-about-value-sec {
+	    margin-bottom: 50px;
+	    padding: 40px 0 30px;
+	}
+	.dm-about-value-title {
+	    font-size: 30px;
+	    margin-bottom: 25px;
 	}
 
 }
 
 @media(max-width: 479px){
-
+	.dm-about-sec-inr {
+	    padding: 35px 10px 25px 20px;
+	}
+	.dm-about-sec-title {
+	    margin-bottom: 12px;
+	    font-size: 25px;
+	}
+	.dm-about-sec-inr p {
+	    line-height: 20px;
+	    font-size: 15px;
+	}
+	.dm-about-sec-inr p a{
+		margin-left: 15px;
+	}
+	.dm-vm-title {
+	    font-size: 25px;
+	}
+	.dm-vm-grd-item-title {
+	    font-size: 30px;
+	}
+	.dm-vm-grd-item p {
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.dm-vm-grd-item {
+	    padding: 80px 20px 30px 40px;
+	}
+	.dm-vm-grd-item:before {
+		height: 35px;
+    	width: 55px;
+	    background-size: 55px 35px;
+	    top: 30px;
+	}
+	.dm-about-value-title {
+	    font-size: 25px;
+	    margin-bottom: 18px;
+	}
+	.dm-about-value-sec-inr ul li {
+	    font-size: 18px;
+	}
+	.dm-about-value-sec-inr ul li:after {
+	    background-size: 15px 15px;
+	}
 
 }
 
 @media(max-width: 359px){
-
+	.dm-about-sec-inr p a {
+	    display: block;
+	    margin: 0;
+	    margin-top: 4px;
+	}
 }
