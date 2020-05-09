@@ -276,6 +276,7 @@
 .our-project-filter-results-sec{
 	background: #f5f7f6;
 	padding: 55px 0 60px;
+	margin-bottom: 125px;
 }
 
 
@@ -319,6 +320,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	opacity: 0;
+	transform: scale3d(1,0,1);
+	-ms-transform: scale3d(1,0,1);
+	-webkit-transform: scale3d(1,0,1);
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transform-origin: bottom;
+	-ms-transform-origin: bottom;
+	-webkit-transform-origin: bottom;
 }
 .filter-results-img-hover div{
 	padding: 10px;
@@ -335,11 +346,41 @@
 .filter-results-img-hover strong i{
     position: relative;
     top: 18px;
-    right: 14px;
+    right: -114px;
+    text-indent: -99999px;
 }
 
 .filter-results-grd-item:hover{
-	-webkit-box-shadow: 4px 2px 5px -1px rgba(93,93,93,1);
+-webkit-box-shadow: 4px 2px 5px -1px rgba(93,93,93,1);
 -moz-box-shadow: 4px 2px 5px -1px rgba(93,93,93,1);
 box-shadow: 4px 2px 5px -1px rgba(93,93,93,1);
+}
+.filter-results-grd-item:hover .filter-results-img-hover{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+	-ms-transform: scale3d(1,1,1);
+	-webkit-transform: scale3d(1,1,1);
+}
+.filter-results-grd-item:hover strong i{
+	text-indent: 0;
+	right: 14px;
+}
+
+.our-project-see-all-btn a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #88BC41;
+	font-size: 12px;
+	line-height: 1;
+	font-weight: 800;
+	color: #fff;
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(189,191,190,1);
+	-moz-box-shadow: 2px 2px 4px 0px rgba(189,191,190,1);
+	box-shadow: 2px 2px 4px 0px rgba(189,191,190,1);
+	width: 80px;
+	height: 26px;
+	padding: 2px;
+	border-radius: 3px;
+	margin-left: auto;
 }
