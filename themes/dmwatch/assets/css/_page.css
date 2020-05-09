@@ -161,7 +161,7 @@ ol li::before {
 	margin-bottom: 0;
 	font-size: 21px;
 	line-height: 1.5;
-	padding-top: 20px;
+	padding-top: 15px;
 }
 .page-banner-des p a{
 	color: #88BE43;
@@ -244,4 +244,8 @@ ol li::before {
 
 .page-bnr-our-management-bio{
 	margin-bottom: 0;
+}
+
+.page-bnr-practice-areas .page-banner-title{
+	text-transform: initial;
 }
