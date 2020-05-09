@@ -242,8 +242,11 @@ ol li::before {
 
 
 
-.page-bnr-our-management-bio{
+.page-bnr-our-management-bio,
+.page-bnr-about,
+.page-bnr-blog-details{
 	margin-bottom: 0;
+
 }
 
 .page-bnr-practice-areas .page-banner-title{

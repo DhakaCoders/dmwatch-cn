@@ -1,0 +1,87 @@
+------------------------
+About
+-------------------------
+Desktop--->
+1. https://www.screencast.com/t/VwVsdBMSyAu
+	i) ai div ta margin-top hoye upore jabe
+	ii) ai div a box shadow missing
+
+2. https://www.screencast.com/t/QftHjxwyWnm
+	gap besi hoiche.
+	ai project a jpg gulo tei main look ta ache, ai file xd te on korate kichu change hoye geche
+	tai jgp ta thakei map gulo nite hobe, r xd thake font-size, color , text asob
+
+
+3. https://www.screencast.com/t/fQds40v1
+	https://www.screencast.com/t/HUoBnxG4
+	ata h2 rakho, bcoz banner a h1 use kora ache.
+	ak page a akadhik h1 thaka jabena , h2 ba onno heading thakte parbe
+
+4. https://www.screencast.com/t/mmdVM6yiu4
+
+	https://www.screencast.com/t/1joJsMyux6o
+	ai icon ta white bg chole asche,
+	img ta kete dichi , img folder a paba, single akta kete niye bosao
+
+
+------------------------
+Advisor 
+-------------------------
+Desktop--->
+
+1. https://www.screencast.com/t/nEuwCS6vJFX
+	i) img ta tag a hobe r img k bolte hobe max-height 100%;
+	ii) img ar parent div a
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 280px;
+		overflow: hidden hobe
+
+
+------------------------
+Blog  
+-------------------------
+Desktop--->
+
+1. https://www.screencast.com/t/bEtAnOBpHSG
+	i) title a link hobe
+	ii) hover korle checkmark ar niche white bg aseteche
+	iii) sob h2 hobe
+
+2. https://www.screencast.com/t/sFzhQpJGDro
+	i) ai class tate 's' hobena parent tate 's' thakte pare
+	ii) hover korle bg green ta daw
+
+3. https://www.screencast.com/t/HiTmqbij
+	ai bg ta missing
+
+4. https://www.screencast.com/t/ZzPOMURytFG
+	aro niche nambe
+
+
+------------------------
+Blog  
+-------------------------
+Desktop--->
+
+1. https://www.screencast.com/t/x0sFifc0HIw7
+	i) margin-top hoye upore uthbe
+	ii) white gap ta thik rakhte hobe
+	iii) box tate shadow missing 
+
+2. https://www.screencast.com/t/RgJqEHBprb2
+	i) gap besi 
+	ii) text mileni
+
+
+3. https://www.screencast.com/t/rewdIPuy5
+	heading ta p ar maje strong
+	des ta akta p 
+	avabei choble
+	ul li hobena
+
+	Markup---> 
+	<p><strong></strong></p>
+	<p>......</p>
+
