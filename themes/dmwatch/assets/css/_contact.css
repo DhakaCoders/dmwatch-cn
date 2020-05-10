@@ -171,8 +171,7 @@ dm-contact-form-sec-wrp
     box-shadow: 7px 6px 11px 2px rgba(188,189,191,0.75);
 }
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,190,67,1) 0%, rgba(12,238,29,1) 100%);
+	opacity: .5;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;

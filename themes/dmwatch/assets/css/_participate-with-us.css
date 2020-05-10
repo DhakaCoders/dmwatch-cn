@@ -103,6 +103,29 @@ dm-us-contact-form-sec
 	-webkit-transition: all 0.5s;
 }
 
+.dm-us-contact-form-wrp .wpforms-field-select select {
+    outline: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 64px;
+	background: transparent;
+	border: 1px solid #6D9B6A;
+	box-sizing: border-box;
+    padding: 15px 14px 15px;
+	color: #9AA59A;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 28px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	border-radius: 0;
+	font-family: 'PoppinsRegular';
+    position: relative;
+}
+
 
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #9AA59A;
@@ -127,7 +150,7 @@ dm-us-contact-form-sec
  Input type checkbox Css
 -------------------------
 */
-.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox {
+/*.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox {
     width: 100%;
     margin-bottom: 60px;
     padding-top: 55px;
@@ -205,7 +228,85 @@ dm-us-contact-form-sec
     transform: rotate(45deg);
     position: absolute;
     content: "";
+}*/
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox {
+    width: 100%;
+    margin-bottom: 60px;
+    padding-top: 55px !important;
+    padding-left: 0;
+    padding-right: 0;
 }
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul{
+	width: 100%;
+	max-width: 825px;
+	margin: 0 auto;
+}
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-bottom: 30px !important;
+    position: relative;
+}
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #88BE43;
+    margin: 0;
+    padding-left: 80px;
+    text-transform: inherit;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 0;
+}
+/* Hide the browser's default checkbox */
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark{
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #6D9B6A;
+    box-sizing: border-box;
+    left: 0;
+    top: 6px;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label .checkmark:after {
+  	left: 17px;
+    top: 8px;
+    width: 8px;
+    height: 18px;
+    border: solid #88be44;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    content: "";
+}
+
+
+
 .dm-member-msg{
 	max-width: 395px;
 	width: 100%;
@@ -294,6 +395,7 @@ dm-us-contact-form-sec
 	}
 	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
 	    padding: 0;
+	    padding-top: 25px !important;
 	}
 	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container{
 		margin: 0;

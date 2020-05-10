@@ -7,7 +7,7 @@ dm-project-info-sec-wrp
 	background: #f5f7f7;
 	padding-top: 70px;
 	margin: 120px 0;
-	padding-bottom: 70px;
+	padding-bottom: 60px;
 }
 .dm-project-info-inr{
 	display: flex;
@@ -20,12 +20,11 @@ dm-project-info-sec-wrp
 	padding-right: 15px;
 }
 .dm-project-info-lft-img img{
-	height: 605px;
+	height: 510px;
 }
 .dm-project-info-rgt-dsc{
 	width: 43%;
 	float: right;
-	padding-top: 6px;
 }
 .dm-info-dsc-title{
 	display: block;
@@ -34,7 +33,7 @@ dm-project-info-sec-wrp
 	color: #88BE43;
 	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
-	margin-bottom: 70px;
+	margin-bottom: 55px;
 }
 .dm-info-dsc-title-1{
 	display: block;
@@ -43,11 +42,11 @@ dm-project-info-sec-wrp
 	color: #88BE43;
 	font-weight: 700; 
 	font-family: 'Raleway', sans-serif;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
 }
 .dm-project-info-rgt-dsc p {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
     line-height: 48px;
     font-size: 22px;
     text-transform: uppercase;
@@ -59,34 +58,23 @@ dm-project-info-sec-wrp
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: 400;
-	padding-bottom: 48px;
+	padding-bottom: 40px;
 }
 .dm-project-info-logo {
-    background: #88BE43;
-    width: 270px;
-    height: 170px;
-    padding: 25px 25px;
+    width: 230px;
+    height: 140px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    -webkit-box-shadow: 6px 8px 8px 0px rgba(112,112,112,0.75);
-    -moz-box-shadow: 6px 8px 8px 0px rgba(112,112,112,0.75);
-    box-shadow: 3px 4px 10px 0px rgba(112,112,112,0.75);
 }
-.dm-project-info-logo-title{
-	font-size: 28px;
-	line-height: 30px;
-	font-weight: 700;
-	color: #fff;
-	margin: 0;
-	font-family: 'Raleway', sans-serif;
-	display: block;
+.dm-project-info-logo img{
+	max-height: 100%;
 }
 .dm-project-info-btm-dsc {
     padding-top: 55px;
     padding-right: 15px;
 }
-.dm-project-info-btm-dsc-title{
+.dm-project-info-btm-dsc a{
 	font-size: 22px;
 	line-height: 24px;
 	color:#88BE43;
@@ -94,6 +82,9 @@ dm-project-info-sec-wrp
 	display: block;
 	text-transform: uppercase; 
 	margin-bottom: 10px;
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
 }
 .dm-project-info-btm-dsc p{
 	font-size: 22px;
@@ -109,7 +100,7 @@ dm-project-info-sec-wrp
 */
 .dm-vacancy-grid-sec-wrp{
 	background:#f5f7f6;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 	margin: 100px 0;
 }
 .dm-vacancy-grid-head{
@@ -126,19 +117,17 @@ dm-project-info-sec-wrp
 .dm-vacancy-grid-wrp ul li{
 	width: 33.3333%;
 	float: left;
-	padding: 0 12px;
+	padding: 0 12px 20px;
 }
 .dm-vacancy-grid-wrp ul li:nth-child(3n+1){
 	clear: left;
 }
 .dm-vacancy-grid-inr {
-    -webkit-box-shadow: 1px 1px 5px -2px rgba(13,58,36,0.75);
-    -moz-box-shadow: 1px 1px 5px -2px rgba(13,58,36,0.75);
-    box-shadow: 1px 1px 5px -2px rgba(13,58,36,0.75);
+    -webkit-box-shadow: 0px 2px 10px -1px  rgba(13,58,36,0.75);
+    -moz-box-shadow: 0px 2px 10px -1px  rgba(13,58,36,0.75);
+    box-shadow: 0px 2px 10px -1px  rgba(13,58,36,0.75);
 }
 .dm-vacancy-grid-img-contrl{
-	background:#88BE43;
-	padding: 45px 45px;
 	position: relative;
 	overflow: hidden;
 }
@@ -147,6 +136,14 @@ dm-project-info-sec-wrp
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+	height: 225px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dm-vacancy-grid-img img{
+	max-height: 100%;
+	width: 100%;
 }
 .dm-vacancy-grid-dsc{
 	padding: 25px 30px 27px;
@@ -242,6 +239,9 @@ dm-project-info-sec-wrp
 	.dm-vacancy-grid-dsc-title br{
 		display: none;
 	}
+	.dm-vacancy-grid-img {
+	    height: 186px;
+	}
 }
 
 @media(max-width: 991px){
@@ -314,9 +314,10 @@ dm-project-info-sec-wrp
 	.dm-project-info-sec-wrp {
 	    padding-top: 60px;
 	    margin: 80px 0;
-	    padding-bottom: 60px;
+	    padding-bottom: 50px;
 	}
-	.dm-project-info-btm-dsc-title {
+	.dm-project-info-btm-dsc a,
+	.dm-project-info-btm-dsc-title{
 	    font-size: 20px;
 	    line-height: 22px;
 	}
@@ -339,6 +340,9 @@ dm-project-info-sec-wrp
 	.dm-vacancy-grid-sec-wrp {
 	    padding-bottom: 50px;
 	    margin: 60px 0;
+	}
+	.dm-vacancy-grid-img {
+	    height: 178px;
 	}
 }
 @media(max-width: 639px){
@@ -370,6 +374,9 @@ dm-project-info-sec-wrp
 	.dm-vacancy-grid-head-title {
 	    font-size: 34px;
 	    line-height: 36px;
+	}
+	.dm-vacancy-grid-img {
+	    height: 175px;
 	}
 
 }
