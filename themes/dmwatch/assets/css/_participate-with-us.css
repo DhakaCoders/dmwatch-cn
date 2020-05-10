@@ -73,6 +73,7 @@ dm-us-contact-form-sec
 }
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
 	border-color: #88BE43;
+	box-shadow: none;
 }
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
 	max-width: 825px;
