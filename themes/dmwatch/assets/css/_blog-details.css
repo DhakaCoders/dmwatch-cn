@@ -130,7 +130,7 @@
 	    margin-bottom: 100px;
 	    margin-top: -50px;
 	}
-	.dm-bd-grd-sec-inr ul li {
+	.dm-bd-grd-item {
 	    padding-bottom: 45px;
 	    padding-right: 150px;
 	}
@@ -149,7 +149,7 @@
 	.dm-blog-details-des-sec-inr p {
 	    font-size: 22px;
 	}
-	.dm-bd-grd-sec-inr ul li {
+	.dm-bd-grd-item {
 	    padding-bottom: 30px;
 	    padding-right: 120px;
 	}
@@ -175,7 +175,7 @@
 	    margin-bottom: 90px;
 	    margin-top: -40px;
 	}
-	.dm-bd-grd-sec-inr ul li {
+	.dm-bd-grd-item {
 	    padding-right: 40px;
 	}
 	
@@ -203,7 +203,7 @@
 	    margin-bottom: 70px;
 	    margin-top: 20px;
 	}
-	.dm-bd-grd-sec-inr ul li {
+	.dm-bd-grd-item {
 	    padding-right: 0px;
 	}
 	.dm-bd-grd-item-title {

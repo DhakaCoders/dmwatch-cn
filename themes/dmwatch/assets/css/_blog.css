@@ -240,7 +240,9 @@
 	.dm-blog-pagi-ctlr {
 	    float: none;
 	    text-align: center;
+	    padding: 10px 0px 10px 0px;
 	}
+
 	.dm-blog-secr {
 	    float: none;
 	    margin: 0 auto;
