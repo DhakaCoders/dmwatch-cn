@@ -53,13 +53,17 @@
 	overflow: hidden;
 }
 .dm-advisor-grd-item-img{
-	min-height: 280px;
-	background-repeat: no-repeat!important;
-	background-size: cover!important;
-	background-position: center center!important;
+	height: 280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
+}
+.dm-advisor-grd-item-img img{
+	min-height: 100%;
 }
 .dm-advisor-grd-item:hover .dm-advisor-grd-item-img{
 	transform: scale(1.1);
