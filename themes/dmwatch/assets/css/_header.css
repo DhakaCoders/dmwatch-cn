@@ -522,14 +522,19 @@ nav.main-nav ul.sub-menu li:hover:after {
 	}
 	.header-inr{
 		position: relative;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 35px;
+		padding-bottom: 60px;
 	}
 	.logo{
 		position: absolute;
 		left: 0;
-		bottom: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
 		z-index: 20;
+		padding-top: 0;
+		margin-top: -15px;
 	}
 	.hdr-topbar{
 		justify-content: center;
@@ -540,11 +545,28 @@ nav.main-nav ul.sub-menu li:hover:after {
 	.main-nav-menu-bar-xs{
 		margin-bottom: 4px;
 	}
+	.hdr-topbar{
+		padding: 0;
+	}
+	.hdr-search{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 8px;
+		z-index: 10;
+	}
+	.hdr-search form {
+	    margin-right: 0;
+	    max-width: initial;
+	    width: 100%;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.logo a {
+	    max-width: 205px;
+	}
 
 }
 
@@ -555,7 +577,7 @@ nav.main-nav ul.sub-menu li:hover:after {
 	.hdr-topbar-grd-xs{
 		margin-left: 10px;
 	}
-	.hdr-topbar {
-	    padding-bottom: 25px;
+	.logo a {
+	    max-width: 170px;
 	}
 }
