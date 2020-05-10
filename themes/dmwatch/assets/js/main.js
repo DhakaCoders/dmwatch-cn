@@ -424,6 +424,33 @@ $('.view-full-biography-toggle-btn').on('click', function(){
 });
 
 
+
+/**
+Sidebar menu
+*/
+if (windowWidth <= 991) {
+  $('.hdr-humbergur-btn').on('click', function(e){
+    $('.xs-nav-cntlr').addClass('opacity-1');
+    $('.bdoverlay').addClass('active');
+    $('body').addClass('active-scroll-off');
+    $(this).addClass('menu-expend');
+  });
+  $('.menu-closebtn').on('click', function(e){
+    $('.bdoverlay').removeClass('active');
+    $('.xs-nav-cntlr').removeClass('opacity-1');
+    $('body').removeClass('active-scroll-off');
+    $('.hdr-humbergur-btn').removeClass('menu-expend');
+  });
+  
+  $('li.menu-item-has-children > a').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().siblings().find('.sub-menu').slideUp(300);
+    $(this).parent().find('.sub-menu').slideToggle(300);
+    $(this).toggleClass('sub-menu-active');
+  });
+}
+
+
     new WOW().init();
 
 })(jQuery);
