@@ -178,7 +178,7 @@ ol li::before {
 
 .page-banner.page-bnr-lft-con .page-banner-inr{
 	position: absolute;
-	left: 0;
+	left: 15px;
 	bottom: 160px;
 }
 
@@ -251,4 +251,55 @@ ol li::before {
 
 .page-bnr-practice-areas .page-banner-title{
 	text-transform: initial;
+}
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.page-banner.page-bnr-lft-con .page-banner-title {
+	    font-size: 55px;
+	}
+	.page-banner-des {
+	    min-height: 550px;
+	}
+	.page-banner {
+	    margin-bottom: 80px;
+	}
+
+}
+
+@media(max-width: 991px){
+	.page-banner-des p br{
+		display: none;
+	}
+	
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }
