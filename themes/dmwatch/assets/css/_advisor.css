@@ -42,7 +42,7 @@
 .dm-advisor-grd-item-wrap ul li{
 	float: left;
 	width: 25%;
-	padding: 0 9px 70px 9px;
+	padding: 0 9px 75px 9px;
 }
 .dm-advisor-grd-item-wrap ul li:nth-child(4n+1){
 	clear: left;
@@ -63,7 +63,7 @@
 	-ms-transition: all 0.5s;
 }
 .dm-advisor-grd-item-img img{
-	min-height: 100%;
+	max-height: 100%;
 }
 .dm-advisor-grd-item:hover .dm-advisor-grd-item-img{
 	transform: scale(1.1);
@@ -99,20 +99,29 @@
 	font-size: 11px;
 	color: #606060;
 	font-weight: 600;
-	padding-right: 160px;
+	padding-right: 35px;
 	position: relative;
+	display: block;
+	padding-top: 5px;
 }
 .dm-advisor-grd-item-des a i{
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 9px;
+	right: 20px;
+	width: 10px;
+	height: 5px;
+	background: url(../images/dm-advisor-down-arrow.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .dm-advisor-grd-item-des a:hover{
 	color: #88BE43;
 }
 
-.dm-advisor-grd-item-des a:hover svg{
-	fill: #88BE43;
+.dm-advisor-grd-item-des a:hover i{
+	background: url(../images/dm-advisor-down-arrow-hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 
@@ -131,6 +140,9 @@
 	}
 	.dm-advisor-grd-item-wrap ul li {
 	    padding: 0 9px 60px 9px;
+	}
+	.dm-advisor-grd-item-img{
+		height: 228px;
 	}
 
 }
@@ -155,6 +167,10 @@
 	}
 	.dm-advisor-grd-item-wrap ul li:nth-child(3n+1) {
 	    clear: left;
+	}
+	.dm-advisor-grd-item-wrap ul li{
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	
 }
@@ -188,6 +204,21 @@
 	.dm-advisor-grd-item-des > a {
 	    padding-right: 130px;
 	}
+	.dm-advisor-grd-sec-title{
+		text-align: center;
+	}
+	.dm-advisor-grd-sec-title:before {
+	    width: 100%;
+	    max-width: 400px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	}
+	.dm-advisor-grd-item-wrap ul li{
+		padding-left: 26px;
+		padding-right: 26px;
+	}
 }
 
 @media(max-width: 575px){
@@ -217,10 +248,10 @@
 	}
 	.dm-advisor-grd-item-wrap ul li {
 	    width: 100%;
-	    padding: 0 0px 20px 0px;
+	    padding: 0 0px 40px 0px;
 	}
 	.dm-advisor-grd-item{
-		max-width: 285px;
+		max-width: 280px;
 		margin: 0 auto;
 	}
 
@@ -233,7 +264,12 @@
 	.dm-advisor-grd-sec-des {
 	    padding: 0 10px 20px 10px;
 	}
-
+	.dm-advisor-grd-sec-des p{
+		font-size: 18px;
+	}
+	.dm-advisor-grd-sec-title{
+		font-size: 27px;
+	}
 }
 
 
