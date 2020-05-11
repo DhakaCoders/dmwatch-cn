@@ -56,12 +56,13 @@
 	clear: left;
 }
 .crkmts-grd-img-bx{
-	height: 280px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	overflow: hidden;
+}
+.crkmts-grd-img-bx img{
+	width: 100%;
 }
 .crkmts-grd-img-bx-hover{
 	position: absolute;
@@ -117,7 +118,7 @@ box-shadow: 5px 5px 5px -2px rgba(150,152,151,1);
 	color: #88BE43;
 	text-transform: uppercase;
 	font-weight: 700;
-	padding: 10px 0 0 8px;
+	padding: 10px 10px 0 8px;
 }
 
 .crkmts-grd-img-bx:hover .crkmts-grd-img-bx-hover{
@@ -732,6 +733,9 @@ box-shadow: 6px 4px 11px -5px rgba(32,43,37,1);
 	.opfhdr-title, .filter-results-sec-hdr-title {
 	    font-size: 50px;
 	}
+	.mngs-hdr-title{
+		font-size: 45px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -797,6 +801,12 @@ box-shadow: 6px 4px 11px -5px rgba(32,43,37,1);
 	}
 	.filter-results-sec-hdr-title {
 	    margin-bottom: 50px;
+	}
+	.mngs-hdr-title{
+		font-size: 40px;
+	}
+	.crkmts-grd-item-title{
+		font-size: 17px;
 	}
 }
 
@@ -883,6 +893,25 @@ box-shadow: 6px 4px 11px -5px rgba(32,43,37,1);
 	.filter-results-grd-cntlr ul li{
 		width: 50%;
 	}
+	.mngs-hdr-title {
+	    font-size: 38px;
+	    margin-bottom: 25px;
+	}
+	.crkmts-grd-cntlr ul li:nth-child(4n+1) {
+	    clear: initial;
+	}
+	.crkmts-grd-cntlr ul li:nth-child(3n+1) {
+	    clear: left;
+	}
+	.crkmts-grd-cntlr ul li{
+		width: 33.3333%;
+	}
+	.crkmts-grd-img-bx-hover div strong{
+		font-size: 20px;
+	}
+	.research-knwldg-mangmnt-tm-sec {
+	    margin-bottom: 100px;
+	}
 }
 
 @media(max-width: 767px){
@@ -931,6 +960,30 @@ box-shadow: 6px 4px 11px -5px rgba(32,43,37,1);
 	}
 	.filter-results-grd-item{
 		height: 290px;
+	}
+	.mngs-hdr-title {
+	    font-size: 32px;
+	    margin-bottom: 17px;
+	}
+	.crkmts-grd-cntlr ul{
+		max-width: 530px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.crkmts-grd-cntlr ul li:nth-child(3n+1) {
+	    clear: initial;
+	}
+	.crkmts-grd-cntlr ul li:nth-child(2n+1) {
+	    clear: left;
+	}
+	.crkmts-grd-cntlr ul li{
+		width: 50%;
+	}
+	.crkmts-grd-img-bx-hover div strong {
+	    font-size: 18px;
+	}
+	.research-knwldg-mangmnt-tm-sec {
+	    margin-bottom: 80px;
 	}
 }	
 
@@ -1026,6 +1079,17 @@ box-shadow: 6px 4px 11px -5px rgba(32,43,37,1);
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.research-knwldg-mangmnt-tm-sec .mngs-hdr-title{
+		font-size: 30px;
+	}
+	.crkmts-grd-cntlr ul li{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.research-knwldg-mangmnt-tm-sec {
+	    margin-bottom: 60px;
 	}
 }
 
