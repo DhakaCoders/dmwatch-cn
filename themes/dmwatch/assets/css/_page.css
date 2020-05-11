@@ -315,6 +315,16 @@ ol li::before {
 	.page-bnr-top-logo img {
 	    max-width: 100px;
 	}
+	.page-banner.page-bnr-vacancy .page-banner-bg{
+		background: transparent!important;
+		position: static;
+	}
+	.page-banner.page-bnr-vacancy .page-banner-bg img{
+		display: block;
+	}
+	.page-banner.page-bnr-vacancy .page-banner-des{
+		display: none;
+	}
 }
 
 @media(max-width: 767px){
