@@ -810,7 +810,8 @@ body{
 	left: 0;
 }
 .info-popup-cntlr.opacity-1{
-	display: block;
+	display: flex;
+	align-items: center;
 }
 @media(max-width: 1499px){
 
