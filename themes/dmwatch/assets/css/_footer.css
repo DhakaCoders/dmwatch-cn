@@ -47,6 +47,7 @@
 }
 .ftr-menu ul{
 	padding: 0;
+	padding-right: 10px;
 }
 .ftr-menu ul li{
 	padding-bottom: 14px;
@@ -275,14 +276,14 @@
 	}
 	.ftr-top-sec-link a {
 	    width: 200px;
-	    height: 70px;
-	    font-size: 28px;
+	    height: 60px;
+	    font-size: 26px;
 	}
 	.ftr-menu, 
 	.ftr-cnt-menu, 
 	.ftr-facebook {
 	    width: 100%;
-	    padding-bottom: 15px;
+	    padding-bottom: 25px;
 	}
 	.ftr-menu-inr,
 	.ftr-cnt-menu-inr,
@@ -360,9 +361,17 @@
 }
 
 @media(max-width: 575px){
-	
-	
-	
+	.ftr-top-title {
+	    font-size: 33px;
+	}
+	.ftr-top-sec-link a {
+	    width: 180px;
+	    height: 55px;
+	    font-size: 23px;
+	}	
+	.ftr-copywrite-sec{
+		padding-top: 0;
+	}
 	
 
 }

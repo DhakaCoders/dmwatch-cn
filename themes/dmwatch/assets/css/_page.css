@@ -136,7 +136,7 @@ ol li::before {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	z-index: 2;
+	z-index: 8;
 	max-width: 1200px;
 	width: 100%;
 	padding-left: 15px;
@@ -284,7 +284,10 @@ ol li::before {
 		max-width: 800px;
 	}
 	.page-banner.page-bnr-rgt-con .page-banner-title{
-		font-size: 72px;
+		font-size: 65px;
+	}
+	.page-banner.page-bnr-rgt-con .page-banner-inr {
+	    bottom: 150px;
 	}
 }
 
@@ -299,7 +302,7 @@ ol li::before {
 	    font-size: 47px;
 	}
 	.page-banner.page-bnr-rgt-con .page-banner-title {
-	    font-size: 62px;
+	    font-size: 60px;
 	}
 }
 
@@ -330,6 +333,9 @@ ol li::before {
 	.page-banner.page-bnr-rgt-con .page-banner-title {
 	    font-size: 52px;
 	}
+	.dm-vision-mision-grd-sec {
+	    padding: 35px 0;
+	}
 }
 
 @media(max-width: 639px){
@@ -353,7 +359,7 @@ ol li::before {
 	    font-size: 38px;
 	}
 	.page-banner.page-bnr-rgt-con .page-banner-title {
-	    font-size: 42px;
+	    font-size: 37px;
 	}
 }
 
