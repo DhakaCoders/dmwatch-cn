@@ -304,6 +304,9 @@ ol li::before {
 	.page-banner.page-bnr-rgt-con .page-banner-title {
 	    font-size: 60px;
 	}
+	.page-bnr-btm-logo{
+		bottom: -80px;
+	}
 }
 
 @media(max-width: 767px){
@@ -327,7 +330,7 @@ ol li::before {
 	    margin-bottom: 60px;
 	}
 	.page-banner-des p {
-	    font-size: 19px;
+	    font-size: 18px;
 	    line-height: 1.3;
 	}
 	.page-banner.page-bnr-rgt-con .page-banner-title {
@@ -335,6 +338,12 @@ ol li::before {
 	}
 	.dm-vision-mision-grd-sec {
 	    padding: 35px 0;
+	}
+	.page-bnr-btm-logo{
+		bottom: -50px;
+	}
+	.page-bnr-btm-logo img{
+		max-width: 100px;
 	}
 }
 

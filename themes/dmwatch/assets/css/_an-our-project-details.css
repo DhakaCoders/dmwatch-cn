@@ -25,6 +25,7 @@ dm-project-info-sec-wrp
 .dm-project-info-rgt-dsc{
 	width: 43%;
 	float: right;
+	padding-top: 10px;
 }
 .dm-info-dsc-title{
 	display: block;
@@ -344,6 +345,13 @@ dm-project-info-sec-wrp
 	.dm-vacancy-grid-img {
 	    height: 178px;
 	}
+	.dm-project-info-rgt-dsc p {
+	    line-height: 32px;
+	    font-size: 19px;
+	}
+	.dm-project-info-rgt-dsc span{
+		font-size: 20px;
+	}
 }
 @media(max-width: 639px){
 	.dm-vacancy-grid-wrp{
@@ -366,6 +374,10 @@ dm-project-info-sec-wrp
 	.dm-vacancy-grid-head-title {
 	    font-size: 37px;
 	    line-height: 39px;
+	}
+	.dm-project-info-rgt-dsc p {
+	    line-height: 28px;
+	    font-size: 18px;
 	}
 
 }
