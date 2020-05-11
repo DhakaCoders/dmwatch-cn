@@ -31,7 +31,7 @@
 	line-height: 1;
 }
 .main-slider-des a:hover{
-	opacity: .8!important;
+	opacity: .7!important;
 }
 .mainSLideItem{
 	background-size: cover!important;
@@ -394,4 +394,373 @@ box-shadow: 3px 3px 6px 0px rgba(155,155,155,1);
 .clientsPartnersLogosSlideItem{
 	padding: 0 30px 40px;
 	width: 20%;
+}
+.clientsPartnersLogosSlideItem > div{
+	height: 175px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.clientsPartnersLogosSlideItem img{
+	max-height: 100%;
+}
+
+
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.hm-fea-services-sec-hdr {
+	    padding-bottom: 35px;
+	}
+	.hmFeaServicesSlideItem {
+	    width: 25%;
+	}
+	.hm-projects-section {
+	    padding: 85px 0 65px;
+	}
+}
+
+@media(max-width: 991px){
+	.main-slider-des {
+	    padding: 170px 0 150px;
+	    max-width: 594px;
+	}
+	.main-slide-des-title,
+	.hmfsshdr-title{
+		font-size: 43px;
+	}
+	.dm-watch-sec-cntlr{
+		display: block;
+	}
+	.dm-watch-sec-des{
+		width: 100%;
+		padding-right: 0;
+	}
+	.dm-watch-sec-fea-img{
+		width: 100%;
+
+	}
+	.dm-watch-sec-fea-img {
+	    width: 100%;
+	    padding-left: 0;
+	    text-align: center;
+	    padding-bottom: 30px;
+	}
+	.hmpashdr-title {
+	    margin-bottom: 30px;
+	}
+	.hmcpshdr-title,
+	.hmpashdr-title{
+		font-size: 45px;
+	}
+	.hm-practice-area-sec {
+	    padding: 75px 0 55px;
+	}
+	.hmPracticeAreaSlider {
+	    margin: 0 -10px!important;
+	}
+	.hmPracticeAreaSlideItem {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    width: 50%;
+	}
+	.hm-practice-area-item-des {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.hm-fea-services-sec {
+	    padding: 75px 0 55px;
+	    margin-bottom: 70px;
+	}
+	.hm-fea-services-sec {
+	    padding: 65px 0 45px;
+	    margin-bottom: 75px;
+	}
+	.hmFeaServicesSlideItem {
+	    width: 33.3333%;
+	}
+	.hm-clients-partners-sec{
+		margin-bottom: 100px;
+	}
+	.hm-counter-cntlr ul li{
+		width: 50%;
+		padding-bottom: 30px;
+	}
+	.hm-projects-section {
+	    padding: 75px 0 55px;
+	}
+	.hm-clients-partners-sec {
+	    padding: 70px 0 45px;
+	    margin-bottom: 115px;
+	}
+	.hm-projects-tabs .tab-link {
+	    margin: 0 25px;
+	    font-size: 32px;
+	}
+	.hm-projects-tabs .tab-link:not(:last-child):after{
+		right: -28px;
+	}
+	.hm-projects-tabs{
+		padding-bottom: 40px;
+	}
+	.hm-project-tab-short-des{
+		padding-bottom: 40px;
+	}
+	.hmProTabSlideItem {
+	    padding: 0 10px 30px;
+	}
+	.hmcpshdr-title{
+		margin-bottom: 15px;
+	}
+	.hm-clients-partners-sec-hdr{
+		padding-bottom: 50px;
+	}
+	.clientsPartnersLogosSlideItem{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media(max-width: 767px){
+	.main-slide-des-title {
+	    font-size: 33px;
+	}
+	.main-slider-des {
+	    padding: 110px 0 98px;
+	}
+	.main-slider-sec {
+	    padding-bottom: 60px;
+	}
+	.main-slider-des {
+		max-width: 448px;
+	}
+	.dmwsd-title,
+	.hmfsshdr-title,
+	.hmcpshdr-title{
+		font-size: 40px;
+	}
+	.dm-watch-section {
+	    padding: 60px 0 50px;
+	}
+	.hm-practice-area-sec {
+	    padding: 65px 0 50px;
+	}
+	.hmpashdr-title {
+	    font-size: 41px;
+	    margin-bottom: 25px;
+	}
+	.hm-fea-services-sec {
+	    padding: 65px 0 45px;
+	    margin-bottom: 75px;
+	}
+	.hmFeaServicesSlideItem {
+	    width: 50%;
+	}
+	.hm-clients-partners-sec{
+		margin-bottom: 70px;
+	}
+	.hm-counter-item strong{
+		font-size: 60px;
+	}
+	.hm-projects-section {
+	    padding: 65px 0 50px;
+	}
+	.hm-clients-partners-sec {
+	    padding: 65px 0 40px;
+	    margin-bottom: 80px;
+	}
+	.hm-project-tab-short-des{
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.hm-projects-tabs .tab-link {
+	    margin: 0 20px;
+	    font-size: 24px;
+	}
+	.hm-projects-tabs .tab-link:not(:last-child):after {
+	    right: -24px;
+	}
+	.hm-clients-partners-sec-hdr{
+		padding-bottom: 40px;
+	}
+}
+
+@media(max-width: 575px){
+	.main-slide-des-title {
+	    font-size: 30px;
+	}
+	.main-slider-sec {
+	    padding-bottom: 40px;
+	}
+	.dmwsd-title,
+	.hmfsshdr-title,
+	.hmcpshdr-title{
+		font-size: 38px;
+		margin-bottom: 20px;
+	}
+	.dm-watch-sec-des p{
+		font-size: 19px;
+	}
+	.hm-practice-area-sec {
+	    padding: 45px 0 40px;
+	}
+	.hmpashdr-title {
+	    font-size: 35px;
+	    margin-bottom: 20px;
+	}
+	.hm-practice-area-sec-hdr p {
+	    font-size: 18px;
+	}
+	.hmPracticeAreaSlideItem{
+		width: 100%;
+	}
+	.hm-practice-area-item{
+		max-width: 370px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hmPracticeAreaSlideItem {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.hmPracticeAreaSlider {
+	    margin: 0!important;
+	}
+	.hm-fea-services-sec {
+	    padding: 55px 0 35px;
+	    margin-bottom: 55px;
+	}
+	.hm-fea-services-sec-hdr {
+	    padding-bottom: 30px;
+	}
+	.hmFeaServicesSlideItem {
+	    width: 100%;
+	}
+	.hm-fea-service-item{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hm-fea-service-item-img img{
+		max-width: 100px;
+	}
+	.hm-clients-partners-sec{
+		margin-bottom: 50px;
+	}
+	.hm-projects-section {
+	    padding: 50px 0 40px;
+	}
+	.hm-clients-partners-sec {
+	    padding: 45px 0 25px;
+	    margin-bottom: 60px;
+	}
+	.hm-counter-sec{
+		padding: 55px 0 45px;
+	}
+	.hmProTabSlideItemCon{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hm-projects-tabs .tab-link{
+		padding: 10px 15px;
+		margin-bottom: 14px;
+		background: #f5f7f6;
+		border-radius: 5px;
+	}
+	.hm-projects-tabs {
+	    padding-bottom: 10px;
+	}
+	.hm-projects-tabs .tab-link{
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 18px;
+	}
+	.hm-projects-tabs .tab-link:not(:last-child):after {
+	    right: -14px;
+	    width: 3px;
+	}
+	.hm-clients-partners-sec-hdr{
+		padding-bottom: 25px;
+	}
+	.hm-clients-partners-sec-hdr p {
+	    font-size: 18px;
+	}
+	.hmcpshdr-title{
+		margin-bottom: 10px;
+	}
+	.clientsPartnersLogosSlideItem {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    padding-bottom: 20px;
+	}
+}
+
+@media(max-width: 479px){
+	.main-slider-des{
+		text-align: center;
+	}
+	.hmfsshdr-title,
+	.hmcpshdr-title,
+	.hmpashdr-title{
+		font-size: 30px;
+	}
+	.hmcpshdr-title{
+		font-size: 27px;
+	}
+	.main-slider-des a{
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+		height: 35px;
+	}
+	.main-slide-des-title {
+	    font-size: 28px;
+	}
+	.mainSlider.slick-slider ul.slick-dots{
+		bottom: 22px;
+	}
+	.dm-watch-sec-des p {
+	    font-size: 18px;
+	}
+	.hm-fea-services-sec-hdr {
+	    padding-bottom: 20px;
+	}
+	.hm-counter-sec {
+	    padding: 55px 0 45px;
+	}
+	.hm-counter-item strong {
+	    font-size: 47px;
+	}
+	.hm-counter-cntlr ul li{
+		width: 100%;
+	}
+	.hm-counter-item span{
+		font-size: 16px;
+	}
+	.hm-counter-sec{
+		padding: 50px 0 40px;
+	}
+	.hm-projects-tabs .tab-link:not(:last-child):after{
+		content: none;
+	}
+
+}
+
+@media(max-width: 359px){
+
 }

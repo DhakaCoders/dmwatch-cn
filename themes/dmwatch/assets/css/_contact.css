@@ -171,7 +171,7 @@ dm-contact-form-sec-wrp
     box-shadow: 7px 6px 11px 2px rgba(188,189,191,0.75);
 }
 .dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
-	opacity: .5;
+	opacity: .9;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -311,7 +311,16 @@ dm-contact-form-sec-wrp
 	    font-size: 38px;
 	    line-height: 42px;
 	}
-
+	.dm-contact-form-head p{
+		font-size: 19px;
+	}
+	.dm-contact-form-inr p{
+		font-size: 19px;
+	}
+	.dm-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label {
+	    font-size: 18px;
+	    line-height: 22px;
+	}
 }
 
 @media(max-width: 479px){

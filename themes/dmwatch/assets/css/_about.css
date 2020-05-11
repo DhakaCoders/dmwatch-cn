@@ -1,15 +1,15 @@
 .dm-about-sec{
 	padding-bottom: 90px;
-	margin-top: -100px;
 }
 .dm-about-sec-inr{
 	background: #88BE43;
-	padding: 50px 45px 25px 45px;
+	padding: 50px 70px 25px 45px;
 	position: relative;
-	z-index: 1;
-	-webkit-box-shadow: 1px 1px 5px 1px rgba(192,192,192,1);
-	-moz-box-shadow: 1px 1px 5px 1px rgba(192,192,192,1);
-	box-shadow: 1px 1px 5px 1px rgba(192,192,192,1);
+	z-index: 12;
+	-webkit-box-shadow: 1px 3px 7px 0px rgba(147,147,147,1);
+	-moz-box-shadow: 1px 3px 7px 0px rgba(147,147,147,1);
+	box-shadow: 1px 3px 7px 0px rgba(147,147,147,1);
+	margin-top: -100px;
 }
 .dm-about-sec-title{
 	display: block;
@@ -54,20 +54,24 @@
 
 .dm-vision-mision-grd-sec{
 	padding: 60px 0;
+	overflow: hidden;
 }
-
+.dm-vision-mision-grd-sec-inr{
+	max-width: 1020px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.dm-vision-mision-grd-sec-inr ul{
+	margin: 0 -75px;
+}
 .dm-vision-mision-grd-sec-inr ul li{
 	float: left;
 	width: 50%;
-	padding-right: 63px;
-	padding-left: 63px;
-}
-.dm-vision-mision-grd-sec-inr ul li:first-child{
+	padding-right: 75px;
 	padding-left: 75px;
 }
-.dm-vision-mision-grd-sec-inr ul li:last-child{
-	padding-right: 75px;
-}
+
 
 .dm-vm-grd-item{
 	background: #F5F7F7;
@@ -120,13 +124,13 @@
 	text-align: center;
 }
 .dm-about-value-sec-inr ul{
-	margin-left: 185px;
-	margin-right: 75px;
+	padding-left: 200px;
+	padding-right: 130px;
 }
 .dm-about-value-sec-inr ul li{
 	float: left;
 	width: 50%;
-	padding: 0 0 18px 30px;
+	padding: 0 10px 25px 30px;
 	font-size: 30px;
 	color: #606060;
 	font-family: 'Montserrat', sans-serif;
@@ -143,14 +147,20 @@
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
-.about-page-ctlr .page-banner {
-    margin-bottom: 0px;
-    position: relative;
-    z-index: -1;
+
+@media(max-width: 1399px){
+	.dm-vision-mision-grd-sec-inr ul {
+	    margin: 0 -40px;
+	}
+	.dm-vision-mision-grd-sec-inr ul li {
+	    padding-right: 40px;
+	    padding-left: 40px;
+	}
+	.dm-about-value-sec-inr ul {
+	    padding-left: 150px;
+	    padding-right: 130px;
+	}
 }
-
-
-
 
 @media(max-width: 1199px){
 	.dm-about-sec {
@@ -175,12 +185,6 @@
 	.dm-vision-mision-grd-sec {
 	    padding: 55px 0;
 	}
-	.dm-vision-mision-grd-sec-inr ul li {
-	    padding-right: 50px;
-	}
-	.dm-vision-mision-grd-sec-inr ul li {
-	    padding-left: 50px;
-	}
 	.dm-vm-grd-item {
 	    padding: 115px 60px 40px 40px;
 	}
@@ -191,11 +195,21 @@
 	    margin-bottom: 30px;
 	}
 	.dm-about-value-sec-inr ul {
-	    margin-left: 120px;
-	    margin-right: 65px;
+	    padding-left: 126px;
+	    padding-right: 80px;
 	}
 	.dm-about-value-sec-inr ul li {
 	    font-size: 26px;
+	}
+	.dm-vision-mision-grd-sec-inr ul {
+	    margin: 0 -20px;
+	}
+	.dm-vision-mision-grd-sec-inr ul li {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+	.dm-about-value-sec-inr ul li:after{
+		top: 6px;
 	}
 
 }
@@ -203,10 +217,9 @@
 @media(max-width: 991px){
 	.dm-about-sec {
 	    padding-bottom: 70px;
-	    margin-top: -80px;
 	}
 	.dm-about-sec-inr {
-	    padding: 40px 40px 40px 45px;
+	    padding: 40px 30px 30px 45px;
 	}
 	.dm-about-sec-title {
 	    margin-bottom: 20px;
@@ -223,18 +236,12 @@
 	.dm-vision-mision-grd-sec {
 	    padding: 50px 0;
 	}
-	.dm-vision-mision-grd-sec-inr ul li:first-child {
-	    padding-left: 0px;
-	}
-	.dm-vision-mision-grd-sec-inr ul li {
-	    padding-right: 20px;
-	    padding-left: 20px;
-	}
-	.dm-vision-mision-grd-sec-inr ul li:last-child {
-	    padding-right: 0px;
-	}
 	.dm-vm-grd-item {
-	    padding: 115px 20px 40px 40px;
+	    padding: 115px 25px 40px 30px;
+	}
+	.dm-vm-grd-item p{
+		font-size: 20px;
+		line-height: 1.5;
 	}
 	.dm-vm-grd-item-title {
 	    font-size: 38px;
@@ -247,23 +254,30 @@
 	    font-size: 40px;
 	    margin-bottom: 40px;
 	}
-	.dm-about-value-sec-inr ul {
-	    margin-left: 0px;
-	    margin-right: 0px;
-	}
 	.dm-about-value-sec-inr ul li {
 	    font-size: 22px;
 	    padding: 0 0 12px 30px;
+	}
+	.dm-vision-mision-grd-sec-inr ul {
+	    margin: 0 -15px;
+	}
+	.dm-vision-mision-grd-sec-inr ul li {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	}
+	.dm-about-value-sec-inr ul {
+	    padding-left: 65px;
+	    padding-right: 40px;
+	}
+	.dm-about-value-sec-inr ul li:after {
+	    top: 5px;
 	}
 	
 }
 
 @media(max-width: 767px){
-	.dm-about-sec {
-	    margin-top: -70px;
-	}
 	.dm-about-sec-inr {
-	    padding: 40px 40px 30px 45px;
+	    padding: 40px 30px 30px 30px;
 	}
 	.dm-about-sec-title {
 	    margin-bottom: 15px;
@@ -275,12 +289,6 @@
 	.dm-vm-title {
 	    margin-bottom: 10px;
 	    font-size: 35px;
-	}
-	.dm-vision-mision-grd-sec-inr ul li {
-	    width: 100%;
-	    padding-right: 0px;
-	    padding-left: 0px;
-	    padding-bottom: 20px;
 	}
 	.dm-vm-grd-item{
 		max-width: 450px;
@@ -299,6 +307,27 @@
 	}
 	.dm-about-value-sec-inr ul li:after {
 	    top: 2px;
+	}
+	.dm-about-sec-inr{
+		margin-top: -120px;
+	}
+	.dm-vision-mision-grd-sec-inr ul{
+		margin: 0;
+	}
+	.dm-vision-mision-grd-sec-inr ul li{
+		width: 100%;
+		padding-bottom: 30px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.dm-about-value-sec-inr ul {
+	    padding-left: 0;
+	    padding-right: 0;
+	    display: table;
+	    margin-left: auto;
+	    margin-right: auto;
+	    max-width: 313px;
+	    width: 100%;
 	}
 }
 
@@ -321,10 +350,10 @@
 	    font-size: 30px;
 	}
 	.dm-vm-grd-item {
-	    padding: 115px 20px 30px 40px;
+	    padding: 115px 20px 30px 25px;
 	}
 	.dm-vm-grd-item-title {
-	    font-size: 32px;
+	    font-size: 30px;
 	}
 	.dm-vm-grd-item p {
 	    font-size: 18px;
@@ -341,6 +370,9 @@
 	    font-size: 30px;
 	    margin-bottom: 25px;
 	}
+	.dm-about-sec-inr{
+		margin-top: -100px;
+	}
 
 }
 
@@ -349,28 +381,27 @@
 	    padding: 35px 10px 25px 20px;
 	}
 	.dm-about-sec-title {
-	    margin-bottom: 12px;
-	    font-size: 25px;
+	    margin-bottom: 15px;
+	    font-size: 27px;
 	}
 	.dm-about-sec-inr p {
-	    line-height: 20px;
-	    font-size: 15px;
+	    font-size: 17px;
 	}
 	.dm-about-sec-inr p a{
 		margin-left: 15px;
 	}
 	.dm-vm-title {
-	    font-size: 25px;
+	    font-size: 27px;
 	}
 	.dm-vm-grd-item-title {
-	    font-size: 30px;
+	    font-size: 28px;
 	}
 	.dm-vm-grd-item p {
 	    font-size: 16px;
 	    line-height: 24px;
 	}
 	.dm-vm-grd-item {
-	    padding: 80px 20px 30px 40px;
+	    padding: 80px 20px 30px 25px;
 	}
 	.dm-vm-grd-item:before {
 		height: 35px;
@@ -379,8 +410,8 @@
 	    top: 30px;
 	}
 	.dm-about-value-title {
-	    font-size: 25px;
-	    margin-bottom: 18px;
+	    font-size: 26px;
+	    margin-bottom: 20px;
 	}
 	.dm-about-value-sec-inr ul li {
 	    font-size: 18px;

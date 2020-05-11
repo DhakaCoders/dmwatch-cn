@@ -7,7 +7,8 @@ a,input,img,textarea,button,svg,
 .slick-slider .slick-dots li,
 .hmProTabSlideItemCon,
 .filter-results-grd-item,
-.filter-results-img-hover strong i{
+.filter-results-img-hover strong i,
+.dm-advisor-grd-item-des a i{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
