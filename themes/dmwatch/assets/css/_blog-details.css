@@ -147,7 +147,10 @@
 	    padding-right: 120px;
 	}
 	.dm-blog-details-des-sec-inr{
-		margin-top: -145px;
+		margin-top: -75px;
+	}
+	.dm-bd-grd-sec {
+	    margin-top: -50px;
 	}
 }
 
