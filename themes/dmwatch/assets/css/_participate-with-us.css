@@ -258,6 +258,7 @@ dm-us-contact-form-sec
     text-transform: inherit;
     font-family: 'Raleway', sans-serif;
     padding-right: 0;
+    cursor: pointer;
 }
 /* Hide the browser's default checkbox */
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label input {
