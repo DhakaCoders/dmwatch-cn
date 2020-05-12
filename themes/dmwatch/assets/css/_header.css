@@ -275,8 +275,40 @@ nav.main-nav ul.sub-menu li:hover:after {
 .hdr-humbergur-btn span:nth-child(3){
 	top: 16px;
 }
-
-
+header.header{
+	background: #fff;
+}
+.hdr-topbar,
+.logo,
+header.header,
+.hdr-rgt{
+	transition: all 0.3s ease;
+}
+body.hasSticky{
+    padding-top: 75px;
+}
+body.hasSticky header.header {
+    padding-top: 17px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0px 0px 15px #eee;
+}
+body.hasSticky .hdr-rgt{
+	padding-top: 15px;
+}
+body.hasSticky .logo {
+    padding-top: 0;
+}
+body.hasSticky .hdr-topbar{
+	top: -100px;
+	position: absolute;
+	z-index: -9;
+	right: 0;
+}
 @media(max-width: 1499px){
 
 }
