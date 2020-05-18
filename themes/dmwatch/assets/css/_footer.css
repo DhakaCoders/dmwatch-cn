@@ -184,7 +184,9 @@
 	cursor: pointer;
 }
 
-
+.ftr-cpwrt span p {
+    margin: 0;
+}
 
 
 
