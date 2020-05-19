@@ -194,7 +194,12 @@ dm-contact-form-sec-wrp
   opacity: 1;
 }
 
-
+div.wpforms-container-full .wpforms-form .wpforms-error {
+    display: block !important;
+    color: #990000 !important;
+    font-size: 12px !important;
+    float: none;
+}
 /*
 ----------------------
  Responsive Css

@@ -1,0 +1,113 @@
+<?php 
+get_header(); 
+$thisID = get_the_ID();
+$standaardbanner = get_field('bannerimage', $thisID);
+if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/cln-banner-sec.jpg';
+?>
+<section class="page-banner page-bnr-lft-con page-bnr-blog" style="overflow: hidden;">
+  <div class="page-banner-controller">
+    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-bnr-blog.jpg);">
+    </div>
+    <div class="page-banner-des">
+      <div class="page-banner-inr">
+        <div>
+          <h1 class="page-banner-title">BLOG</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- end of page-banner -->
+
+<section class="dm-blog-grd-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="dm-blog-grd-sec-inr">
+        <?php 
+          if( have_posts() ):
+        ?>
+          <ul class="reset-list">
+          <?php 
+            while(have_posts()): the_post();
+              $categories = get_the_terms( get_the_ID(), 'category' );
+              $term_name = '';
+              if ( ! empty( $categories ) ) {
+                  foreach( $categories as $category ) {
+                     $term_name = ' | '.$category->name; 
+                  }
+              } 
+          ?>
+            <li>
+              <div class="dm-blog-grd-item">
+                <div>
+                  <h2 class="dm-blog-grd-item-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                  <strong><?php echo get_the_date('M d, Y'); ?><?php echo $term_name; ?></strong>
+                  <?php the_excerpt(); ?>
+                </div>
+                <span></span>
+              </div>
+            </li>
+            <?php endwhile; ?>
+          </ul>
+          <div class="dm-blog-srch-pagi-sec clearfix">
+            <div class="dm-blog-srch-pagi-sec-inr">
+              <div class="dm-blog-secr">
+                <span>Search</span>
+                <div class="hdr-search">
+                  <form>
+                      <input type="search" name="" placeholder="Enter Search Keyword...">
+                      <button><i class="fas fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              <div class="dm-blog-pagi-ctlr">
+                <?php
+                global $wp_query;
+
+                $big = 999999999; // need an unlikely integer
+                $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+
+                echo paginate_links( array(
+                  'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                  'type'      => 'list',
+                  'prev_text' => __('Prev'),
+                  'next_text' => __('Next'),
+                  'format'    => '?paged=%#%',
+                  'show_all'  => false,
+                  'end_size'  => 1,
+                  'mid_size'  => 5,
+                  'current'   => $current,
+                  'total'     => $wp_query->max_num_pages
+                ) );
+              ?>
+              </div>
+              
+            </div>
+          </div>
+          <?php else: ?>
+            <div class="notfound">No result!</div>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="footer-top-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ftr-top-sec-inr clearfix">
+          <div class="ftr-top-sec-title">
+            <h2 class="ftr-top-title">Ready to start your project with us ?</h2>
+          </div>
+          <div class="ftr-top-sec-link">
+            <a href="#">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php get_footer(); ?>
