@@ -1184,6 +1184,9 @@ body{
 	.team-single-top-sec-inr{
 		padding: 20px;
 	}
+	.team-single-btm-con-sec{
+		margin-bottom: 80px;
+	}
 }	
 
 @media(max-width: 575px){
@@ -1297,6 +1300,9 @@ body{
 	    max-width: 182px;
 	    padding-right: 20px;
 	}
+	.team-single-btm-con-sec{
+		margin-bottom: 70px;
+	}
 }
 
 @media(max-width: 479px){
@@ -1348,6 +1354,7 @@ body{
 	.tstd-title{
 		font-size: 21px;
 	}
+
 }
 
 @media(max-width: 359px){
