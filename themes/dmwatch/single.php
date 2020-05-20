@@ -65,24 +65,8 @@ while ( have_posts() ) :
 </div>
 
 
-<section class="footer-top-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="ftr-top-sec-inr clearfix">
-          <div class="ftr-top-sec-title">
-            <h2 class="ftr-top-title">Ready to start your project with us ?</h2>
-          </div>
-          <div class="ftr-top-sec-link">
-            <a href="#">Contact us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <?php 
-endwhile; 
+endwhile;
+get_template_part('templates/footer', 'top');
 get_footer(); 
 ?>

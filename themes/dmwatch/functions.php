@@ -24,6 +24,7 @@ if( !function_exists('cbv_theme_setup') ){
 		}
         add_image_size( 'bloggrid', 400, 280, true );
         add_image_size( 'contgrid', 596, 510, true );
+        add_image_size( 'hmslide', 1584, 634, true );
 
 		
 		// add size to media uploader
