@@ -273,6 +273,15 @@ ol li::before {
 	text-transform: initial;
 }
 
+.page-bnr-team-member-single .page-banner-title{
+	color: #88be44;
+}
+.page-bnr-team-member-single .page-banner-title span{
+	color: #606060;
+}
+.page-banner.page-bnr-team-member-single{
+	margin-bottom: 0!important;
+}
 
 @media(max-width: 1499px){
 
@@ -381,6 +390,9 @@ ol li::before {
 	}
 	.page-bnr-btm-logo img{
 		max-width: 100px;
+	}
+	.team-single-btm-con-sec{
+		margin-bottom: 80px;
 	}
 }
 
