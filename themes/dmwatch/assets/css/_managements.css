@@ -269,6 +269,7 @@ position: relative;
 	color: #706D6D;
 	font-size: 26px;
 	line-height: 1;
+	font-weight: 700;
 }
 
 .our-project-filter-hdr-sec{
@@ -475,6 +476,13 @@ box-shadow: 4px 2px 5px -1px rgba(93,93,93,1);
 }
 .filter-btn-dorpdown{
 	display: none;
+}
+.filter-btn button.filter-btn-active{
+	background: #88be44;
+	color: #fff;
+}
+.filter-btn button.filter-btn-active span:after{
+	color: #fff;
 }
 /*check*/
 .filter-check-row{

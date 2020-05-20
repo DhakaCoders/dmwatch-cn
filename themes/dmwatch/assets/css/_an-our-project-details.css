@@ -93,6 +93,12 @@ dm-project-info-sec-wrp
 	margin-bottom: 45px;
 	text-transform: uppercase;
 }
+.dm-project-info-btm-dsc-title{
+	color: #88be44;
+}
+.dm-project-info-btm-dsc a:hover{
+	color: #000;
+}
 
 /*
 -------------------

@@ -84,6 +84,12 @@
 .dm-blog-secr{
 	float: left;
 }
+.dm-blog-grd-sec .hdr-search form input[type="search"]{
+	background: transparent;
+}
+.dm-blog-grd-sec  .hdr-search form{
+	width: 100%;
+}
 .dm-blog-pagi-ctlr{
 	float: right;
 	padding: 10px 7px 10px 15px;
@@ -97,9 +103,12 @@
 	font-weight: 500;
 	margin-bottom: 10px;
 }
+.dm-blog-grd-sec .hdr-search{
+	width: 265px;
+}
 .dm-blog-grd-sec .hdr-search form {
-    max-width: 265px;
     width: 100%;
+    max-width: 100%;
     border: 1px solid #424242;
 }
 .dm-blog-grd-sec .hdr-search form input[type="search"] {
