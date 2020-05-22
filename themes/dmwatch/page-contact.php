@@ -4,10 +4,10 @@
 */
 get_header(); 
 $thisID = get_the_ID();
-$map = get_field('mapsec', $thisID); 
+$map = get_field('embedded_code', $thisID); 
 ?>
 <section class="contact-google-map-wrp">
-  <div id="googlemap" data-latitude="38.03898" data-longitude="23.804699"></div>
+  <?php if( !empty($map) ) printf('%s', $map); ?>
 </section>
 
 
@@ -53,20 +53,4 @@ $map = get_field('mapsec', $thisID);
   </div>
 </section>
 
-<section class="footer-top-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="ftr-top-sec-inr clearfix">
-          <div class="ftr-top-sec-title">
-            <h2 class="ftr-top-title">Ready to start your project with us ?</h2>
-          </div>
-          <div class="ftr-top-sec-link">
-            <a href="#">Contact us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <?php get_footer(); ?>

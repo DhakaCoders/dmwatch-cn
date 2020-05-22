@@ -66,208 +66,158 @@
 </section>
 <?php endif; ?>
 <?php endif; ?>
-
+<?php
+  $showhidepractice = get_field('showhidepractice', HOMEID);
+  if( $showhidepractice ):
+    $practice = get_field('practicearea', HOMEID);
+    if( $practice ):
+?>
 <section class="hm-practice-area-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-practice-area-sec-hdr">
-          <h2 class="hmpashdr-title">practice area</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
+        <?php 
+          if( !empty($practice['title']) ) printf('<h2 class="hmpashdr-title">%s</h2>', $practice['title']);
+          if( !empty($practice['description']) ) echo wpautop( $practice['description'] );
+        ?>
         </div>
       </div>
     </div>
+    <?php 
+      $practices = $practice['practiceareas']; 
+      if( $practices ):
+    ?>
     <div class="row">
       <div class="col-md-12">
         <div class="hm-practice-area-items hmPracticeAreaSlider">
+          <?php foreach( $practices as $pract ): ?>
           <div class="hmPracticeAreaSlideItem">
             <div class="hm-practice-area-item">
               <div class="hm-practice-area-fea-img">
-                <img src="<?php echo THEME_URI; ?>/assets/images/hm-practice-area-fea-img-01.png">
+                <?php 
+                if( !empty($pract['image']) ):
+                  echo cbv_get_image_tag($pract['image'], 'hareas');
+                endif;
+                ?>
               </div>
               <div class="hm-practice-area-item-des">
-                <h4 class="mHc hm-practice-area-item-title">Environmental Inspection</h4>
-                <p >We are a group of people motivated to work
-                  in the field of environmental betterment and
-                  to ensure a safe and sustainable future for all
-                  of us</p>
+                <a href="#" class="overlay-link"></a>
+                <?php 
+                  if( !empty($pract['title']) ) printf('<h4 class="mHc hm-practice-area-item-title">%s</h4>', $pract['title']);
+                  if( !empty($pract['description']) ) echo wpautop( $pract['description'] );
+                ?>
               </div>
             </div>
           </div>
-          <div class="hmPracticeAreaSlideItem">
-            <div class="hm-practice-area-item">
-              <div class="hm-practice-area-fea-img">
-                <img src="<?php echo THEME_URI; ?>/assets/images/hm-practice-area-fea-img-02.png">
-              </div>
-              <div class="hm-practice-area-item-des">
-                <h4 class="mHc hm-practice-area-item-title">Higg Index consultancy</h4>
-                <p >We provide full support and solution for
-                  HIGG FEM 3.0 for manufacturers to better
-                    measure and manage comprehensive
-                    environmental and social impacts of apparel</p>
-              </div>
-            </div>
-          </div>
-          <div class="hmPracticeAreaSlideItem">
-            <div class="hm-practice-area-item">
-              <div class="hm-practice-area-fea-img">
-                <img src="<?php echo THEME_URI; ?>/assets/images/hm-practice-area-fea-img-03.png">
-              </div>
-              <div class="hm-practice-area-item-des">
-                <h4 class="mHc hm-practice-area-item-title">Environmental Management Plan</h4>
-                <p>Environmental Management Plans describe
-                  how an action might impact on the natural
-                  environmental. We have qualified team to run
-                  down the operations</p>
-              </div>
-            </div>
-          </div>
-          <div class="hmPracticeAreaSlideItem">
-            <div class="hm-practice-area-item">
-              <div class="hm-practice-area-fea-img">
-                <img src="<?php echo THEME_URI; ?>/assets/images/hm-practice-area-fea-img-01.png">
-              </div>
-              <div class="hm-practice-area-item-des">
-                <h4 class="mHc hm-practice-area-item-title">Environmental Inspection</h4>
-                <p >We are a group of people motivated to work
-                  in the field of environmental betterment and
-                  to ensure a safe and sustainable future for all
-                  of us</p>
-              </div>
-            </div>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
+    <?php endif; ?>
   </div>    
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
-
+<?php
+  $showhideservices = get_field('showhideservices', HOMEID);
+  if( $showhideservices ):
+    $service = get_field('featuredservices', HOMEID);
+    if( $service ):
+?>
 <section class="hm-fea-services-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-fea-services-sec-hdr">
-          <h2 class="hmfsshdr-title">FEATURED SERVICES</h2>
+        <?php if( !empty($service['title']) ) printf('<h2 class="hmfsshdr-title">%s</h2>', $service['title']); ?>
         </div>
       </div>
     </div>
+    <?php 
+      $services = $service['fservices']; 
+      if( $services ):
+    ?>
     <div class="row">
       <div class="col-md-12">
         <div class="hm-fea-services-cntlr">
           <div class="hm-fea-services hmFeaServicesSlider">
+            <?php foreach( $services as $serv ): ?>
             <div class="hmFeaServicesSlideItem">
               <div class="hm-fea-service-item">
                 <div class="hm-fea-service-item-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/fea-services-icon-01.png">
+                <?php 
+                  if( !empty($serv['icon']) ):
+                    echo cbv_get_image_tag($serv['icon']);
+                  endif;
+                ?>
                 </div>
                 <div class="hm-fea-service-item-des">
-                  <h5 class="hmfsid-title mHc">Climate Resiliency Assessment</h5>
-                  <p>Climate resilience assenssment is one of our core service. We have DEdicaed team members to contaucted this assessment. </p>
+                <?php 
+                  if( !empty($serv['title']) ) printf('<h5 class="hmfsid-title mHc">%s</h5>', $serv['title']);
+                  if( !empty($serv['description']) ) echo wpautop( $serv['description'] );
+                ?>
                 </div>
               </div>
             </div>
-            <div class="hmFeaServicesSlideItem">
-              <div class="hm-fea-service-item">
-                <div class="hm-fea-service-item-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/fea-services-icon-01.png">
-                </div>
-                <div class="hm-fea-service-item-des">
-                  <h5 class="hmfsid-title mHc">City Profiling & Poverty Assessment</h5>
-                  <p>Climate resilience assenssment is one of our core service. We have DEdicaed team members to contaucted this assessment. </p>
-                </div>
-              </div>
-            </div>
-            <div class="hmFeaServicesSlideItem">
-              <div class="hm-fea-service-item">
-                <div class="hm-fea-service-item-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/fea-services-icon-01.png">
-                </div>
-                <div class="hm-fea-service-item-des">
-                  <h5 class="hmfsid-title mHc">WASH</h5>
-                  <p>Climate resilience assenssment is one of our core service. We have DEdicaed team members to contaucted this assessment. </p>
-                </div>
-              </div>
-            </div>
-            <div class="hmFeaServicesSlideItem">
-              <div class="hm-fea-service-item">
-                <div class="hm-fea-service-item-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/fea-services-icon-01.png">
-                </div>
-                <div class="hm-fea-service-item-des">
-                  <h5 class="hmfsid-title mHc">Improving Urban Functionality</h5>
-                  <p>Climate resilience assenssment is one of our core service. We have DEdicaed team members to contaucted this assessment. </p>
-                </div>
-              </div>
-            </div>
-            <div class="hmFeaServicesSlideItem">
-              <div class="hm-fea-service-item">
-                <div class="hm-fea-service-item-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/fea-services-icon-01.png">
-                </div>
-                <div class="hm-fea-service-item-des">
-                  <h5 class="hmfsid-title mHc">Capacity Building</h5>
-                  <p>Climate resilience assenssment is one of our core service. We have DEdicaed team members to contaucted this assessment. </p>
-                </div>
-              </div>
-            </div>
-            <div class="hmFeaServicesSlideItem">
-              <div class="hm-fea-service-item">
-                <div class="hm-fea-service-item-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/fea-services-icon-01.png">
-                </div>
-                <div class="hm-fea-service-item-des">
-                  <h5 class="hmfsid-title mHc">Capacity Building</h5>
-                  <p>Climate resilience assenssment is one of our core service. We have DEdicaed team members to contaucted this assessment. </p>
-                </div>
-              </div>
-            </div>
+            <?php endforeach; ?>
           </div>
         </div>
       </div>
     </div>
+    <?php endif; ?>
   </div>    
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
-
+<?php
+  $showhideclients = get_field('showhideclients', HOMEID);
+  if( $showhideclients ):
+    $client = get_field('clientspartners', HOMEID);
+    if( $client ):
+?>
 <section class="hm-clients-partners-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-clients-partners-sec-hdr">
-          <h2 class="hmcpshdr-title">Clients and partners</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <?php 
+          if( !empty($client['title']) ) printf('<h2 class="hmcpshdr-title">%s</h2>', $client['title']);
+          if( !empty($client['description']) ) echo wpautop( $practice['description'] );
+        ?>
         </div>
       </div>
     </div>
+    <?php 
+      $logos = $client['logos']; 
+      if( $logos ):
+    ?>
     <div class="row">
       <div class="col-md-12">
         <div class="clients-partners-logos-cntlr">
           <div class="clients-partners-logos clientsPartnersLogosSlider">
+            <?php foreach( $logos as $logo ): ?>
             <div class="clientsPartnersLogosSlideItem">
-              <div><img src="<?php echo THEME_URI; ?>/assets/images/clients-partners-logo-01.png"></div>
+              <div>
+                <?php 
+                  if( !empty($logo['icon']) ):
+                    echo cbv_get_image_tag($logo['icon']);
+                  endif;
+                ?>
+              </div>
             </div>
-            <div class="clientsPartnersLogosSlideItem">
-              <div><img src="<?php echo THEME_URI; ?>/assets/images/clients-partners-logo-01.png"></div>
-            </div>
-            <div class="clientsPartnersLogosSlideItem">
-              <div><img src="<?php echo THEME_URI; ?>/assets/images/clients-partners-logo-01.png"></div>
-            </div>
-            <div class="clientsPartnersLogosSlideItem">
-              <div><img src="<?php echo THEME_URI; ?>/assets/images/clients-partners-logo-01.png"></div>
-            </div>
-            <div class="clientsPartnersLogosSlideItem">
-              <div><img src="<?php echo THEME_URI; ?>/assets/images/clients-partners-logo-01.png"></div>
-            </div>
-            <div class="clientsPartnersLogosSlideItem">
-              <div><img src="<?php echo THEME_URI; ?>/assets/images/clients-partners-logo-01.png"></div>
-            </div>
+            <?php endforeach; ?>
           </div>
         </div>
       </div>
     </div>
+    <?php endif; ?>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
 <?php
   $showhidecounter = get_field('showhidecounter', HOMEID);

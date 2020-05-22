@@ -4,16 +4,24 @@
 */
 get_header(); 
 $thisID = get_the_ID();
+$pageTitle = get_the_title($thisID);
+$custom_page_title = get_field('custom_page_titel', $thisID);
+if(!empty(str_replace(' ', '', $custom_page_title))){
+  $pageTitle = $custom_page_title;
+}
+
+$standaardbanner = get_field('bannerimage', $thisID);
+if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr-about.jpg';
 $intro = get_field('introsec', $thisID);
 ?>
 <section class="page-banner page-bnr-rgt-con page-bnr-about" style="overflow: hidden;">
   <div class="page-banner-controller">
-    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-bnr-about.jpg);">
+    <div class="page-banner-bg" style="background-image:url(<?php echo $standaardbanner; ?>);">
     </div>
     <div class="page-banner-des">
       <div class="page-banner-inr">
         <div>
-          <h1 class="page-banner-title">ABOUT DM WATCH</h1>
+          <h1 class="page-banner-title"><?php echo $pageTitle; ?></h1>
         </div>
       </div>
     </div>
@@ -98,6 +106,7 @@ $mission = $vmsec['mission'];
   if( $showhidedw ):
     $dmwatch = get_field('dmwatch', $thisID);
     if( $dmwatch ):
+      $values = $dmwatch['values'];
 ?>
 <section class="dm-about-value-sec">
   <div class="container">
@@ -106,8 +115,17 @@ $mission = $vmsec['mission'];
        <div class="dm-about-value-sec-inr">
         <?php
           if( !empty($dmwatch['title']) ) printf('<h2 class="dm-about-value-title">%s</h2>', $dmwatch['title'] );
-          if(!empty($dmwatch['description'])) echo wpautop( $dmwatch['description'], true );
+          if( !empty($values) ):
         ?>
+        <ul class="reset-list clearfix">
+          <?php foreach( $values as $value ): ?>
+           <li>
+            <?php if( !empty($value['title']) ) printf('%s', $value['title']); ?>
+            <?php if( !empty($value['subtitle']) ) printf('<p>%s</p>', $value['subtitle']); ?>
+           </li>
+         <?php endforeach; ?>
+         </ul>
+       <?php endif; ?>
        </div>
      </div>
    </div>
