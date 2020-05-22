@@ -434,7 +434,7 @@ if (windowWidth <= 991) {
 }
 
 /*popup*/
-$('.popup-btn').on('click', function(e){
+/*$('.popup-btn').on('click', function(e){
   e.preventDefault();
   $('.info-popup-cntlr').addClass('opacity-1');
 });
@@ -442,7 +442,7 @@ $('.popup-btn').on('click', function(e){
 $('.popup-close').on('click', function(e){
   $('.info-popup-cntlr').removeClass('opacity-1');
 });
-
+*/
 
     new WOW().init();
 
