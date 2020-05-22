@@ -2,7 +2,7 @@
 get_header(); 
 $thisID = 330;
 $pageTitle = get_the_title($thisID);
-$custom_page_title = get_field('custom_page_titel', $thisID);
+$custom_page_title = get_field('custom_page_title', $thisID);
 if(!empty(str_replace(' ', '', $custom_page_title))){
   $pageTitle = $custom_page_title;
 }

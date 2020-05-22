@@ -1,15 +1,26 @@
 <?php
 get_header(); 
 $cterm = get_queried_object();
+
+$pageID = 62;
+
+$pageTitle = get_the_title($pageID);
+$custom_page_title = get_field('custom_page_title', $pageID);
+if(!empty(str_replace(' ', '', $custom_page_title))){
+  $pageTitle = $custom_page_title;
+}
+
+$standaardbanner = get_field('bannerimage', $pageID);
+if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr-team-members.jpg';
 ?>
 <section class="page-banner page-bnr-research-team-members" style="overflow: hidden;">
   <div class="page-banner-controller">
-    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-bnr-team-members.jpg);">
+    <div class="page-banner-bg" style="background-image:url(<?php echo $standaardbanner; ?>);">
     </div>
     <div class="page-banner-des">
       <div class="page-banner-inr">
         <div>
-          <h1 class="page-banner-title">TEAM MRMBERS</h1>
+          <h1 class="page-banner-title"><?php echo $pageTitle; ?></h1>
         </div>
       </div>
     </div>

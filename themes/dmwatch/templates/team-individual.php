@@ -35,13 +35,16 @@ $cterm = get_queried_object();
         <div class="individual-team-mambers-grd-cntlr">
           <ul class="reset-list clearfix">
             <?php 
+            $i = 1;
             while($query->have_posts()): $query->the_post();  
+             $fullname = get_field('full_name', get_the_ID()); 
              $position = get_field('position', get_the_ID()); 
              $profileimage = get_field('profile_image', get_the_ID()); 
+             $aboutcont = get_field('aboutcont', get_the_ID());
             ?>
             <li>
               <div class="crkmts-grd-item">
-                <a href="#" class="popup-btn"></a>
+                <a id="quickViewOpener" data-toggle="modal" data-target="#quickViewModal<?php echo $i; ?>" href="#" class="popup-btn"></a>
                 <div class="itm-grd-img-bx">
                   <?php if(!empty( $profileimage )): echo cbv_get_image_tag( $profileimage ); endif;?>
                 </div>
@@ -50,8 +53,65 @@ $cterm = get_queried_object();
                   <?php if( !empty($position) ) printf('<span>%s</span>', $position); ?>
                 </div>
               </div>
+              <!-- Modal -->
+              <div class="modal fade dm-modal-con-wrap" id="quickViewModal<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <button type="button" class="close popup-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img src="<?php echo THEME_URI; ?>/assets/images/close-icon.jpg"></span>
+                    </button>
+                    <div class="info-popup-container">
+                      <div class="info-popup-cntlr-inr clearfix">
+                        <div class="info-popup-sidebar">
+                          <div class="crkmts-grd-item">
+                            <div class="itm-grd-img-bx">
+                              <?php if(!empty( $profileimage )): echo cbv_get_image_tag( $profileimage ); endif;?>
+                            </div>
+                            <div class="itm-short-des">
+                              <strong>
+                                <?php 
+                                  if( !empty($fullname) ) 
+                                    printf('%s', $fullname);
+                                  else
+                                    printf('%s', get_the_title(get_the_ID()));
+                                ?>
+                              </strong>
+                              <?php if( !empty($position) ) printf('<span>%s</span>', $position); ?>
+                            </div>
+                          </div>
+                          <?php $sinfo = get_field('socialinfo', get_the_ID()); ?>
+                          <div class="popup-social">
+                            <label>Social Media</label>
+                            <?php if( !empty($sinfo) ): ?>
+                            <ul class="reset-list">
+                              <?php if( !empty($sinfo['linkedin_url']) ): ?>
+                              <li><a href="<?php echo $sinfo['linkedin_url']; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/instagram.png"></a></li>
+                              <?php endif; ?>
+                              <?php if( !empty($sinfo['facebook_url']) ): ?>
+                              <li><a href="<?php echo $sinfo['facebook_url']; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/facebook.png"></a></li>
+                              <?php endif; ?>
+                              <?php if( !empty($sinfo['twitter_url']) ): ?>
+                              <li><a href="<?php echo $sinfo['twitter_url']; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/twitter.png"></a></li>
+                              <?php endif; ?>
+                              <?php if( !empty($sinfo['instagram_url']) ): ?>
+                              <li><a href="<?php echo $sinfo['instagram_url']; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/linkedin.png"></a></li>
+                              <?php endif; ?>
+                            </ul>
+                            <?php endif; ?>
+                          </div>
+                        </div>
+                        <div class="info-popup-des">
+                          <?php if( !empty($aboutcont) ) echo wpautop( $aboutcont ); ?>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
             </li>
-            <?php endwhile; ?>
+            <?php $i++; endwhile; ?>
           </ul>
         </div>
       </div>
@@ -59,37 +119,3 @@ $cterm = get_queried_object();
     </div>
   </div>
 </section>
-
-<div class="info-popup-cntlr">
-  <div class="info-popup-container">
-    <div class="info-popup-cntlr-inr clearfix">
-      <span class="popup-close"><img src="<?php echo THEME_URI; ?>/assets/images/close-icon.jpg"></span>
-      <div class="info-popup-sidebar">
-        <div class="crkmts-grd-item">
-          <div class="itm-grd-img-bx">
-            <img src="<?php echo THEME_URI; ?>/assets/images/itm-grd-img-bx-01.jpg">
-          </div>
-          <div class="itm-short-des">
-            <strong>Khan Moniruzzaman Munna</strong>
-            <span>Manager</span>
-          </div>
-        </div>
-        <div class="popup-social">
-          <label>Social Media</label>
-          <ul class="reset-list">
-            <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/instagram.png"></a></li>
-            <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/facebook.png"></a></li>
-            <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/whatsapp.png"></a></li>
-            <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/twitter.png"></a></li>
-            <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/linkedin.png"></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="info-popup-des">
-        <p><span>Khan Moniruzzaman Munna</span> is an Architect and Environment enthusiast, having received his Master of Science degrees in Environmental Management form National University of Singapore (NUS) with a prestigious ABD-Japan Scholarship, in 2020. Prior to this he obtained his bachelor's degrees in architecture form AIUB (American International University Bangladesh) in 2015.</p>
-
-        <p>Tosnim has a diverse field of interest which emanates from his diverse background in study and work experiences. Right after accomplishing his training in Architecture successfully, he joined Housing and Building Research Institute(HBRI) as a research fellow where he pursued different research areas like Disaster resilient urban and regional settlements, Sustainable and Argo-friendly Building Materials and technology, Public toilet and public space in an Urban setting etc.</p>
-      </div>
-    </div>
-  </div>
-</div>

@@ -56,9 +56,7 @@ $thisID = get_the_ID();
                   <strong>AREAS OF EXPERTISE:</strong>
                   <?php if( !empty($areasex) ) echo wpautop($areasex); ?>
                 </div>
-                <?php 
-                $sinfo = get_field('socialinfo', $thisID); 
-                ?>
+                <?php $sinfo = get_field('socialinfo', $thisID); ?>
                 <div class="bio-connect">
                   <strong>CONNECT</strong>
                   <?php if( !empty($sinfo) ): ?>
