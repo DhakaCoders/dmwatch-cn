@@ -252,107 +252,82 @@
 </section>
 <?php endif; ?>
 <?php endif; ?>
-
+<?php 
+  $terms = get_terms( array(
+    'taxonomy' => 'practice_area',
+    'hide_empty' => false,
+    'parent' => 0
+) );
+  if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){ 
+?>
 <section class="hm-projects-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="fl-tabs clearfix hm-projects-tabs">
-          <button class="tab-link current" data-tab="tab-1"><span>ONGOING PROJECTS </span></button>
-          <button class="tab-link" data-tab="tab-2"><span>COMPLETED PROJECTS</span></button>
+          <?php $i = 1; foreach ( $terms as $term ) { ?>
+            <button class="tab-link<?php echo ($i == 1)? ' current': ''; ?>" data-tab="tab-<?php echo $i; ?>"><span><?php echo $term->name; ?></span></button>
+          <?php $i++; } ?>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div id="tab-1" class="fl-tab-content current">
+        <?php $i = 1; foreach ( $terms as $term ) { ?>
+        <div id="tab-<?php echo $i; ?>" class="fl-tab-content<?php echo ($i == 1)? ' current': ''; ?>">
           <div class="hm-projects-tab-con">
             <div class="hm-project-tab-short-des">
-              <p>We are currently working with the  world renowned agencies. So far have completed several projects given by them.
-              our dedicated and profesional team members are the key of our success</p>
+              <?php if( !empty($term->description) ) echo wpautop($term->description); ?>
             </div>
+            <?php 
+              $query = new WP_Query(array( 
+                  'post_type'=> 'project',
+                  'post_status' => 'publish',
+                  'posts_per_page' => 12,
+                  'orderby' => 'date',
+                  'order'=> 'ASC',
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => 'practice_area',
+                      'field' => 'term_id',
+                      'terms' => $term->term_id
+                    )
+                  )
+                ) 
+              );
+              if($query->have_posts()):
+            ?>
             <div class="hm-project-tab-slider hmProTabSlider">
+              <?php 
+                while($query->have_posts()): $query->the_post();
+                  $pintro = get_field('introsec', get_the_ID());
+                  if( !empty($pintro['image']) ):
+                    $project_src = cbv_get_image_src($pintro['image'], 'projectgrid');
+                  else:
+                    $project_src = '';
+                  endif;
+              ?>
               <div class="hmProTabSlideItem">
-                <div class="hmProTabSlideItemCon" style="background: url(<?php echo THEME_URI; ?>/assets/images/project-slide-img-01.png);">
-                  <a href="#" class="overlay-link"></a>
+                <div class="hmProTabSlideItemCon" style="background: url(<?php echo $project_src; ?>);">
+                  <a href="<?php the_permalink(); ?>" class="overlay-link"></a>
                   <div class="hmProTabSlideItemCon-hover">
                     <div class="hmProTabSlideItemCon-hover-inr">
-                      <strong>Baseline Survey of Urban Climate
-                      Change Resiliency</strong>
+                      <strong><?php the_title(); ?></strong>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="hmProTabSlideItem">
-                <div class="hmProTabSlideItemCon" style="background: url(<?php echo THEME_URI; ?>/assets/images/project-slide-img-02.png);">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="hmProTabSlideItemCon-hover">
-                    <div class="hmProTabSlideItemCon-hover-inr">
-                      <strong>Baseline Survey of Urban Climate
-                      Change Resiliency</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="hmProTabSlideItem">
-                <div class="hmProTabSlideItemCon" style="background: url(<?php echo THEME_URI; ?>/assets/images/project-slide-img-03.png);">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="hmProTabSlideItemCon-hover">
-                    <div class="hmProTabSlideItemCon-hover-inr">
-                      <strong>Baseline Survey of Urban Climate
-                      Change Resiliency</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="hmProTabSlideItem">
-                <div class="hmProTabSlideItemCon" style="background: url(<?php echo THEME_URI; ?>/assets/images/project-slide-img-01.png);">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="hmProTabSlideItemCon-hover">
-                    <div class="hmProTabSlideItemCon-hover-inr">
-                      <strong>Baseline Survey of Urban Climate
-                      Change Resiliency</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <?php endwhile; ?>
             </div>
+            <?php endif;  wp_reset_postdata(); ?>
           </div>
         </div>
-        <div id="tab-2" class="fl-tab-content">
-          <div class="hm-projects-tab-con">
-            <div class="hm-project-tab-short-des">
-              <p>We are currently working with the  world renowned agencies. So far have completed several projects given by them.
-              our dedicated and profesional team members are the key of our success 2</p>
-            </div>
-            <div class="hm-project-tab-slider hmProTabSlider">
-              <div class="hmProTabSlideItem">
-                <div class="hmProTabSlideItemCon">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/project-slide-img-01.png">
-                </div>
-              </div>
-              <div class="hmProTabSlideItem">
-                <div class="hmProTabSlideItemCon">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/project-slide-img-02.png">
-                </div>
-              </div>
-              <div class="hmProTabSlideItem">
-                <div class="hmProTabSlideItemCon">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/project-slide-img-03.png">
-                </div>
-              </div>
-              <div class="hmProTabSlideItem">
-                <div class="hmProTabSlideItemCon">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/project-slide-img-01.png">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> 
+        <?php $i++; } ?>
       </div>
     </div>
   </div>    
-</section>  
+</section> 
+<?php } ?> 
 </div>
 
 <?php 

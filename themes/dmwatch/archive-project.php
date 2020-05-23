@@ -1,6 +1,6 @@
 <?php
 get_header(); 
-$thisID = 306;
+$thisID = 52;
 
 $pageTitle = get_the_title($thisID);
 $custom_page_title = get_field('custom_page_title', $thisID);
@@ -85,7 +85,7 @@ $description = get_field('description', $thisID);
             </li>
             <li>
               <div class="filter-btn-cntlr">
-                <div class="filter-btn"><button><span>REGION</span></button></div>
+                <div class="filter-btn"><button type="button"><span>REGION</span></button></div>
                 <div class="filter-btn-dorpdown">
                   <div class="filter-btn-dorpdown-item">
                     <div class="filter-check-row clearfix">
@@ -106,7 +106,7 @@ $description = get_field('description', $thisID);
             </li>
             <li>
               <div class="filter-btn-cntlr filter-btn-year-cntlr">
-                <div class="filter-btn"><button><span>YEAR</span></button></div>
+                <div class="filter-btn"><button type="button"><span>YEAR</span></button></div>
                 <div class="filter-btn-dorpdown">
                   <div class="filter-btn-dorpdown-item">
                     <div class="filter-check-row clearfix">
@@ -137,6 +137,11 @@ $description = get_field('description', $thisID);
 </section>
 <?php 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+
+if ( isset($_GET['']) ){
+
+}
 $query = new WP_Query(array( 
     'post_type'=> 'project',
     'post_status' => 'publish',
