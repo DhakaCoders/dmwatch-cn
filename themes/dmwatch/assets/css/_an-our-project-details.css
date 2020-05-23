@@ -199,7 +199,21 @@ dm-project-info-sec-wrp
 .dm-vacancy-grid-dsc a:hover{
 	color: #0d3a24;
 }
-
+.dm-thumb-images{
+	margin: 0 -5px;
+}
+.dm-thumb-img{
+	float: left;
+	width: 25%;
+	padding: 0 5px;
+}
+.dm-thumb-img > div,
+.dm-project-info-lft-img{
+	cursor: pointer;
+}
+.dm-thumb-images{
+	padding: 0 15px 0 5px;
+}
 /*
 ----------------------
  Responsive Css
