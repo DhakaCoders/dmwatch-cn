@@ -148,8 +148,8 @@
 	padding-right: 3px;
 	padding-bottom: 0;
 }
-.dm-blog-pagi-ctlr ul li a.page-number,
-.dm-blog-pagi-ctlr ul li span.page-number{
+.dm-blog-pagi-ctlr ul li a.page-numbers,
+.dm-blog-pagi-ctlr ul li span.page-numbers{
 	display: inline-block;
 	height: 28px;
 	width: 28px;
@@ -167,7 +167,7 @@
     font-size: 14px;
     font-weight: 600;
 }
-.dm-blog-pagi-ctlr ul li a.page-number:hover{
+.dm-blog-pagi-ctlr ul li a.page-numbers:hover{
 	background: #88BE43;
 }
 
