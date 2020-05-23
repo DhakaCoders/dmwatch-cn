@@ -12,6 +12,8 @@ if(!empty(str_replace(' ', '', $custom_page_title))){
 
 $standaardbanner = get_field('bannerimage', $thisID);
 if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr-participate-with-us.jpg';
+
+$bcontent = get_field('bcontent', $thisID);
 ?>
 <section class="page-banner page-bnr-lft-con page-bnr-participate-with-us" style="overflow: hidden;">
   <div class="page-banner-controller">
@@ -21,7 +23,7 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
       <div class="page-banner-inr">
         <div>
           <h1 class="page-banner-title"><?php echo $pageTitle; ?></h1>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          <?php if( !empty($bcontent) ): if( !empty($bcontent['description']) ) echo wpautop( $bcontent['description'] ); endif; ?>
         </div>
       </div>
     </div>
@@ -30,108 +32,24 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
 
 
 
-
+<?php 
+$intro = get_field('introsec', $thisID); 
+if( $intro ):
+?>
 <section class="dm-us-contact-form-sec">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <div class="dm-us-contact-form-cntrl">
           <div class="dm-contact-form-head">
-            <h2 class="dm-contact-form-head-title">JOIN WITH US</h2>
-            <p>JOIN US TO INSPIRE US, TO TEACH US, TO GROW WITH US.</p>
+          <?php 
+            if( !empty($intro['title']) ) printf('<h2 class="dm-contact-form-head-title">%s</h2>', $intro['title'] );
+            if(!empty($intro['description'])) echo wpautop( $intro['description'] ); 
+          ?>
           </div>
           <div class="dm-us-contact-form-wrp clearfix">
             <div class="wpforms-container">
-              <form class="wpforms-form">
-                
-                <div class="wpforms-field-container">
-                  
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">NAME</label>
-                    <input type="text" name="name" placeholder="Your full name" required>
-                  </div>
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">PHONE NUMBER</label>
-                    <input type="text" name="name" placeholder="Phone Number" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">EMAIL</label>
-                    <input type="email" name="email" placeholder="Email adress" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">DATE OF BIRTH</label>
-                    <input type="date" name="text" placeholder="DD/MM/YY" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">NID NUMBER</label>
-                    <input type="text" name="text" placeholder="****************" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">PERMANENT ADDRESS</label>
-                    <input type="email" name="email" placeholder="Permanent Address" class="form-control" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">PRESENT ADDRESS</label>
-                    <input type="text" name="text" placeholder="Present Address" required>
-                  </div>
-
-                  <div class="wpforms-field wpforms-field-select">
-                    <label class="wpforms-field-label" for="select1">INTERESTED FOR THE POSITION OF</label>
-                    <select id="select1" name="select1">
-                      <option value="First Choice">[Please Select-]</option>
-                      <option value="Second Choice">Selecteer hier</option>
-                      <option value="Third Choice">Selecteer hier</option>
-                    </select>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">LAST DEGREE NAME</label>
-                    <input type="text" name="text" placeholder="Degree Name" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">LAST EDUCATIONAL INSTITUTE NAME</label>
-                    <input type="text" name="text" placeholder="Educational Institute Name" class="form-control" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">LIST OF PUBLICATIONS (IF ANY)</label>
-                    <input type="text" name="text" placeholder="Name Of Publication" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">AREA OF EXPERTISE</label>
-                    <input type="text" name="text" placeholder="Year" class="form-control" required>
-                  </div>
-
-                  <div class="wpforms-field wpforms-field-checkbox">
-                    <ul class="reset-list clearfix">
-                      <li class="wpforms-selected">
-                        <label class="container">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-
-
-                </div><!-- end of .wpforms-field-container-->
-
-                <div class="wpforms-submit-container">
-                  <button type="submit" name="submit" class="wpforms-submit">SUBMITE</button>
-                </div>
-
-                <div class="dm-member-msg">
-                  <span>I’m already a member</span>
-                </div>
-
-              </form>
+              <?php if(!empty($intro['formshortcode'])) echo do_shortcode( $intro['formshortcode'] ); ?>
             </div>
           </div>
         </div>
@@ -139,7 +57,7 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
     </div>
   </div>
 </section>
-
+<?php endif; ?>
 <?php 
 get_template_part('templates/footer', 'top');
 get_footer(); 
