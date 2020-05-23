@@ -174,7 +174,8 @@ ol.reset-list,
 ul.sub-menu,
 .fl-pagi-pagi-ctlr ul,
 .bio-experience ul,
-.dm-blog-pagi-ctlr ul{
+.dm-blog-pagi-ctlr ul,
+ul.wpforms-field-required{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -183,7 +184,8 @@ ul.sub-menu,
 ul.sub-menu li,
 .fl-pagi-pagi-ctlr ul li,
 .bio-experience ul li,
-.dm-blog-pagi-ctlr ul li{
+.dm-blog-pagi-ctlr ul li,
+ul.wpforms-field-required li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -193,7 +195,8 @@ ul.sub-menu li,
 ul.sub-menu li:before,
 .fl-pagi-pagi-ctlr ul li:before,
 .bio-experience ul li:before,
-.dm-blog-pagi-ctlr ul li:before{
+.dm-blog-pagi-ctlr ul li:before,
+ul.wpforms-field-required li:before{
 	content: none!important;
 }
 
