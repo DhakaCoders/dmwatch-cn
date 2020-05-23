@@ -80,11 +80,6 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
                     <input type="text" name="text" placeholder="Present Address" required>
                   </div>
 
-                  <!-- <div class="wpforms-field">
-                    <label class="wpforms-field-label">INTERESTED FOR THE POSITION OF</label>
-                    <input type="text" name="text" placeholder="[Please Select-]" class="form-control" required>
-                  </div> -->
-
                   <div class="wpforms-field wpforms-field-select">
                     <label class="wpforms-field-label" for="select1">INTERESTED FOR THE POSITION OF</label>
                     <select id="select1" name="select1">
