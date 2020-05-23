@@ -332,6 +332,11 @@ dm-project-info-sec-wrp
 		max-width: 730px;
 		width: 100%;
 	}
+	.dm-thumb-images{
+		max-width: 680px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media(max-width: 767px){
