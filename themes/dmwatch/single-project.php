@@ -7,6 +7,7 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
 
 $thisID = get_the_ID();
 $details = get_field('description', $thisID);
+
 $client = get_field('clientinfo', $thisID);
 ?>
 
@@ -32,7 +33,7 @@ $client = get_field('clientinfo', $thisID);
 
 </section><!-- end of page-banner -->
 
-
+<?php $intro = get_field('introsec', $thisID); ?>
 <section class="dm-project-info-sec-wrp">
     <div class="container">
       <div class="row">
@@ -40,9 +41,32 @@ $client = get_field('clientinfo', $thisID);
           <div class="dm-project-info-wrp">
             <div class="dm-project-info-inr clearfix">
               <div class="dm-project-info-lft">
+
+                <?php if( $intro ): ?>
                 <div class="dm-project-info-lft-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/dm-project-info-lft-img.png">
+                <?php if( !empty($intro['image']) ): ?>
+                <div class="dm-project-info-lft-img" data-fancybox="gallery" href="<?php echo cbv_get_image_src( $intro['image'] ); ?>">
+                  <?php echo cbv_get_image_tag( $intro['image'], 'projectsingle' ); ?>
                 </div>
+                <?php endif; ?>
+                <?php
+                $galleries = $intro['gallery']; 
+                if($galleries): 
+                ?>
+                <div class="dm-thumb-images clearfix">
+                  <?php foreach( $galleries as $gallery ): ?>
+                  <div class="dm-thumb-img">
+                    <?php if( !empty($gallery['id']) ): ?>
+                    <div data-fancybox="gallery" href="<?php echo cbv_get_image_src( $gallery['id'] ); ?>">
+                      <?php echo cbv_get_image_tag( $gallery['id'], 'projectthumb' ); ?>
+                    </div>
+                    <?php endif; ?>
+                  </div>
+                  <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
+                </div>
+                <?php endif; ?>
               </div>
               <div class="dm-project-info-rgt-dsc">
                 <h2 class="dm-info-dsc-title">PROJECT INFORMATION</h2>
