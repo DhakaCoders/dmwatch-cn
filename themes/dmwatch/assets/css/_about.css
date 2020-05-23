@@ -147,7 +147,9 @@
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
-
+.dm-about-value-sec-inr ul li p{
+	font-size: 16px;
+}
 @media(max-width: 1399px){
 	.dm-vision-mision-grd-sec-inr ul {
 	    margin: 0 -40px;
@@ -211,7 +213,9 @@
 	.dm-about-value-sec-inr ul li:after{
 		top: 6px;
 	}
-
+	.dm-about-value-sec-inr ul li p {
+	    font-size: 15.5px;
+	}
 }
 
 @media(max-width: 991px){
@@ -332,6 +336,10 @@
 }
 
 @media(max-width: 575px){
+	.dm-about-value-sec-inr ul{
+		max-width: 100%;
+		padding-top: 20px;
+	}
 	.dm-about-sec {
 	    margin-top: 20px;
 	    padding-bottom: 50px;
@@ -412,9 +420,6 @@
 	.dm-about-value-title {
 	    font-size: 26px;
 	    margin-bottom: 20px;
-	}
-	.dm-about-value-sec-inr ul li {
-	    font-size: 18px;
 	}
 	.dm-about-value-sec-inr ul li:after {
 	    background-size: 15px 15px;
