@@ -207,7 +207,8 @@ dm-project-info-sec-wrp
 	width: 25%;
 	padding: 0 5px;
 }
-.dm-thumb-img > div{
+.dm-thumb-img > div,
+.dm-project-info-lft-img{
 	cursor: pointer;
 }
 .dm-thumb-images{
