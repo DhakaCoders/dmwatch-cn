@@ -38,8 +38,8 @@
               <div class="hdr-topbar text-right">
                 <div>
                   <div class="hdr-search">
-                    <form>
-                        <input type="search" name="" placeholder="http://www.">
+                    <form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" >
+                        <input type="search" value="<?php echo get_search_query(); ?>" name="s" placeholder="http://www.">
                         <button><i class="fas fa-search"></i></button>
                     </form>
                   </div>

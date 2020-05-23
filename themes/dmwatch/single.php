@@ -50,8 +50,8 @@ while ( have_posts() ) :
               <div class="dm-bd-grd-search-sec-inr">
                 <span>Search</span>
                 <div class="hdr-search">
-                  <form>
-                      <input type="search" name="" placeholder="Enter Search Keyword...">
+                  <form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" >
+                        <input type="search" value="<?php echo get_search_query(); ?>" name="s" placeholder="Enter Search Keyword...">
                       <button><i class="fas fa-search"></i></button>
                   </form>
                 </div>

@@ -1,6 +1,6 @@
 <?php 
 get_header(); 
-$thisID = get_the_ID();
+$thisID = get_option( 'page_for_posts' );
 $standaardbanner = get_field('bannerimage', $thisID);
 if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/cln-banner-sec.jpg';
 ?>

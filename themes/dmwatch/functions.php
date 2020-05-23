@@ -164,6 +164,26 @@ function get_all_gallery_posts( $query ) {
     }
 add_action( 'pre_get_posts', 'get_all_gallery_posts' );
 
+function wds_cpt_search( $query ) {
+ 
+    // If we're on the search page, working with the main query, and someone searched for something...
+    if ( is_search() && $query->is_main_query() && $query->get( 's' ) ) {
+ 
+        // Add the CPT's to include in search.    
+        $query->set( 'post_type', array( 
+            'post', 
+            'page', 
+            'project',
+            'teams',
+            'management',
+            'vacancy',
+            'advisor'
+        ) );
+    }
+}
+add_action( 'pre_get_posts', 'wds_cpt_search' );
+
+
 /**
 ACF - Custom rule for WOO attribues
 */

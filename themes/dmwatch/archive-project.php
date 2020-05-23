@@ -29,7 +29,43 @@ $description = get_field('description', $thisID);
   </div>
 </section><!-- end of page-banner -->
 
+<?php 
+  $pyears = $pstatus = $pclient = $pregion = '';
+  $taxs = array();
+  if ( isset($_GET['status']) && !empty($_GET['status'])){
+    $taxs[] = array(
+      'taxonomy' => 'practice_area',
+      'field' => 'slug',
+      'terms' => $_GET['status']
+    );
+    $pstatus = $_GET['status'];
+  }
+  if ( isset($_GET['client']) && !empty($_GET['client'])){
+    $taxs[] = array(
+      'taxonomy' => 'client',
+      'field' => 'slug',
+      'terms' => $_GET['client']
+    );
+    $pclient = $_GET['client'];
+  } 
+  if ( isset($_GET['region']) && !empty($_GET['region'])){
+    $taxs[] = array(
+      'taxonomy' => 'region',
+      'field' => 'slug',
+      'terms' => $_GET['region']
+    );
+    $pregion = $_GET['region'];
+  } 
 
+  if ( isset($_GET['years']) && !empty($_GET['years'])){
+    $taxs[] = array(
+      'taxonomy' => 'years',
+      'field' => 'slug',
+      'terms' => $_GET['years']
+    );
+    $pyears = $_GET['years'];
+  }
+?>
 <section class="our-project-filter-hdr-sec">
   <div class="container">
     <div class="row">
@@ -39,90 +75,105 @@ $description = get_field('description', $thisID);
         </div>
         <div class="our-project-filter-btns">
           <form action="" method="get">
+            <?php 
+            $aareas = get_terms( array(
+              'taxonomy' => 'practice_area',
+              'hide_empty' => false,
+              'parent' => 0
+            ) );
+            ?>
           <ul class="reset-list clearfix">
             <li>
               <div class="filter-btn-cntlr">
                 <div class="filter-btn"><button type="button"><span>PRACTICE AREA</span></button></div>
+                <?php if ( ! empty( $aareas ) && ! is_wp_error( $aareas ) ){  ?>
                 <div class="filter-btn-dorpdown">
+                  <?php $i = 1; foreach ( $aareas as $aarea ) { ?>
                   <div class="filter-btn-dorpdown-item">
                     <div class="filter-check-row clearfix">
-                      <input type="checkbox" id="pa1" name="show_ongoing_project" value="YES">
+                      <input type="checkbox" id="pa<?php echo $i; ?>" <?php echo ( $pstatus == $aarea->slug )? 'checked': ''; ?> name="status" value="<?php echo $aarea->slug; ?>">
                       <span class="checkmark"></span> 
-                      <label for="pa1"> SHOW ONGOING PROJECTS</label> 
+                      <label for="pa<?php echo $i; ?>"> SHOW <?php echo $aarea->name; ?></label> 
                     </div>
                   </div>
-                  <div class="filter-btn-dorpdown-item">
-                    <div class="filter-check-row clearfix">
-                      <input type="checkbox" id="pa2" name="show_completed_project" value="YES">
-                      <span class="checkmark"></span> 
-                      <label for="pa2"> SHOW COMPLETED PROJECTS</label> 
-                    </div>
-                  </div>
-
+                  <?php $i++; } ?>
                 </div>
+                <?php } ?>
               </div>
             </li>
+            <?php 
+            $clients = get_terms( array(
+              'taxonomy' => 'client',
+              'hide_empty' => false,
+              'parent' => 0
+            ) );
+            ?>
             <li>
               <div class="filter-btn-cntlr">
                 <div class="filter-btn"><button type="button"><span>CLIENT</span></button></div>
+                <?php if ( ! empty( $clients ) && ! is_wp_error( $clients ) ){  ?>
                 <div class="filter-btn-dorpdown">
+                  <?php $i = 10; foreach ( $clients as $client ) { ?>
                   <div class="filter-btn-dorpdown-item">
                     <div class="filter-check-row clearfix">
-                      <input type="checkbox" id="pa3" name="show_client_project" value="YES">
+                      <input type="checkbox" id="pa<?php echo $i; ?>" <?php echo ( $pclient == $client->slug )? 'checked': ''; ?> name="client" value="<?php echo $client->slug; ?>">
                       <span class="checkmark"></span> 
-                      <label for="pa3"> SHOW CLIENT PROJECTS</label> 
+                      <label for="pa<?php echo $i; ?>"> SHOW <?php echo $client->name; ?></label> 
                     </div>
                   </div>
-                  <div class="filter-btn-dorpdown-item">
-                    <div class="filter-check-row clearfix">
-                      <input type="checkbox" id="pa4" name="show_client_c_project" value="YES">
-                      <span class="checkmark"></span> 
-                      <label for="pa4"> SHOW CLIENT COMPLETED PROJECTS</label> 
-                    </div>
-                  </div>
+                  <?php $i++; } ?>
                 </div>
+                <?php } ?>
               </div>
             </li>
+            <?php 
+            $regions = get_terms( array(
+              'taxonomy' => 'region',
+              'hide_empty' => false,
+              'parent' => 0
+            ) );
+            ?>
             <li>
               <div class="filter-btn-cntlr">
                 <div class="filter-btn"><button type="button"><span>REGION</span></button></div>
+                <?php if ( ! empty( $regions ) && ! is_wp_error( $regions ) ){  ?>
                 <div class="filter-btn-dorpdown">
+                  <?php $i = 20; foreach ( $regions as $region ) { ?>
                   <div class="filter-btn-dorpdown-item">
                     <div class="filter-check-row clearfix">
-                      <input type="checkbox" id="pa5" name="show_regoing_project" value="YES">
+                      <input type="checkbox" id="pa<?php echo $i; ?>" <?php echo ( $pregion == $region->slug )? 'checked': ''; ?> name="region" value="<?php echo $region->slug; ?>">
                       <span class="checkmark"></span> 
-                      <label for="pa5"> SHOW REGION PROJECTS</label> 
+                      <label for="pa<?php echo $i; ?>"> SHOW <?php echo $region->name; ?></label> 
                     </div>
                   </div>
-                  <div class="filter-btn-dorpdown-item">
-                    <div class="filter-check-row clearfix">
-                      <input type="checkbox" id="pa6" name="show_regoing_project_2" value="YES">
-                      <span class="checkmark"></span> 
-                      <label for="pa6"> SHOW REGION PROJECTS</label> 
-                    </div>
-                  </div>
+                  <?php $i++; } ?>
                 </div>
+                <?php } ?>
               </div>
             </li>
+            <?php 
+            $years = get_terms( array(
+              'taxonomy' => 'years',
+              'hide_empty' => false,
+              'parent' => 0
+            ) );
+            ?>
             <li>
               <div class="filter-btn-cntlr filter-btn-year-cntlr">
                 <div class="filter-btn"><button type="button"><span>YEAR</span></button></div>
+                <?php if ( ! empty( $years ) && ! is_wp_error( $years ) ){  ?>
                 <div class="filter-btn-dorpdown">
+                  <?php $i = 40; foreach ( $years as $year ) { ?>
                   <div class="filter-btn-dorpdown-item">
                     <div class="filter-check-row clearfix">
-                      <input type="checkbox" id="pa7" name="year_1" value="YES">
+                      <input type="checkbox" id="pa<?php echo $i; ?>" <?php echo ( $pyears == $year->slug )? 'checked': ''; ?> name="years" value="<?php echo $year->slug; ?>">
                       <span class="checkmark"></span> 
-                      <label for="pa7">2019</label> 
+                      <label for="pa<?php echo $i; ?>"><?php echo $year->name; ?></label> 
                     </div>
                   </div>
-                  <div class="filter-btn-dorpdown-item">
-                    <div class="filter-check-row clearfix">
-                      <input type="checkbox" id="pa8" name="year_2" value="YES">
-                      <span class="checkmark"></span> 
-                      <label for="pa8">2020</label> 
-                    </div>
-                  </div>
+                  <?php $i++; } ?>
                 </div>
+                <?php } ?>
               </div>
             </li>
           </ul>
@@ -138,9 +189,16 @@ $description = get_field('description', $thisID);
 <?php 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-
-if ( isset($_GET['']) ){
-
+$taxquery = '';
+if( $taxs ){
+  if(count($taxs) > 1){
+    $taxquery = array(
+    'relation' => 'AND',
+    $taxs
+    );
+  } else{
+    $taxquery = array($taxs);
+  }
 }
 $query = new WP_Query(array( 
     'post_type'=> 'project',
@@ -148,7 +206,9 @@ $query = new WP_Query(array(
     'posts_per_page' => 3,
     'paged' => $paged,
     'orderby' => 'date',
-    'order'=> 'ASC'
+    'order'=> 'ASC',
+    'tax_query' => $taxquery
+
   ) 
 );
 if($query->have_posts()):
@@ -157,9 +217,11 @@ if($query->have_posts()):
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <?php if( !empty($taxquery) ): ?>
         <div class="filter-results-sec-hdr">
           <h3 class="filter-results-sec-hdr-title">FILTER RESULT</h3>
         </div>
+        <?php endif; ?>
       </div>
       <div class="col-md-12">
         <div class="filter-results-grd-cntlr">
