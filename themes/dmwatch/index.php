@@ -1,18 +1,26 @@
 <?php 
 get_header(); 
-$thisID = get_the_ID();
+$thisID = get_option( 'page_for_posts' );
 $standaardbanner = get_field('bannerimage', $thisID);
-if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/cln-banner-sec.jpg';
+if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr-blog.jpg';
+
+
+$pageTitle = get_the_title($thisID);
+$custom_page_title = get_field('custom_page_title', $thisID);
+if(!empty(str_replace(' ', '', $custom_page_title))){
+  $pageTitle = $custom_page_title;
+}
+$bcontent = get_field('bcontent', $thisID);
 ?>
 <section class="page-banner page-bnr-lft-con page-bnr-blog" style="overflow: hidden;">
   <div class="page-banner-controller">
-    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-bnr-blog.jpg);">
+    <div class="page-banner-bg" style="background-image:url(<?php echo $standaardbanner; ?>);">
     </div>
     <div class="page-banner-des">
       <div class="page-banner-inr">
         <div>
-          <h1 class="page-banner-title">BLOG</h1>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+          <h1 class="page-banner-title"><?php echo $pageTitle; ?></h1>
+          <?php if( !empty($bcontent) ) echo wpautop( $bcontent ); ?>
         </div>
       </div>
     </div>

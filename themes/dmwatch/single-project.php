@@ -1,35 +1,38 @@
 <?php
 get_header();
 
-$pageID = 306;
-$standaardbanner = get_field('bannerimage', $pageID);
-if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr-our-management-bio.jpg';
-
 $thisID = get_the_ID();
+$standaardbanner = get_field('bannerimage', $thisID);
+if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr-an-our-project-details.jpg';
+
+
 $details = get_field('description', $thisID);
 
 $client = get_field('clientinfo', $thisID);
+
+$banner = get_field('bannercont', $thisID);
 ?>
 
 <section class="page-banner page-bnr-lft-con page-bnr-an-our-project-details" style="overflow: hidden;">
-  <div class="page-bnr-btm-logo">
-    <img src="<?php echo THEME_URI; ?>/assets/images/page-bnr-btm-logo-01.png">
-  </div>
   <div class="page-banner-controller">
     <div class="page-banner-bg" style="background-image:url(<?php echo $standaardbanner; ?>);">
     </div>
     <div class="page-banner-des">
       <div class="page-banner-inr">
         <div>
-          <h1 class="page-banner-title">LOREM IPSUM</h1>
-          <p>LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY. LOREM IPSUM HAS BEEN <br>THE INDUSTRY'S STANDARD DUMMY TEXT EVER SINCE THE 1500S, WHEN AN UNKNOWN PRINTER TOOK A GALLEY <br>OF TYPE AND SCRAMBLED IT TO MAKE A TYPE SPECIMEN BOOK.</p>
+          <?php 
+            if( !empty($banner['title']) ) printf('<h1 class="page-banner-title">%s</h1>', $banner['title'] );
+            if(!empty($banner['description'])) echo wpautop( $banner['description'] ); 
+          ?>
         </div>
       </div>
     </div>
   </div>
+  <?php if(!empty( $banner['logo'] )): ?>
   <div class="page-bnr-btm-logo">
-    <img src="<?php echo THEME_URI; ?>/assets/images/page-bnr-btm-logo-02.png">
+    <?php echo cbv_get_image_tag( $banner['logo'] ); ?>
   </div>
+  <?php endif; ?>
 
 </section><!-- end of page-banner -->
 

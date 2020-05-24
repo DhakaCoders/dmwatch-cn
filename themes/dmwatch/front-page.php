@@ -256,7 +256,9 @@
   $terms = get_terms( array(
     'taxonomy' => 'practice_area',
     'hide_empty' => false,
-    'parent' => 0
+    'parent' => 0,
+    'orderby'  => 'term_order',
+    'order'    => 'ASC'
 ) );
   if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){ 
 ?>

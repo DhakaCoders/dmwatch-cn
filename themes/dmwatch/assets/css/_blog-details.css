@@ -50,8 +50,11 @@
 	padding-bottom: 45px;
 	padding-right: 190px;
 }
-
-.dm-bd-grd-item-des p strong{
+.dm-page-grd-item-des{
+	padding-bottom: 45px;
+}
+.dm-bd-grd-item-des p strong,
+.dm-page-grd-item-des p strong{
 	display: block;
 	font-size: 25px;
 	line-height: 1;
@@ -59,7 +62,8 @@
 	color: #424242;
 	padding-top: 30px;
 }
-.dm-bd-grd-item-des p{
+.dm-bd-grd-item-des p,
+.dm-page-grd-item-des p{
 	font-size: 22px;
 	color: #424242;
 	line-height: 1.5;

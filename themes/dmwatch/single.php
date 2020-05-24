@@ -9,10 +9,14 @@ while ( have_posts() ) :
          $term_name = ' | '.$category->name; 
       }
   }
+
+$thisID = get_option( 'page_for_posts' );
+$standaardbanner = get_field('bannerimage', $thisID);
+if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr-blog-details.jpg';
 ?>
 <section class="page-banner page-bnr-blog-details" style="overflow: hidden;">
   <div class="page-banner-controller">
-    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-bnr-blog-details.jpg);">
+    <div class="page-banner-bg" style="background-image:url(<?php echo $standaardbanner; ?>);">
     </div>
     <div class="page-banner-des">
       <div class="page-banner-inr">

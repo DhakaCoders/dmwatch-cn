@@ -13,7 +13,7 @@
   }else{
     $logo_tag = '';
   }
-  $smedias = get_field('sociale_media', 'options');
+  $sinfo = get_field('sociale_media', 'options');
   $ftdescription = get_field('ftdescription', 'options');
   $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
   $copyright_text = get_field('copyright_text', 'options');
@@ -60,13 +60,22 @@
           <div class="ftr-facebook">
             <div class="ftr-facebook-inr">
               <div class="ftr-cnt-socials-media">
+                <?php if( !empty($sinfo) ): ?>
                 <ul class="reset-list">
-                  <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/instagram.png"></a></li>
-                  <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/facebook.png"></a></li>
-                  <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/whatsapp.png"></a></li>
-                  <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/twitter.png"></a></li>
-                  <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/linkedin.png"></a></li>
+                  <?php if( !empty($sinfo['linkedin_url']) ): ?>
+                  <li><a href="<?php echo $sinfo['linkedin_url']; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/instagram.png"></a></li>
+                  <?php endif; ?>
+                  <?php if( !empty($sinfo['facebook_url']) ): ?>
+                  <li><a href="<?php echo $sinfo['facebook_url']; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/facebook.png"></a></li>
+                  <?php endif; ?>
+                  <?php if( !empty($sinfo['twitter_url']) ): ?>
+                  <li><a href="<?php echo $sinfo['twitter_url']; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/twitter.png"></a></li>
+                  <?php endif; ?>
+                  <?php if( !empty($sinfo['instagram_url']) ): ?>
+                  <li><a href="<?php echo $sinfo['instagram_url']; ?>"><img src="<?php echo THEME_URI; ?>/assets/images/linkedin.png"></a></li>
+                  <?php endif; ?>
                 </ul>
+                <?php endif; ?>
               </div>
               <div class="ftr-fb-area">
                 <img src="<?php echo THEME_URI; ?>/assets/images/facebook-img.jpg">

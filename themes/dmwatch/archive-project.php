@@ -12,7 +12,7 @@ $standaardbanner = get_field('bannerimage', $thisID);
 if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr-our-project.jpg';
 
 
-$description = get_field('description', $thisID);
+$bcontent = get_field('bcontent', $thisID);
 ?>
 <section class="page-banner page-bnr-lft-con page-bnr-our-project" style="overflow: hidden;">
   <div class="page-banner-controller">
@@ -22,7 +22,7 @@ $description = get_field('description', $thisID);
       <div class="page-banner-inr">
         <div>
           <h1 class="page-banner-title"><?php echo $pageTitle; ?></h1>
-          <p>Water, sanitation and hygiene are at the very core of sustainable development, crucial for survival of people and the planet. Water scarcity affects more than 40 percent of people around the world, which is projected to increase <a href="#">Continue Reading.</a></p>
+          <?php if( !empty($bcontent) ) echo wpautop( $bcontent ); ?>
         </div>
       </div>
     </div>
