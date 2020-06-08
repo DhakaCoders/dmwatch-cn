@@ -21,6 +21,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     /*font-family: 'FranklinGothic-Book';*/
+    /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
@@ -320,28 +321,45 @@ form .dropdown-menu li a{
 .dropdown-menu.show{
 	width: 100%;
 }
+/*button*/
+.fl-see-all-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #88BC41;
+    border: 1px solid #88BC41;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+    color: #fff;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(189,191,190,1);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(189,191,190,1);
+    box-shadow: 2px 2px 4px 0px rgba(189,191,190,1);
+    width: 80px;
+    height: 26px;
+    padding: 2px;
+    border-radius: 3px;
+    margin-left: auto; 
+}
+
+.fl-see-all-btn a:hover {
+    background: transparent;
+    color: #88BC41;
+}
+
 
 
 /* slider break*/
 .mainSlider .mainSLideItem,
-.hmPracticeAreaSlider .hmPracticeAreaSlideItem,
-.hmFeaServicesSlider .hmFeaServicesSlideItem,
-.clientsPartnersLogosSlider .clientsPartnersLogosSlideItem,
 .hmProTabSlider .hmProTabSlideItem{
 	display: none;
 }
 .mainSlider .mainSLideItem:first-child,
-.hmPracticeAreaSlider .hmPracticeAreaSlideItem:first-child,
-.hmFeaServicesSlider .hmFeaServicesSlideItem:first-child,
-.clientsPartnersLogosSlider .clientsPartnersLogosSlideItem:first-child,
 .hmProTabSlider .hmProTabSlideItem:first-child{
 	display: block;
 }
 
 .mainSlider.slick-initialized .mainSLideItem,
-.hmPracticeAreaSlider.slick-initialized .hmPracticeAreaSlideItem,
-.hmFeaServicesSlider.slick-initialized .hmFeaServicesSlideItem,
-.clientsPartnersLogosSlider.slick-initialized .clientsPartnersLogosSlideItem,
 .hmProTabSlider.slick-initialized .hmProTabSlideItem{
 	display: block;
 }
