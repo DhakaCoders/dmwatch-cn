@@ -143,6 +143,9 @@
 }
 .hmPracticeAreaSlider{
 	margin: 0 -12px!important;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .hmPracticeAreaSlideItem{
@@ -211,10 +214,14 @@
 }
 .hmFeaServicesSlider{
 	margin: 0 -10px!important;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .hmFeaServicesSlideItem{
 	padding: 0 10px;
 }
+
 .hm-fea-service-item-img img{
 	display: inline-block;
 	vertical-align: baseline;
@@ -226,6 +233,22 @@
 	font-size: 17px;
 	line-height: 1.2;
 }
+.hmFeaServicesModal-hdr{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.hmFeaServicesModal .info-popup-cntlr-inr{
+	padding: 60px 20px 35px 20px;
+}
+
+.hmFeaServicesModal .hmFeaServicesSlideItem{
+	width: 25%;
+}
+.dm-modal-con-wrap.hmFeaServicesModal .modal-dialog{
+	max-width: 1200px;
+}
+
 
 .hm-counter-sec{
 	background: url(../images/hm-counter-sec-bg.jpg);
@@ -389,6 +412,11 @@ box-shadow: 3px 3px 6px 0px rgba(155,155,155,1);
 
 .hm-clients-partners-sec-hdr p {
     font-size: 19px;
+}
+.clientsPartnersLogosSlider{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .clientsPartnersLogosSlideItem{

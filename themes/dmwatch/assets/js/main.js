@@ -5,7 +5,7 @@ var CustomMapStyles  = [{"featureType":"all","elementType":"all","stylers":[{"vi
 
 var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
-	$('#mobile-nav').slideToggle(300);
+  $('#mobile-nav').slideToggle(300);
 });
 
 $(window).scroll(function(){
@@ -221,83 +221,6 @@ if( $('.mainSlider').length ){
     });
 }
 
-
-if( $('.hmPracticeAreaSlider').length ){
-    $('.hmPracticeAreaSlider').slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-      dots: true,
-      infinite: true,
-      arrows: false,
-      speed: 700,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-}
-
-
-if( $('.hmFeaServicesSlider').length ){
-    $('.hmFeaServicesSlider').slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-      dots: true,
-      infinite: true,
-      arrows: false,
-      speed: 700,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-}
-
-
 if( $('.hmProTabSlider').length ){
     $('.hmProTabSlider').slick({
       autoplay: true,
@@ -328,47 +251,7 @@ if( $('.hmProTabSlider').length ){
     });
 }
 
-if( $('.clientsPartnersLogosSlider').length ){
-    $('.clientsPartnersLogosSlider').slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-      dots: true,
-      infinite: true,
-      arrows: false,
-      speed: 700,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 4,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 2,
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-}
+
 
 
 if( $('.fl-tabs').length ){
