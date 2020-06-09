@@ -1,5 +1,69 @@
+
+.tp-banner{
+	margin-bottom: 0;
+	position: relative;
+}
+
+.tp-banner .page-banner-des{
+	padding-top: 380px;
+	align-items: normal;
+}
+.tp-banner-title{
+	display: block;
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+.tp-banner-des p{
+	font-size: 22px;
+	line-height: 35px;
+	padding-top: 0;
+	text-align: center;
+}
+
+.tp-bmp-wash{
+	position: absolute;
+	top: 72%;
+    left: 23%;
+	transform: translate(-50%,-50%);
+	z-index: 33;
+}
+.tp-bmp-udm{
+	position: absolute;
+	top: 72%;
+	left: 77%;
+	transform: translate(-50%,-50%);
+	z-index: 33;
+}
+.tp-bmp-environment{
+	position: absolute;
+	top: 45%;
+    left: 37%;
+	transform: translate(-50%,-50%);
+	z-index: 33;
+}
+.tp-bmp-anr{
+	position: absolute;
+	top: 45%;
+    left: 64%;
+	transform: translate(-50%,-50%);
+	z-index: 33;
+}
+.tp-bmp-ph{
+	position: absolute;
+	top: 17%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 33;
+}
+
 .dm-tp-entry-hdr{
-	padding: 90px 0 45px;
+	padding: 80px 0 50px;
 }
 
 .dm-tp-entry-hdr-inr p{
@@ -78,7 +142,7 @@
 }
 
 .dm-tp-fancybox-sec{
-	padding: 60px 0 80px;
+	padding: 60px 0 85px;
 	background: #F5F7F7;
 	margin-bottom: 90px;
 }
@@ -112,7 +176,7 @@
 .dm-tp-report-sec{
 	padding: 60px 0 30px;
 	background: #F5F7F7;
-	margin-bottom: 100px;
+	margin-bottom: 105px;
 }
 .dm-tp-report-title{
 	display: block;
@@ -142,7 +206,7 @@
 
 
 .dm-tp-useful-sec{
-	padding: 50px 0 40px;
+	padding: 50px 0 50px;
 	background: #93C64A;
 }
 .dm-tp-useful-sec-inr > ul{
@@ -185,7 +249,7 @@
 }
 
 .dm-tp-des-sec{
-	padding: 60px 0 40px;
+	padding: 60px 0 45px;
 }
 
 .dm-tp-des-title{
