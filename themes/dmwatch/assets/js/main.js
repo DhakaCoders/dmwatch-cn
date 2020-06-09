@@ -154,6 +154,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 }
 
+
+/*Shariful*/
+
+$('[data-fancybox="gallery"]').fancybox({
+    loop : true,
+     buttons: [
+    "zoom",
+    "share",
+    "slideShow",
+    "fullScreen",
+    "download",
+    "thumbs",
+    "close"
+  ],
+});
+
 /*Milon*/
 /*
 -----------------------
