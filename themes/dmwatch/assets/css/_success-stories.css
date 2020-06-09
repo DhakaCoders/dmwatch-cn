@@ -72,3 +72,19 @@
 .initiateEventsCn{
 	background: #fff;
 }
+ul.publicatinList.notableEventsList .filter-result-items-des{
+	padding-right: 25px;
+}
+ul.publicatinList.notableEventsList li:nth-child(2n+2) .filter-result-items-des{
+	order: 2;
+	padding-right: 0;
+	padding-left: 25px;
+	text-align: left;
+}
+ul.publicatinList.notableEventsList.filter-result-items-des p{
+	padding-left: 80px;
+}
+ul.publicatinList.notableEventsList li:nth-child(2n+2) .filter-result-items-des p{
+	padding-left: 0;
+	padding-right: 80px;
+}
