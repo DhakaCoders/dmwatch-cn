@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Client</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
+  <?php } ?> -->
+  <link href="favicon.png" rel="shortcut icon" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->	
+
+</head>
+<body>
+<div class="bdoverlay"></div>  
+<header class="header">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-inr clearfix">
+            <div class="hdr-lft">
+              <div class="logo">
+                <a href="#"><img src="assets/images/logo.png"></a>
+              </div>
+            </div>
+            <div class="hdr-rgt">
+              <div class="hdr-topbar text-right">
+                <div>
+                  <div class="hdr-search">
+                    <form>
+                        <input type="search" name="" placeholder="http://www.">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="hdr-topbar-grd">
+                    <img src="assets/images/hdr-topbar-grd-img.png">
+                  </div>
+                </div>
+              </div>
+              <div class="main-nav-cntlr">
+                <div class="main-nav-menu-bar-xs">
+                  <div>
+                    <div class="hdr-humbergur-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="hdr-topbar-grd-xs">
+                      <img src="assets/images/hdr-topbar-grd-img.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="main-nav-cntlr-inr">                                               
+                  <nav class="main-nav clearfix">
+                    <ul class="clearfix reset-list">
+                      <li class="current-menu-item"><a href="#">home</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">about us</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">Sub menu item 1</a></li>
+                          <li><a href="#">Sub menu item 2</a></li>
+                          <li><a href="#">Sub menu item 3</a></li>
+                          <li><a href="#">Sub menu item 4</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">practice areas</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">Sub menu item 1</a></li>
+                          <li><a href="#">Sub menu item 2</a></li>
+                          <li><a href="#">Sub menu item 3</a></li>
+                          <li><a href="#">Sub menu item 4</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">projects</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">Sub menu item 1</a></li>
+                          <li><a href="#">Sub menu item 2</a></li>
+                          <li><a href="#">Sub menu item 3</a></li>
+                          <li><a href="#">Sub menu item 4</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">get involved</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">Sub menu item 1</a></li>
+                          <li><a href="#">Sub menu item 2</a></li>
+                          <li><a href="#">Sub menu item 3</a></li>
+                          <li><a href="#">Sub menu item 4</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">blog</a></li>
+                      <li><a href="#">contact us</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="xs-nav-cntlr">
+                  <div class="xs-nav-inr">
+                    <div class="menu-closebtn">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="xs-main-nav">
+                      <ul class="clearfix reset-list">
+                        <li class="current-menu-item"><a href="#">home</a></li>
+                        <li class="menu-item-has-children">
+                          <a href="#">about us</a>
+                          <ul class="sub-menu">
+                            <li><a href="#">Sub menu item 1</a></li>
+                            <li><a href="#">Sub menu item 2</a></li>
+                            <li><a href="#">Sub menu item 3</a></li>
+                            <li><a href="#">Sub menu item 4</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                          <a href="#">practice areas</a>
+                          <ul class="sub-menu">
+                            <li><a href="#">Sub menu item 1</a></li>
+                            <li><a href="#">Sub menu item 2</a></li>
+                            <li><a href="#">Sub menu item 3</a></li>
+                            <li><a href="#">Sub menu item 4</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                          <a href="#">projects</a>
+                          <ul class="sub-menu">
+                            <li><a href="#">Sub menu item 1</a></li>
+                            <li><a href="#">Sub menu item 2</a></li>
+                            <li><a href="#">Sub menu item 3</a></li>
+                            <li><a href="#">Sub menu item 4</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                          <a href="#">get involved</a>
+                          <ul class="sub-menu">
+                            <li><a href="#">Sub menu item 1</a></li>
+                            <li><a href="#">Sub menu item 2</a></li>
+                            <li><a href="#">Sub menu item 3</a></li>
+                            <li><a href="#">Sub menu item 4</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</header>
+
+<section class="vacancy-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="vacancy-details-innr clearfix">
+          <div class="vacancy-details-left">
+            <ul class="reset-list">
+              <li>DM WATCH</li>
+              <li>Job Location: Shewrapara, Dhaka</li>
+              <li>No. of Vacancy: 01</li>
+              <li>Position: Senior Officer - Finance and</li>
+              <li>Operations</li>
+              <li>Job Nature: Full time</li>
+              <li>Salary Range: BDT 35,000–60,000</li>
+              <li>Experience Requirements: 3 to 4 year(s)</li>
+              <li>Application Deadline: April 25, 2020</li>
+            </ul>
+          </div>
+          <div class="vacancy-details-content">
+            <h3>Vacancy Announcement</h3>
+            <div class="vacancy-jon-content">
+              <h4>Job Context</h4>
+              <p>In an era of globalization, countries now function as cities. Interconnected countries and interwoven sectors have created a complex new world. A small change in any part of the world can impact the world in infinite ways. A multi-disciplinary approach is, thus, necessary to address these complex intertwined issues. Disaster Management Watch (DM WATCH) fits into that complex framework with multi-disciplinary approach and expertise.</p>
+              <p>DM WATCH was established in 2013 as a Research, Training and Consultancy firm with a multi-disciplinary group of professionals. DM WATCH has worked with a broad range of partners at regional and country levels. Our clients include, among many, UNDP, World Bank, SNV Netherlands Development Organisation, Bernard Van Leer Foundation, BNWLA, BRAC University, CARE Bangladesh, 
+              </p>
+            </div>
+            <div class="vacancy-Job-Responsibilities">
+              <h4>Job Responsibilities:</h4>
+              <ul class="reset-list">
+                <li>-Prepare budget and cash call on a regular basis. Segregate the budget considering different requirements</li>
+                <li>-Prepare procurement and expenditure plan for the smooth project implementation based on approved work-plan and budget</li>
+                <li>-Review/check expenses (bill/vouchers) of project staff. Also ensure appropriate charging of these expenses</li>
+                <li>-Monitor expenses of project activities and provide feedback to project management</li>
+                <li>-Maintain salary sheet for every employee and prepare financial reports</li>
+                <li>-Collect bill from vendor and submit to appropriate authority with necessary attachments</li>
+                <li>-Keep all the computerized financial documents/formats updated</li>
+              </ul>
+            </div>
+            <div class="vacancy-Educational-Requirements">
+              <h4>Educational Requirements:</h4>
+              <p>Bachelor of Commerce in Accounting/ Finance/ HRM or Masters of Business Administration (MBA) in Accounting/ Finance/ HRM or any other relevant degree from relevant subjects from any reputed university/institution</p>
+            </div>
+            <div class="vacancy-Experience-Requirements">
+              <h4>Experience Requirements</h4>
+              <p>Minimum 3 years of experience in accounts and HR/ admin
+              Working experience in any research/ consulting firm in the accounting/ finance/ HR and admin department is preferable
+              </p>
+            </div>
+            <div class="vacancy-Required-Skills">
+              <h4>Required Skills</h4>
+              <p>Good communication skill both in Bangla and English
+              Sound knowledge in debit and credit management
+              Sound knowledge on MS Excel, MS Word, MS Access, and other accounting software
+              Willingness to work under pressure and meet deadlines
+              </p>
+            </div>
+            <div class="vacancy-Compensation">
+              <h4>Compensation and other benefits
+              </h4>
+              <p>Festival bonus,Insurance, Profit share, Weekly 2 holidays, Mdical leave, Annual leave, Maternal/ Paternal leave
+              Early Applicant will get priority in case of short screening. Only shortlisted candidates will be communicated for interview as per requirement process. DM WATCH reserves the right to accept or reject any application without assigning any reasons whatsoever.
+              </p>
+            </div>
+            <div class="vacancy-Application-Procedure">
+              <h4>Application Procedure
+              </h4>
+              <p>If you are interested to be a part of this diversified DM WATCH family, then please fill up the Google form link attached herewith (without filling the Google form, applications will not be accepted).</p>
+            </div>
+            <div class="vacancy-link-items">
+              <ul class="reset-list">
+                <li><a href="#"><span>LINK:</span> https://forms.gle/6sZyfw8xUVguXsXa9</a></li>
+              </ul>
+            </div>
+            <div class="vacancy-dm-watch-address">
+              <p>DM WATCH</p>
+              <a href="#">Shatabdi Haque Tower (3rd Floor), 586/3, Begum Rokeya Sharoni,</a>
+              <a href="#">West Shewrapara, Mirpur, Dhaka-1216, Bangladesh
+              </a>
+              <div class="vacancy-dm-watch-address-nav">
+                <ul class="reset-list clearfix">
+                  <li><a href="#">www.dmwatch-bd.com</a></li>
+                  <li><a href="#">info@dmwatch-bd.com</a></li>
+                  <li><a href="#">Phone: +88 02 8090617</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="footer-top-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ftr-top-sec-inr clearfix">
+          <div class="ftr-top-sec-title">
+            <h2 class="ftr-top-title">Ready to start your project with us ?</h2>
+          </div>
+          <div class="ftr-top-sec-link">
+            <a href="#">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-wrp">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-inner clearfix">
+          <div class="ftr-logo">
+            <a href="#"><img src="assets/images/logo.png"></a>
+            <div class="ftr-des">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+          </div>
+          <div class="ftr-menu">
+            <div class="ftr-menu-inr">
+              <h4 class="ftr-menu-title">About us</h4>
+              <ul class="reset-list">
+                <li><a href="#">DM WATCH</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">practice areas</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">GET INVOLVED</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ftr-cnt-menu">
+            <div class="ftr-cnt-menu-inr">
+              <h4 class="ftr-cnt-menu-title">Connect</h4>
+              <ul class="reset-list">
+                <li><a href="#">Shatabdi Haque Tower (3rd Floor) 586/3, Begum Rokeya Sharoni West Shewrapara, Mirpur,<br> Dhaka-1216, Bangladesh</a></li>
+                <li><a href="mailto:info@dmwatch-bd.com">info@dmwatch-bd.com</a></li>
+                <li><a href="tel:+8(802)8090617">+8 (802) 809-0617</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ftr-facebook">
+            <div class="ftr-facebook-inr">
+              <div class="ftr-cnt-socials-media">
+                <ul class="reset-list">
+                  <li><a href="#"><img src="assets/images/instagram.png"></a></li>
+                  <li><a href="#"><img src="assets/images/facebook.png"></a></li>
+                  <li><a href="#"><img src="assets/images/whatsapp.png"></a></li>
+                  <li><a href="#"><img src="assets/images/twitter.png"></a></li>
+                  <li><a href="#"><img src="assets/images/linkedin.png"></a></li>
+                </ul>
+              </div>
+              <div class="ftr-fb-area">
+                <img src="assets/images/facebook-img.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ftr-copywrite-sec clearfix">
+          <div class="developed-by">
+            
+          </div>
+          <div class="ftr-cpwrt">
+            <span>© 2020 DM WATCH. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="ftr-msg-icon">
+    <img src="assets/images/msg-icon.png">
+  </div>
+</footer>
+
+<script src="assets/js/jQueryLibrary.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/js/waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick.slider/slick.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo2-QJ7RdCkLw3NFZEu71mEKJ_8LczG-c"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+
+
