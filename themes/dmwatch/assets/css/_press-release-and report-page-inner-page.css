@@ -8,7 +8,7 @@
 	color: #006838;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .dm-prarpip-banner-sec-title{
 	display: block;
@@ -60,7 +60,7 @@
 .dm-prarpip-des-sec-inr p{
 	font-size: 21px;
 	line-height: 34px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 .dm-prarpip-des-sec-inr p strong{
 	display: block;
@@ -79,7 +79,7 @@
 	float: left;
 	width: 32.2916%;
 	padding-left: 30px;
-	padding-top: 34px;
+	padding-top: 20px;
 	border-left: 2px solid #88BE43;
 	margin-top: 15px;
 }
@@ -99,7 +99,7 @@
 .dm-prarpip-des-btm-right p{
 	font-size: 19px;
 	line-height: 30px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 .dm-prarpip-des-sec{
 	padding-bottom: 80px;
