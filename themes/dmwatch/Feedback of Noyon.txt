@@ -1,0 +1,42 @@
+Home Client
+---------------------------
+Desktop--->
+1. https://www.screencast.com/t/6slRtM7ls1l
+	padding diye rakhte hobe , charpase
+	bcoz boro img hole lege jaite pare
+
+
+Publications
+---------------------------
+Desktop--->
+1. https://www.screencast.com/t/CQtwNCli
+	ai page img ar upor akta shadow hobe,
+	atar css ta ai page a kora ache
+	https://www.dmwatch.com/annual-reports/
+
+	r img ar right a akta logo hobe
+	r title ar niche akta border hobe
+
+2. https://www.screencast.com/t/jj5rBVaZ
+	title ar niche border missing
+
+3. https://www.screencast.com/t/iMQCPGgnhxic
+	top and bottom gap mileni, kom hobe
+
+4. https://www.screencast.com/t/b2vHNFI6wl1
+    img gulo div ar bg te use koro, akta height diye
+
+
+5. https://www.screencast.com/t/tKrPboOJQH
+		left and right ar gap gulo besi hoiche
+
+
+
+
+
+Vacancy Details
+---------------------------
+Desktop--->
+
+1. https://www.screencast.com/t/exDd5SoAWW
+	ai contgulor markup ta change korte hobe, ata jokhon fix korba amar kache bujay niye korio
