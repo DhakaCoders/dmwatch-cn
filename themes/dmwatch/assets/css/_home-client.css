@@ -44,6 +44,7 @@
 	clear: left;
 }
 .client-partners-items{
+	padding: 20px;
 	background: #F5F7F7;
 	height: 199px;
 	display: flex;
