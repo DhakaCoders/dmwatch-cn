@@ -553,6 +553,7 @@ box-shadow: 4px 2px 5px -1px rgba(93,93,93,1);
 	font-weight: 500;
 	padding-left: 26px;
 	color: #908F8F;
+	text-transform: uppercase;
 }
 
 .filter-check-row input[type="checkbox"],
