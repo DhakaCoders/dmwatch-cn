@@ -1,0 +1,17 @@
+Tools products
+---------------------------
+Desktop--->
+
+1. https://www.screencast.com/t/ctprXtM7hNO
+	ai design ta ami korechi,
+	https://www.screencast.com/t/mhmW58FGbLw ai page thake copye kore niye bosay daw
+
+2. https://www.screencast.com/t/oOxV78KIZA
+	img a width 100% hobe, bcoz right a gap hoye ache
+
+
+3. https://www.screencast.com/t/z3fzeQZfAO
+	ak ta page aktai h1 use hobe, banner a h1 use ache
+	multi h2 ba onno tag thakte pare
+
+
