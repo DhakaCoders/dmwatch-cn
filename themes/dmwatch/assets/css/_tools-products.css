@@ -172,6 +172,9 @@
 	-moz-box-shadow: 1px 1px 5px 0px rgba(112,112,112,1);
 	box-shadow: 1px 1px 5px 0px rgba(112,112,112,1);
 }
+.dm-tp-fancybox a img{
+	width: 100%;
+}
 
 .dm-tp-report-sec{
 	padding: 60px 0 30px;
