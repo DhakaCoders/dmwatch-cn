@@ -33,9 +33,10 @@
 }
 .vacancy-details-content h4{
 	font-weight: 700;
-	display: inline-block;
+	display: block;
 	font-size: 18px;
 	margin-bottom: 8px;
+	margin-top: 8px;
 }
 .vacancy-details-content p{
 	font-size: 18px;
@@ -48,50 +49,55 @@
 	font-size: 24px;
 	margin-bottom: 50px;
 }
-.vacancy-Job-Responsibilities{
-	padding-bottom: 44px;
-}
-.vacancy-Job-Responsibilities > ul > li{
+.vacancy-details-content > ul > li{
 	font-size: 18px;
 	line-height: 1.75;
+}
+.vacancy-details-content > ul > li:last-child{
+	margin-bottom: 30px;
 }
 .vacancy-link-items{
-	padding-bottom: 28px;
-}
-.vacancy-link-items > ul >li{
-}
-.vacancy-link-items > ul > li >a{
-	display: inline-block;
-	cursor: pointer;
-	font-size: 18px;
-	color: #3b3b3b;
-	line-height: 1.75;
-}
-.vacancy-link-items > ul > li > a >span{
-	color: #88BE43;
-}
-.vacancy-dm-watch-address >p{
-	margin-bottom: 0;
-}
-.vacancy-dm-watch-address >a{
-	display: inline-block;
-	cursor: pointer;
-	font-size: 18px;
-	line-height: 1.75;
-	color: #3b3b3b;
-}
-.vacancy-dm-watch-address a:hover{
-	color: #3b3b3b;
-}
-.vacancy-dm-watch-address-nav{
 
 }
-.vacancy-dm-watch-address-nav > ul > li{
+.vacancy-link-items > ul:nth-child(1) >li{
+}
+.vacancy-link-items > ul:nth-child(1) > li >a{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 18px;
+	color: #3b3b3b;
+	line-height: 1.75;
+}
+.vacancy-link-items > ul:nth-child(1) > li >a:hover{
+	color: #53bc20;
+}
+.vacancy-link-items > ul:nth-child(1) > li > a >span{
+	color: #53bc20;
+}
+.vacancy-link-items >h5{
+	margin-bottom: 5px;
+	margin-top: 44px;
+	display: block;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.vacancy-link-items >a{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 1.75;
+	color: #3b3b3b;
+}
+.vacancy-link-items a:hover{
+	color: #53bc20;
+}
+.vacancy-link-items .vacancy-link-2nd-ul > li{
 	float: left;
 	padding: 0 10px;
 	position: relative;
 }
-.vacancy-dm-watch-address-nav > ul > li:after{
+.vacancy-link-items .vacancy-link-2nd-ul > li:after{
 	position: absolute;
 	content: "";
 	background: #3b3b3b;
@@ -102,18 +108,20 @@
 	margin-right: -1px;
 	transform: translate(-50%,-50%);
 }
-.vacancy-dm-watch-address-nav > ul > li:last-child:after{
+.vacancy-link-items .vacancy-link-2nd-ul > li:last-child:after{
 	display: none;
 }
-.vacancy-dm-watch-address-nav > ul > li:first-child{
+.vacancy-link-items .vacancy-link-2nd-ul > li:first-child{
 	padding-left: 0;
 }
-.vacancy-dm-watch-address-nav > ul > li:last-child{
+.vacancy-link-items .vacancy-link-2nd-ul > li:last-child{
 	padding-right: 0;
 }
-.vacancy-dm-watch-address-nav > ul > li > a{
+.vacancy-link-items .vacancy-link-2nd-ul > li > a{
 	display: inline-block;
 	font-size: 18px;
 	color: #3b3b3b;
-
+}
+.vacancy-link-items .vacancy-link-2nd-ul > li > a:hover{
+	color: #53bc20;
 }
