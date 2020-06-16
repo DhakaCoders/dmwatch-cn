@@ -29,14 +29,14 @@
 .tp-bmp-wash{
 	position: absolute;
 	top: 72%;
-    left: 23%;
+    left: 20%;
 	transform: translate(-50%,-50%);
 	z-index: 33;
 }
 .tp-bmp-udm{
 	position: absolute;
 	top: 72%;
-	left: 77%;
+	left: 81%;
 	transform: translate(-50%,-50%);
 	z-index: 33;
 }
