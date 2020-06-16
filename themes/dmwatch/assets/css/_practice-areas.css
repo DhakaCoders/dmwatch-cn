@@ -5,6 +5,7 @@ dm-we-do-content-sec-wrp
 */
 .dm-we-do-content-sec-wrp{
 	background:#fff;
+	margin-bottom: 75px;
 }
 .dm-we-do-dsc-wrp {
     background: #03aed9;
@@ -192,6 +193,21 @@ dm-pa-service-sec-wrp
 */
 .dm-pa-service-sec-wrp{
 	padding-bottom: 95px;
+	padding-top: 35px;
+	padding-bottom: 10px;
+	-webkit-box-shadow: 0px 0px 17px 1px rgba(226,226,226,1);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(226,226,226,1);
+    box-shadow: 0px 0px 17px 1px rgba(226,226,226,1);
+    margin-bottom: 120px;
+    background: #f5f7f6;
+}
+.dm-pa-service-sec-hdr h4{
+	display: block;
+	color: #006838;
+	font-size: 23px;
+	line-height: 1;
+	margin-bottom: 25px;
+	font-weight: 600;
 }
 .dm-pa-service-wrp ul{
 	margin: 0 -28px;
@@ -207,7 +223,37 @@ dm-pa-service-sec-wrp
 .dm-pa-service-wrp ul li:nth-child(7n+1){
 	clear: left;
 }
+.hm-fea-services-sec-2 .hmfsshdr-title{
+	text-transform: initial;
+	color: #606060;
+}
 
+.hm-fea-services-sec-2 .hm-fea-service-item-des p{
+	text-align: left;
+}
+
+.hm-fea-services-sec-2.hm-fea-services-sec{
+	-webkit-box-shadow: 0px 0px 17px 1px rgba(226,226,226,1);
+	-moz-box-shadow: 0px 0px 17px 1px rgba(226,226,226,1);
+	box-shadow: 0px 0px 17px 1px rgba(226,226,226,1);
+	margin-bottom: 80px;
+}
+
+.dm-featured-project-sec-hdr{
+	text-align: center;
+}
+
+.dmfpshdr-title{
+	display: block;
+	margin: 0 0 55px 0;
+	font-weight: 700;
+	font-size: 48px;
+	color: #606060;
+}
+
+.dm-featured-project-tabs-con-cntlr{
+	padding: 75px 0 100px;
+}
 
 /*
 ----------------------

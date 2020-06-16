@@ -193,6 +193,9 @@
 }
 .hm-fea-service-item-img{
 	padding-bottom: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .hm-fea-service-item{
 	text-align: center;
