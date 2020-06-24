@@ -51,8 +51,8 @@ if($query->have_posts()):
              $fullname = get_field('full_name', $thisID); 
             ?>
             <li>
-              <div class="our-management-grd-item">
-                <div class="our-management-grd-img-bx">
+              <div class="crkmts-grd-item">
+                <div class="itm-grd-img-bx">
                   <?php  
                     if( !empty($mimgid) ):
                       echo cbv_get_image_tag( $mimgid );
@@ -62,7 +62,7 @@ if($query->have_posts()):
                   <?php endif; ?>
                   <a href="<?php the_permalink(); ?>" class="overlay-link"></a>
                 </div>
-                <div class="our-management-short-des">
+                <div class="itm-short-des mHc">
                 <?php 
                   if( !empty($fullname) ) 
                     printf('<strong>%s</strong>', $fullname);

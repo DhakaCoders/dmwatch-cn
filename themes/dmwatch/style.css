@@ -17,3 +17,13 @@ Text Domain: dmwatch
 .ftr-msg-icon{
 	display: none;
 }
+.management-sec-hdr a{
+	color: #575656;
+}
+.management-sec-hdr a.active,
+.management-sec-hdr a:hover{
+	color: #53bc20;
+}
+.individual-team-mambers-grd-cntlr{
+    padding-bottom: 80px;	
+}
