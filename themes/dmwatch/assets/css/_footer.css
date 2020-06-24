@@ -1,29 +1,29 @@
 .footer-wrp{
-	padding-top: 100px;
+	padding-top: 80px;
 	position: relative;
 	font-family: 'FranklinGothic-Book';
 }
 .footer-inner{
 	padding-bottom: 20px;
 }
-.ftr-logo{
-	float: left;
-	width: 33.7606%;
-	padding-right: 72px;
-	margin-top: -5px;
+.ftr-logo {
+    float: left;
+    width: 30%;
+    padding-right: 72px;
+    margin-top: -5px;
 }
-.ftr-menu{
-	float: left;
-	width:  16.6666%;
+.ftr-menu {
+    float: left;
+    width: 20%;
 }
-.ftr-cnt-menu{
-	float: left;
-	width: 26.0683%;
-	padding-right: 50px;
+.ftr-cnt-menu {
+    float: left;
+    width: 27%;
+    padding-right: 50px;
 }
-.ftr-facebook{
-	float: left;
-	width: 23.5042%;
+.ftr-facebook {
+    float: left;
+    width: 23%;
 }
 .ftr-logo a{
 	display: block;
@@ -42,8 +42,9 @@
 	font-size: 22px;
 	line-height: 1;
 	margin-bottom: 40px;
-	font-weight: 400;
+	font-weight: 500;
 	color: #2a2828;
+	font-family: 'Verdana';
 }
 .ftr-menu ul{
 	padding: 0;
@@ -75,9 +76,13 @@
 	padding-left: 5px;
 	padding-bottom: 10px;
 }
-.ftr-cnt-socials-media ul li a{
-	display: inline-block;
-	vertical-align: baseline;
+.ftr-cnt-socials-media ul li a {
+    display: inline-block;
+    vertical-align: top;
+    color: #88bc41;
+    font-size: 28px;
+    line-height: 1;
+    margin: 0 2px;
 }
 .ftr-cnt-socials-media ul li a:hover{
 	opacity: .7;
@@ -103,8 +108,11 @@
 .ftr-cpwrt-menu{
 	float: left;
 }
-.ftr-cpwrt{
-	float: right;
+.ftr-cpwrt {
+    float: right;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
 }
 .ftr-cpwrt-menu ul li{
 	display: inline-block;
@@ -115,14 +123,11 @@
 	color: #2a2828;
 }
 
-.ftr-cpwrt span{
-	display: block;
-	font-size: 15px;
-	color: #2a2828;
-	text-transform: capitalize;
+.ftr-cpwrt span {
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
 }
-
-
 .footer-top-section{
 	background: url(../images/footer-top-sec-bg.jpg);
 	background-repeat: no-repeat!important;
@@ -144,7 +149,7 @@
 }
 
 .ftr-top-title{
-	font-size: 50px;
+	font-size: 40px;
 	line-height: 1;
 	display: block;
 	font-weight: normal;
@@ -152,6 +157,7 @@
 	margin-bottom: 0;
 	padding-right: 20px;
 	font-family: 'FranklinGothic-Book';
+	text-transform: uppercase;
 }
 
 .ftr-top-sec-link a{
@@ -165,7 +171,6 @@
 	justify-content: center;
 	background: #fff;
 	border: 2px solid #fff;
-	border-radius: 8px;
 	font-size: 34px;
 	color: #88bc41;
 	font-family: 'Franklin-Gothic-Regular';
@@ -180,16 +185,30 @@
 
 .ftr-msg-icon{
 	position: fixed;
-	bottom: 35px;
+	bottom: 30px;
 	right: 10px;
 	cursor: pointer;
+	transition: all 0.4s;
+	z-index: 100;
 }
-
+.ftr-msg-icon a{
+	display: block;
+}
+.ftr-msg-icon a:hover img{
+	transform: scale(1.1);
+}
 .ftr-cpwrt span p {
     margin: 0;
+    padding: 0;
+    font-size: 14px;
 }
-
-
+.copyright-text {
+    background: #fcfcfc;
+    margin-top: 30px;
+}
+.ftr-copywrite-sec {
+    padding: 25px 0 23px;
+}
 
 @media(max-width: 1199px){
 	.footer-top-section {
@@ -215,9 +234,6 @@
 	}
 	.ftr-cnt-socials-media {
 	    padding-bottom: 20px;
-	}
-	.ftr-copywrite-sec {
-	    padding: 40px 0;
 	}
 
 }
@@ -372,8 +388,8 @@
 	    height: 55px;
 	    font-size: 23px;
 	}	
-	.ftr-copywrite-sec{
-		padding-top: 0;
+	.footer-inner{
+		padding-bottom: 0;
 	}
 	
 

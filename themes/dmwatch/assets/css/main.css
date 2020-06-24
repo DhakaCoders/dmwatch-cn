@@ -18,7 +18,6 @@
 @import url('_event.css');
 
 
-
 /*Shoriful*/
 @import url('_advisor.css');
 @import url('_blog-details.css');
@@ -29,12 +28,11 @@
 @import url('_tools-products.css');
 @import url('_press-release-and report-page-inner-page.css');
 
-
 /*noyon*/
 @import url('_home-client.css');
 @import url('_publications.css');
-@import url('_vacancy-details.css');
 @import url('_blog-page.css');
-
+@import url('_vacancy-details.css');
 
 @import url('_success-stories.css');
+

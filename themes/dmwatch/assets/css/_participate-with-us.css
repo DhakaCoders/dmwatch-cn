@@ -1,13 +1,64 @@
+.participate-bnr-slider-sec{
+	
+}
+.participateBnrSlideItem{
+	position: relative;
+}
+.participate-bnr-slider-bg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.participateBnrSlideItem-des{
+	position: relative;
+	z-index: 2;
+	min-height: 625px;
+	max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.participateBnrSlideItem-des > div{
+	max-width: 900px;
+}
+.pcbsd-title{
+	display: block;
+	line-height: 1;
+	margin: 0 0 15px 0;
+	color: #9AD14B;
+	text-shadow: 2px 0px 7px #2F3627;
+}
+.participateBnrSlideItem-des p{
+	color: #fff;
+	font-size: 20px;
+}
+.participateBnrSlider .participateBnrSlideItem{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.participateBnrSlider.slick-slider{
+	margin: 0;
+	overflow: hidden;
+}
+.participateBnrSlider.slick-slider ul.slick-dots{
+	position: absolute!important;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
 /*
 -----------------------
 dm-us-contact-form-sec
 -----------------------
 */
 .dm-us-contact-form-sec {
-    background: #f5f7f6;
     padding-top: 55px;
-    padding-bottom: 50px;
-    margin-bottom: 110px;
+    padding-bottom: 60px;
 }
 .dm-us-contact-form-sec .dm-contact-form-head{
 	padding-bottom: 45px;
@@ -33,6 +84,13 @@ dm-us-contact-form-sec
 	margin-bottom: 36px;
 	position: relative;
 }
+.dm-us-contact-form-wrp .wpforms-container .wpforms-field.wpforms-field-payment-checkbox label.wpforms-error{
+	text-align: center;
+	padding-top: 10px;
+}
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label.wpforms-error{
+	padding-top: 5px;
+}
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .subjectField{
 	width: 100%;
 }
@@ -44,56 +102,50 @@ dm-us-contact-form-sec
 	vertical-align: baseline;
 	width: 100%;
 	margin: 0;
-	font-size: 23px;
-	line-height: 25px;
-	font-weight: 500;
+	font-size: 14.5px;
+	line-height: 1.2;
 	text-transform: uppercase;
 	color: #88BE43;
 	margin-bottom: 12px;
-	font-family: 'Raleway', sans-serif;
-	padding-left: 15px;
+	padding-left: 0;
+	font-family: 'Verdana-Bold';
 }
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
 	width: 100%;
 	max-width: 100%;
-	height: 64px;
+	height: 50px;
 	background: transparent;
 	border: 1px solid #6D9B6A;
 	box-sizing: border-box;
-	padding: 20px 14px 18px;
+	padding: 10px 15px;
 	color: #9AA59A;
-	font-weight: 400;
-	font-size: 26px;
-	line-height: 28px;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+	font-size: 17px;
+	line-height: 1;
 	border-radius: 0;
-	font-family: 'PoppinsRegular';
+
 }
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
 	border-color: #88BE43;
 	box-shadow: none;
 }
-.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
-	max-width: 825px;
-	width: 100%;
-	height: 95px;
-	border: 2px solid #88BE43 !important;
-	background: #88BE43;
-	font-size: 34px;
-	line-height: 36px;
-	text-transform: uppercase;
-	color: #fff;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	cursor: pointer;
-	display: table;
-	margin: 0 auto;
-	padding: 27px 0 30px;
-	font-family: 'PoppinsMedium';
-	letter-spacing: 3px;
+.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {
+    max-width: 300px;
+    width: 100%;
+    height: 60px;
+    border: 2px solid #88BE43 !important;
+    background: #88BE43;
+    font-size: 21px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 8px 10px 6px;
+    letter-spacing: 3px;
+    font-family: 'HelveticaNeueBold';
 }
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
 	background: transparent;
@@ -111,20 +163,16 @@ dm-us-contact-form-sec
     appearance: none;
     width: 100%!important;
     max-width: 100%!important;
-    height: 64px!important;
+    height: 50px!important;
 	background: transparent!important;
 	border: 1px solid #6D9B6A!important;
 	box-sizing: border-box!important;
     padding: 15px 14px 15px!important;
 	color: #21d5ba!important;
 	font-weight: 400!important;
-	font-size: 26px!important;
-	line-height: 28px!important;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+	font-size: 17px!important;
+	line-height: 1!important;
 	border-radius: 0;
-	font-family: 'PoppinsRegular';
     position: relative;
 }
 /*.wpforms-container select.wpforms-payment-price  option.placeholder{
@@ -145,8 +193,8 @@ dm-us-contact-form-sec
 	cursor: pointer;
 }
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .choice-1 input[type="checkbox"]{
-	width: 45px!important;
-	height: 45px!important;
+	width: 35px!important;
+	height: 35px!important;
 	border: 1px solid #b1c9b1!important;
 	border-radius: 0!important;
 	background: transparent!important;
@@ -158,6 +206,7 @@ dm-us-contact-form-sec
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .choice-1 label{
 	margin-bottom: 0;
 	text-transform: initial;
+	cursor: pointer;
 }
 .dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #9AA59A;
@@ -364,10 +413,10 @@ dm-us-contact-form-sec
 ----------------------
 */
 
+@media(max-width: 1399px){
+}
+
 @media(max-width: 1199px){
-	.dm-us-contact-form-sec {
-	    margin-bottom: 90px;
-	}
 	.dm-member-msg span {
 	    font-size: 27px;
 	    line-height: 29px;
@@ -375,7 +424,12 @@ dm-us-contact-form-sec
 	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
 	    padding: 0 20px;
 	}
-
+	.pcbsd-title{
+		margin-bottom: 15px;
+	}
+	.participateBnrSlideItem-des{
+		min-height: 550px;
+	}
 }
 
 @media(max-width: 991px){
@@ -386,27 +440,10 @@ dm-us-contact-form-sec
 	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container{
 		margin: 0 -15px;
 	}
-	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label {
-	    font-size: 18px;
-	    line-height: 20px;
-	    padding-left: 10px;
-	}
-	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input {
-	    height: 60px;
-	    background: transparent;
-	    font-size: 20px;
-	    line-height: 28px;
-	}
 	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label {
 	    font-size: 20px;
 	    line-height: 26px;
 	    padding-left: 65px;
-	}
-	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {
-	    height: 85px;
-	    font-size: 30px;
-	    line-height: 32px;
-	    padding: 25px 0 27px;
 	}
 	.dm-member-msg span {
 	    font-size: 26px;
@@ -415,17 +452,14 @@ dm-us-contact-form-sec
 	.dm-contact-form-head{
 		font-size: 23px;
 	}
-	.wpforms-container select.wpforms-payment-price{
-		font-size: 20px!important;
+	.participateBnrSlideItem-des{
+		min-height: 450px;
 	}
 }
 
 @media(max-width: 767px){
 	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
 	    width: 100%;
-	}
-	.dm-us-contact-form-sec {
-	    margin-bottom: 60px;
 	}
 	.dm-us-contact-form-wrp{
 		max-width: 500px;
@@ -468,6 +502,10 @@ dm-us-contact-form-sec
 	.dm-us-contact-form-sec .dm-contact-form-head {
 	    padding-bottom: 30px;
 	}
+	.participateBnrSlideItem-des p{
+		font-size: 18px;
+		font-weight: 400;
+	}
 }
 
 @media(max-width: 575px){
@@ -481,13 +519,6 @@ dm-us-contact-form-sec
 	    height: 50px;
 	    font-size: 17px;
 	    line-height: 22px;
-	}
-	.wpforms-container select.wpforms-payment-price {
-	    font-size: 17px!important;
-	    line-height: 22px!important;
-	}
-	.wpforms-container select.wpforms-payment-price{
-		height: 50px!important;
 	}
 	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label{
 		padding-left: 0;
@@ -514,6 +545,15 @@ dm-us-contact-form-sec
 	}
 	.dm-us-contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label{
 		font-size: 17px;
+	}
+	.participateBnrSlideItem-des p {
+    	font-size: 17px;
+	}
+	.participateBnrSlideItem-des{
+		text-align: center;
+	}
+	.participateBnrSlideItem-des {
+	    min-height: 400px;
 	}
 }
 

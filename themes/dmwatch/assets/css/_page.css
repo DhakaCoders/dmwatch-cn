@@ -129,12 +129,29 @@ ol li::before {
 /*page banner*/
 .page-banner{
 	position: relative;
-	margin-bottom: 100px;
+	margin-bottom: 0;
 }
 
 
 .page-banner-des{
-	min-height: 641px;
+	min-height: 590px;
+}
+.designTwo .page-banner-des{
+	min-height: 350px;
+}
+.designThree .page-banner-des{
+	min-height: 450px;
+}
+.designTwo .page-banner-des .page-banner-title{
+	text-transform: capitalize;
+	color: #88BE43;
+}
+.designTwo.page-bnr-an-our-project-details .page-banner-des .page-banner-title{
+	font-size: 30px;
+	line-height: 1.3;
+}
+.designTwo.dtLeft .page-banner-des{
+	justify-content: flex-start;
 }
 .page-banner-bg{
 	position: absolute;
@@ -146,6 +163,15 @@ ol li::before {
 	background-repeat: no-repeat!important;
 	background-position: center center!important;
 	z-index: 1;
+}
+.page-banner-bg:after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	content: '';
+	background: rgba(0,0,0,0.4);
 }
 .page-banner-bg img{
 	display: none;
@@ -165,21 +191,21 @@ ol li::before {
 }
 .page-banner-title{
 	display: block;
-	font-size: 106px;
+	font-size: 60px;
 	line-height: 1;
-	text-transform: uppercase;
 	color: #fff;
 	font-weight: 700;
 	margin: 0;
 	text-shadow: 2px 0px 7px #2F3627;
+	font-family: 'Raleway', sans-serif;
 }
 .page-banner-des{
 	color: #fff;
 }
 .page-banner-des p{
+	font-family: 'FranklinGothic-Book';
 	margin-bottom: 0;
-	font-size: 21px;
-	line-height: 1.5;
+	font-size: 18px;
 	padding-top: 15px;
 }
 .page-banner-des p a{
@@ -202,9 +228,12 @@ ol li::before {
 	bottom: 160px;
 }
 
-.page-banner.page-bnr-lft-con .page-banner-title{
-	font-size: 63px;
+.page-banner.page-bnr-lft-con .page-banner-title,
+.pcbsd-title,
+.page-banner-title{
+	font-size: 60px;
 	color: #88BE43;
+	font-family: 'Raleway', sans-serif;
 }
 
 .page-banner.page-bnr-rgt-con .page-banner-inr{
@@ -219,7 +248,6 @@ ol li::before {
 	text-align: right;
 }
 .page-banner.page-bnr-rgt-con .page-banner-title{
-	font-size: 82px;
 	color: #88BE43;
 }
 
@@ -228,15 +256,17 @@ ol li::before {
 }
 
 .page-banner.page-bnr-title-semi .page-banner-title{
-	font-size: 56px;
+	font-size: 46px;
 }
 
 .page-bnr-top-logo {
     position: absolute;
     top: -4px;
-    left: 3px;
+    right: 3px;
 }
-
+.page-bnr-top-logo img{
+	max-width: 200px;
+}
 .page-bnr-btm-logo{
 	position: absolute;
 	bottom: -40px;
@@ -282,6 +312,96 @@ ol li::before {
 .page-banner.page-bnr-team-member-single{
 	margin-bottom: 0!important;
 }
+
+.page-404.text-center {
+    padding: 120px 0;
+}
+.searchBanner .page-banner-des{
+	min-height: 400px;
+}
+.searchBanner.page-banner.page-bnr-lft-con .page-banner-inr {
+    bottom: 160px;
+}
+.searchBanner.page-banner.page-bnr-lft-con .page-banner-inr .page-banner-title span{
+	color: #fff;
+	text-transform: none;
+	font-size: 40px;
+}
+.SearchWrap.dm-blog-grd-sec {
+    margin: 0;
+    padding: 90px 0 50px;
+}
+.SearchWrap .dm-blog-grd-item strong {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.SearchWrap .dm-blog-grd-item p{
+	font-size: 20px;
+}
+.SearchWrap .dm-blog-grd-item{
+	padding-left: 60px;
+}
+.SearchWrap .dm-blog-grd-item span{
+	top: 4px;
+	width: 30px;
+	height: 30px;
+	background: #88BE43;
+    border: 0;
+}
+.dm-blog-grd-item span:before{
+	display: none;
+}
+.SearchWrap .dm-blog-grd-item a.readmore{
+	color: #88BE43;
+}
+.SearchWrap .dm-blog-grd-item a:hover{
+	color: #8ccc39;
+}
+.SearchWrap .dm-blog-grd-sec{
+	margin: 0;
+}
+.searchBanner.page-banner{
+	margin: 0;
+}
+.searchBanner.page-banner.page-bnr-lft-con .page-banner-title{
+	font-size: 50px;
+}
+.annualReports #report-content .rp-desc{
+	top: auto;
+	bottom: 0;
+	opacity: 1;
+}
+.annualReports #report-content .publicatons-page-top-sec-img .rp-img-wrap:after{
+	opacity: 1;
+}
+.tp-banner-des{
+	position: relative;
+	z-index: 35;
+}
+.dm-prarpip-des-sec-inr a{
+	color: #88BE43;
+}
+.dm-prarpip-des-sec-inr a:hover{
+	color: #8bb25a;
+}
+.notFoundMems{
+	text-align: center;
+}
+
+/*to- top*/
+.ad-back-to-top {
+    position: fixed;
+    right: 33px;
+    bottom: 70px;
+    max-width: 35px;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+}
+.ad-back-to-top:hover{
+	color: #88bc41;
+}
 @media(max-width: 1499px){
 
 }
@@ -297,14 +417,13 @@ ol li::before {
 }
 
 @media(max-width: 1199px){
-	.page-banner.page-bnr-lft-con .page-banner-title {
+	.page-banner.page-bnr-lft-con .page-banner-title,
+	.pcbsd-title,
+	.page-banner-title {
 	    font-size: 55px;
 	}
 	.page-banner.page-bnr-lft-con .page-banner-des {
 	    max-width: 550px;
-	}
-	.page-banner {
-	    margin-bottom: 80px;
 	}
 	.page-banner-des p br{
 		display: none;
@@ -312,8 +431,10 @@ ol li::before {
 	.page-banner.page-bnr-lft-con .page-banner-inr > div{
 		max-width: 800px;
 	}
-	.page-banner.page-bnr-rgt-con .page-banner-title{
-		font-size: 65px;
+	.page-banner.page-bnr-lft-con .page-banner-title,
+	.pcbsd-title,
+	.page-banner-title {
+		font-size: 50px;
 	}
 	.page-banner.page-bnr-rgt-con .page-banner-inr {
 	    bottom: 150px;
@@ -330,11 +451,11 @@ ol li::before {
 	.page-banner-des p br{
 		display: none;
 	}
-	.page-banner.page-bnr-lft-con .page-banner-title {
-	    font-size: 47px;
-	}
+	.page-banner.page-bnr-lft-con .page-banner-title,
+	.pcbsd-title,
+	.page-banner-title,
 	.page-banner.page-bnr-rgt-con .page-banner-title {
-	    font-size: 52px;
+	    font-size: 45px;
 	}
 	.page-bnr-btm-logo{
 		bottom: -80px;
@@ -371,15 +492,15 @@ ol li::before {
 	.page-banner-des {
 	    min-height: 450px;
 	}
-	.page-banner {
-	    margin-bottom: 60px;
-	}
 	.page-banner-des p {
 	    font-size: 18px;
 	    line-height: 1.3;
 	}
+	.page-banner.page-bnr-lft-con .page-banner-title,
+	.pcbsd-title,
+	.page-banner-title,
 	.page-banner.page-bnr-rgt-con .page-banner-title {
-	    font-size: 45px;
+	    font-size: 42px;
 	}
 	.dm-vision-mision-grd-sec {
 	    padding: 35px 0;
@@ -399,8 +520,11 @@ ol li::before {
 	.page-banner-des {
 	    min-height: 436px;
 	}
-	.page-banner.page-bnr-lft-con .page-banner-title {
-	    font-size: 42px;
+	.page-banner.page-bnr-lft-con .page-banner-title,
+	.pcbsd-title,
+	.page-banner-title,
+	.page-banner.page-bnr-rgt-con .page-banner-title {
+	    font-size: 40px;
 	}
 }
 
@@ -412,11 +536,11 @@ ol li::before {
 	.page-banner-des {
 	    min-height: 400px;
 	}
-	.page-banner.page-bnr-lft-con .page-banner-title {
-	    font-size: 38px;
-	}
+	.page-banner.page-bnr-lft-con .page-banner-title,
+	.pcbsd-title,
+	.page-banner-title,
 	.page-banner.page-bnr-rgt-con .page-banner-title {
-	    font-size: 37px;
+	    font-size: 35px;
 	}
 }
 
