@@ -70,6 +70,7 @@
 	font-weight: 800;
 	font-family: 'Raleway', sans-serif;
 	position: relative;
+	display: none;
 }
 .omb-sec-ctlr .our-management-bio-rgt-con div a i{
 	position: absolute;
